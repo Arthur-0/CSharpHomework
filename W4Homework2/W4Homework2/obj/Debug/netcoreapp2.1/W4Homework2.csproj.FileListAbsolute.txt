@@ -1,0 +1,11 @@
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\bin\Debug\netcoreapp2.1\W4Homework2.deps.json
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\bin\Debug\netcoreapp2.1\W4Homework2.runtimeconfig.json
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\bin\Debug\netcoreapp2.1\W4Homework2.runtimeconfig.dev.json
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\bin\Debug\netcoreapp2.1\W4Homework2.dll
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\bin\Debug\netcoreapp2.1\W4Homework2.pdb
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\obj\Debug\netcoreapp2.1\W4Homework2.csprojAssemblyReference.cache
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\obj\Debug\netcoreapp2.1\W4Homework2.csproj.CoreCompileInputs.cache
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\obj\Debug\netcoreapp2.1\W4Homework2.AssemblyInfoInputs.cache
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\obj\Debug\netcoreapp2.1\W4Homework2.AssemblyInfo.cs
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\obj\Debug\netcoreapp2.1\W4Homework2.dll
+C:\Users\Ruby\Desktop\学习\C#\W4Homework2\W4Homework2\obj\Debug\netcoreapp2.1\W4Homework2.pdb
