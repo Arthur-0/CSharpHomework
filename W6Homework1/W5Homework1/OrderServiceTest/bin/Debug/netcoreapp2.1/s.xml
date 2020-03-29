@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <ID>202003281120217</ID>
+    <TotalAmount>60</TotalAmount>
+    <TradingTime>2020-03-28T11:20:21.1782603+08:00</TradingTime>
+    <Client>jjj</Client>
+    <OrderItems>
+      <OrderItem>
+        <Name>pen</Name>
+        <ID>008</ID>
+        <Num>2</Num>
+        <UnitPrice>30</UnitPrice>
+      </OrderItem>
+    </OrderItems>
+  </Order>
+</ArrayOfOrder>

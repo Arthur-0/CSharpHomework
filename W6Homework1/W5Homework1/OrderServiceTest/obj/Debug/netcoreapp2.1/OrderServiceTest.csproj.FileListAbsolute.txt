@@ -1,0 +1,17 @@
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\OrderServiceTest.deps.json
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\OrderServiceTest.runtimeconfig.json
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\OrderServiceTest.runtimeconfig.dev.json
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\OrderServiceTest.dll
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\OrderServiceTest.pdb
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\W5Homework1.dll
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\bin\Debug\netcoreapp2.1\W5Homework1.pdb
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.csprojAssemblyReference.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.csproj.CoreCompileInputs.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.AssemblyInfoInputs.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.AssemblyInfo.cs
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.csproj.CopyComplete
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.dll
+C:\Users\Ruby\Desktop\courseMaterial\C#\W5Homework1\OrderServiceTest\obj\Debug\netcoreapp2.1\OrderServiceTest.pdb
