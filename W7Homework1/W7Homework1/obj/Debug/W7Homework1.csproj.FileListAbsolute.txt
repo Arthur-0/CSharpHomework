@@ -1,0 +1,10 @@
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\bin\Debug\W7Homework1.exe.config
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\bin\Debug\W7Homework1.exe
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\bin\Debug\W7Homework1.pdb
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.csprojAssemblyReference.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.Form1.resources
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.Properties.Resources.resources
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.csproj.GenerateResource.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.csproj.CoreCompileInputs.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.exe
+C:\Users\Ruby\Desktop\courseMaterial\C#\W7Homework1\W7Homework1\obj\Debug\W7Homework1.pdb
