@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="咱们开发应用的时候，有时候可能需要建立一些独立于应用逻辑体本身的后台任务。在.NET Core 2.0 之后，官方为我们提供了一个叫做 `IHostedService` 的接口，它可以便于我们更好的实" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>【5min+】后台任务的积木。.NetCore中的IHostedService - 句幽 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/uoyo/custom.css?v=TZbXpieXQG/10X3L0iBgILcLZKA=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/custom/bundle-custom-mobile.min.css?v=-Yh290MhQyDeXLmvKTSses9H6-49lqbpXFh55zvS0w8" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/uoyo/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/uoyo/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/uoyo/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 401017;
+        var currentBlogApp = 'uoyo';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Custom';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/uoyo/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/uoyo/">句幽</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/uoyo/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%8F%A5%E5%B9%BD">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/uoyo/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+27&nbsp; </span>
+<span id="stats_article_count">文章 - 
+1&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+406</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/uoyo/p/12377645.html">【5min+】后台任务的积木。.NetCore中的IHostedService</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+    <div id="cnblogs_post_description" style="display: none">
+        咱们开发应用的时候，有时候可能需要建立一些独立于应用逻辑体本身的后台任务。在.NET Core 2.0 之后，官方为我们提供了一个叫做 `IHostedService` 的接口，它可以便于我们更好的实现托管服务。那么今天咱们就来扒一扒 `IHostedService` 到底是一个怎样的东西，我们可以在什么情况下使用它。
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h2 id="系列介绍"><strong>系列介绍</strong></h2>
+<p>【五分钟的dotnet】是一个利用您的碎片化时间来学习和丰富.net知识的博文系列。它所包含了.net体系中可能会涉及到的方方面面，比如C#的小细节，AspnetCore，微服务中的.net知识等等。<br>
+5min+不是超过5分钟的意思，&quot;+&quot;是知识的增加。so，它是让您花费5分钟以下的时间来提升您的知识储备量。</p>
+<h2 id="前言"><strong>前言</strong></h2>
+<p>这次终于可以给大家分享一些AspNet Core方面的东西了😀。虽然本次提及的内容是.NET Core通用，但将以AspNet Core为例作为介绍。</p>
+<h2 id="正文"><strong>正文</strong></h2>
+<p>咱们开发应用的时候，有时候可能需要建立一些独立于应用逻辑体本身的后台任务。比如：定时发送邮件、定时执行脚本这类持续运行的任务，也有验证数据库是否创建等只伴随应用启动而执行一次的任务。</p>
+<p>在.NET Core 2.0 之后，官方为我们提供了一个叫做 <code>IHostedService</code> 的接口，它可以便于我们更好的实现托管服务。</p>
+<p>在微软《.NET 微服务 - 体系结构》教程中，就有提及到关于该接口的描述：</p>
+<p><img src="https://images.cnblogs.com/cnblogs_com/uoyo/1627547/o_200228064540QQ%E6%88%AA%E5%9B%BE20200228144509.png" alt="x"></p>
+<p>那么今天咱们就来扒一扒 <code>IHostedService</code> 到底是一个怎样的东西，我们可以在什么情况下使用它。</p>
+<p><em>前方车速够快，请抓好扶手。</em><br>
+<img src="https://images.cnblogs.com/cnblogs_com/uoyo/1627547/o_200228064915QQ%E6%88%AA%E5%9B%BE20200228144910.png" alt="x"></p>
+<h2 id="ihostservice"><strong>IHostService</strong></h2>
+<p>请注意 <code>IHostedService</code> 是从 .NET Core 提出的，所以可以看到它并不是专门只针对于 AspNet Core。 从.NetCore 3.x 之后，当大家创建一个新的AspNetCore应用的时候，打开默认的 <code>Program.cs</code> 文件，就会发现它和以往的版本已经不一样了。</p>
+<pre><code class="language-c#">//现在
+public static IHostBuilder CreateHostBuilder(string[] args) =&gt;
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =&gt;
+            {
+                webBuilder.UseStartup&lt;Startup&gt;();
+            });
+
+//过去
+public static IWebHostBuilder CreateWebHostBuilder(string[] args) =&gt;
+        new WebHostBuilder()
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseStartup&lt;Startup&gt;()
+            .UseKestrel()
+            .UseIISIntegration();
+</code></pre>
+<p>可以很明显的看出应用程序由原来的 <code>IWebHostBuilder</code> 更改为了 <code>IHostBuilder</code>。这就告诉我们，.NET Core进行了更高层次的抽象，也就意味着现在能支持更多不同托管主机的创建方式，未来也将支持更多的类型。果然是一盘很大的棋啊🤫</p>
+<p>回到今天的主题 <code>IHostedService</code> 。 从命名上来看，就可以看出一些文章。 很明显，它是伴随主机一同启动的任务。因此来看看该接口的签名：</p>
+<pre><code class="language-c#">public interface IHostedService
+{
+    Task StartAsync(CancellationToken cancellationToken);
+    Task StopAsync(CancellationToken cancellationToken);
+}
+</code></pre>
+<p>确实，很直观。只有两个方法，一个是启动，一个是停止。也就是说在 <code>Host</code> 启动的时候，就会调用 <code>StartAsync</code> 方法。在 <code>Host</code> 停止的时候就会调用 <code>StopAsync</code> 方法。</p>
+<h3 id="在aspnet-core中的作用"><strong>在AspNet Core中的作用</strong></h3>
+<p>那么如果是咱们要在AspNet Core中使用它，该如何操作呢？ 首先，咱们先来建立一个实现该接口的类：</p>
+<pre><code class="language-c#">public class DemoHostService : IHostedService
+{
+    public async Task StartAsync(CancellationToken cancellationToken)
+    {
+        await Task.Delay(100);
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
+<p>然后还需要在 <code>Startup.cs</code> 中将它进行注册：</p>
+<pre><code class="language-c#">services.AddHostedService&lt;DemoHostService&gt;();
+</code></pre>
+<p>OK，就完了。然后应用就会在启动的时候执行 <code>StartAsync</code> 方法。 咱们可以来断点试一试，看一看它的启动顺序。 经过断点之后我们发现基础的AspNet Core 应用会在执行完成 <code>ConfigureServices</code> 方法之后 再执行 <code>DemoHostService</code> 的 <code>StartAsync</code> 方法，最后再执行 <code>Configure</code> 方法：</p>
+<pre><code class="language-c#">// startup.cs
+
+//第一步执行
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers();
+    services.AddHostedService&lt;DemoHostService&gt;();
+}
+
+// 中间执行DemoHostService的StartAsync
+
+// 最后执行
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    app.UseRouting();
+    app.UseEndpoints();
+}
+</code></pre>
+<p>就如同下面的示意图一样，中间的部分就是咱们自定义的 HostService :</p>
+<p><img src="https://images.cnblogs.com/cnblogs_com/uoyo/1627547/o_200228065013QQ%E6%88%AA%E5%9B%BE20200228143302.png" alt="x"></p>
+<p>这就好玩了，说明在应用加载完成所有服务之后，就会在启动的时候开启所有的<code>IHostedService</code> 。 那么是否意味着我们可以在自定义的 <code>IHostedService</code> 使用DI容器中的服务呢，或者说在自定义任务中注入其它类。  答案是：肯定的。</p>
+<pre><code class="language-c#">public class DemoHostService : IHostedService
+{
+    private IMyServiceDemo serviceDemo;
+    public DemoHostService(IMyServiceDemo IServiceDemo)
+    {
+        serviceDemo = IServiceDemo;
+    }
+
+    public async Task StartAsync(CancellationToken cancellationToken)
+    {
+        await Task.Delay(100);
+    }
+}
+</code></pre>
+<p>就如同上面一样，我们使用了注入的<code>IMyServiceDemo</code>类。但是，<strong>请注意！！！！</strong>：<code>IHostedService</code> 的生命周期为单例级别。所以只能在构造函数中注入同为单例级别的服务。而且就算 <code>IHostedService</code> 的周期为其它级别，比如（Scoped），它其实也无法直接在构造函数中注入非单例级别的服务。</p>
+<p>理由是，HostService既然在Configure之前，就证明它目前所在的范围作用域还是在 “根” 级别上，所以当您注入一个非单例级别的类会提示您“无法在根范围获取一个对象”。</p>
+<p>所以如果咱们需要获取其它生命周期类型服务的时候，就要使用另外一种方法：</p>
+<pre><code class="language-c#">public DemoHostService(IServiceProvider provider)
+{
+    var serviceDemo = provider.CreateScope()
+                              .ServiceProvider
+                              .GetService&lt;IMyScpoedService&gt;();
+}
+</code></pre>
+<p>上方只是个快捷写法，您在使用过程中一定要注意释放Scope。</p>
+<p>在知道了<code>IHostedService</code> 之后，我们可以来想一想我们能够在伴随 Host 启动时，做一些什么事情呢？ 比如，我们在应用启动时，可以对EFCore进行自动迁移和播种种子数据等：</p>
+<pre><code class="language-c#">public async Task StartAsync(CancellationToken cancellationToken)
+{
+    using (var scope = _provider.CreateScope())
+    {
+        var efContext = scope.ServiceProvider.GetService&lt;MyDbCotext&gt;();
+        efContext.Database.EnsureCreated();
+
+        // Look for any students.
+        if (efContext.Students.Any())
+        {
+            return; // DB has been seeded
+        }
+        else
+        {
+            SeedData(efContext);
+        }
+    }
+}
+</code></pre>
+<h3 id="持续运行的后台服务"><strong>持续运行的后台服务</strong></h3>
+<p>那么如果我们要定义一个持续运行的后台任务呢？ 比如定时发送邮件等，是否直接在 <code>IHostedService</code> 的 <code>StartAsync</code> 中写个死循环呢？ 好吧，答案是否定的。 如果这样咱们的Host就启动不起来。 通过查看 .NET Core Host的源代码就知道，它在最后启动的时候做了这样的事情:</p>
+<pre><code class="language-c#">_hostedServices = Services.GetService&lt;IEnumerable&lt;IHostedService&gt;&gt;();
+
+foreach (var hostedService in _hostedServices)
+{
+    // Fire IHostedService.Start
+    await hostedService.StartAsync(combinedCancellationToken).ConfigureAwait(false);
+}
+</code></pre>
+<p>是的，它用了await关键字，也就是说如果直接写while死循环的话，就会导致一直等待而无法进行下面的操作。所以，我们可以在 <code>IHostedService</code> 的 <code>StartAsync</code> 中单独开一个线程来进行循环：</p>
+<pre><code class="language-c#">public Task StartAsync(CancellationToken cancellationToken)
+{
+    new Task(() =&gt;
+    {
+        while (true)
+        {
+            // doing
+        }
+    });
+    return Task.CompletedTask;
+}
+</code></pre>
+<p>当然，.NET Core 早就想到了这一点，所以为我们提供了一个叫做 <code>BackgroundService</code> 的抽象类，我们只需要在 <code>ExecuteAsync</code> 方法中执行特有的逻辑就可以了：</p>
+<pre><code class="language-c#">public class MyBackgroundJob : BackgroundService
+{
+    protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            SendEmail();
+        }
+    }
+}
+</code></pre>
+<h2 id="总结"><strong>总结</strong></h2>
+<p><code>IHostedService</code> 接口为在 ASP.NET Core Web 应用程序（在 .NET Core 2.0 及更高版本中）或任何进程/主机（从使用 IHost 的 .NET Core 2.1 开始）中启动后台任务提供了一种便捷方式。 其主要优势在于，当主机本身将要关闭时，可以有机会进行正常取消以清理后台任务的代码。</p>
+<p>其实关于后台定时任务，您可能会想到一些成熟的框架，比如Hangfire等。当然，它也为.NET Core版本提供了 <code>IHostedService</code> 的实现，您可以从<a href="https://github.com/HangfireIO/Hangfire/blob/e3b3452113faf1ecca7b4af37e0e403932fd6a5b/src/Hangfire.AspNetCore/BackgroundJobServerHostedService.cs">这里看到它的实现</a>。</p>
+<p>偷偷告诉您，其实咱们的AspNetCore在启动时进行初始化<code>Configure</code> 等操作也是通过扩展一个<code>IHostedService</code>来实现的，它的具体实现类叫做：<code>GenericWebHostService</code>。</p>
+<p>所以可以看出 <code>IHostedService</code> 为咱们提供了非常便利的操作，我们可以像累积木一样，往 Host 主机添加我们需要的任务项。就像下面的图一样：</p>
+<p><img src="https://images.cnblogs.com/cnblogs_com/uoyo/1627547/o_200228074943QQ%E6%88%AA%E5%9B%BE20200228154934.png" alt="x"></p>
+<p><em>好吧，这次废话好像多了些。最后，偷偷说一句：创作不易，点个推荐吧.....</em></p>
+<p><img src="https://images.cnblogs.com/cnblogs_com/uoyo/1635918/o_200221093942dw-23.png" alt="x"></p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-02-28 16:07</span>&nbsp;
+<a href="https://www.cnblogs.com/uoyo/">句幽</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12377645" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12377645);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 401017, cb_blogApp = 'uoyo', cb_blogUserGuid = '4660842a-34b1-4866-476c-08d52fc34315';
+    var cb_entryId = 12377645, cb_entryCreatedDate = '2020-02-28 16:07', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 句幽
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <div class="Snow">
+    <canvas id="Snow"></canvas>
+</div>
+
+<!--下雪特效-->
+<script src="https://blog-static.cnblogs.com/files/uoyo/snoweffects.js"></script>
+
+<script type="text/javascript" language="javascript"> 
+//为右下角推荐推荐区域添加关注按钮
+window.onload = function () {
+    $('#div_digg').prepend('<div style="padding-bottom: 5px" id="please_follow"><span class="icon_favorite" style="padding-top: 2px"></span><a onclick="follow(\'4660842a-34b1-4866-476c-08d52fc34315\');" href="javascript:void(0);" style="font-weight: bold; padding-left:5px;font-size: 14px; vertical-align: super;color: #ff5d47;">关注一下楼主吧</a> </div>');
+}
+</script>
+
+<!--代码复制-->
+<script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+<!--主题-->
+<script src="https://blog-static.cnblogs.com/files/uoyo/gshang.2019.10.27.1.js"></script>
+
+<!-- zoom.js 的样式 -->
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/uoyo/zoom.css">
+<!-- Bootstrap 的 transition.js cdn（过渡动画插件）-->
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<!-- zoom.js 核心代码 -->
+<script src="https://blog-static.cnblogs.com/files/uoyo/zoom.js"></script>
+<script type='text/javascript'>$('#cnblogs_post_body img').attr('data-action', 'zoom');</script>
+    </div>
+</body>
+</html>

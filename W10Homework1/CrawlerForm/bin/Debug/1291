@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>vcjmhg - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/goWithHappy/custom.css?v=4zdoh2flgKTHGFQBu&#x2B;49zGY8nq0=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/goWithHappy/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/goWithHappy/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/goWithHappy/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 505621;
+        var currentBlogApp = 'goWithHappy';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/goWithHappy/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/goWithHappy/">vcjmhg</a>
+</h1>
+<h2>
+自律者自由
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/goWithHappy/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/vcjmhg">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/goWithHappy/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+27&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+12</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/04/19.html">2020年4月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/learn-frp.html">
+[置顶]    使用frp搭建内网穿透服务
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要是关于内网穿透服务搭建相关的内容：通过 frp 搭建一个简单的内网穿透服务。            <a href="https://www.cnblogs.com/goWithHappy/p/learn-frp.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-19 16:06 vcjmhg 阅读 (40) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12731946" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/04/05.html">2020年4月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/the-design-of-cache-in-linux.html">
+[置顶]    unix中数据缓冲区高速缓冲的设计
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要是本人对 unix 操作系统中的数据缓冲区高速缓冲设计以及其算法思路的一些理解，可能由于水平有限，文中难免会有错误，如若发现，恳请支持，谢谢！            <a href="https://www.cnblogs.com/goWithHappy/p/the-design-of-cache-in-linux.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-05 16:17 vcjmhg 阅读 (95) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12637703" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2019/12/29.html">2019年12月29日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/what_happened_when_extend_in_java.html">
+[置顶]    关于java继承的哪些事
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在该部分我们分析的类和对象加载的过程，以及在过程中方法和代码块的执行顺序，我们可以得到以下结论。
+
+**方法和代码的执行顺序：**
+
+1. 父类的类初始化代码块（static代码块）
+2. 子类的类代码初始化块
+3. 父类的实例初始化代码块
+4. 父类的构造方法
+5. 子类的实例初始化代码块
+6. 子类的构造方法
+
+**重载方法的执行逻辑：**
+
+寻找要执行的实例方法的时候，是从对象的实际类型信息开始查找的，找不到的时候在查找父类的类型信息。            <a href="https://www.cnblogs.com/goWithHappy/p/what_happened_when_extend_in_java.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-12-29 15:22 vcjmhg 阅读 (157) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12115126" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2019/10/19.html">2019年10月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/sql_transaction.html">
+[置顶]    MYSQL之事务篇
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要写的是数据库事务的基本概念以及相关四种隔离级别。            <a href="https://www.cnblogs.com/goWithHappy/p/sql_transaction.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-19 20:06 vcjmhg 阅读 (33) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11705011" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2019/10/07.html">2019年10月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/proxyMode.html">
+[置顶]    代理（Proxy）设计模式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本篇博客主要从代理设计模式的概念、以及三种不同的实现方式入手（静态代理、动态代理 jdk实现方式、动态代理设计模式 cglib实现方式）通过若干例子来说明该设计模式多作用以及三种设计模式的优缺点，以期能给读者以启示。当然可能个人水平有限，中间难免会出现一些错误，如若发现恳请指出，不胜赐教。当然对于文章内容若有疑问，欢迎在下方留言，必当尽力解惑。            <a href="https://www.cnblogs.com/goWithHappy/p/proxyMode.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-07 20:45 vcjmhg 阅读 (333) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11632148" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2019/10/06.html">2019年10月6日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/solo_start.html">
+[置顶]    从零开始搭建solo个人博客系统
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本篇博客记录自己搭建solo个人博客系统的流程包括服务器选购、域名申请与备案、安装solo、nginx进行反向代理以及ssl证书的申请与使用，以及踩过的坑，希望能给那些搭建个人博客系统的用户提供一定的帮助。当然可能个人水平有限，中间难免会出现一些错误，如若发现恳请指出，不胜赐教。如果按照本教程在配置过程中遇到什么问题，欢迎在博客下边留言，我若看到的话一定第一时间回复，谢谢！            <a href="https://www.cnblogs.com/goWithHappy/p/solo_start.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-06 14:42 vcjmhg 阅读 (2594) 评论 (12)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11627273" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/04/26.html">2020年4月26日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/write-emoji-with-markdown.html">
+    如何在markdown文档中插入emoji表情？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：偶尔发现了 Markdown 中可以用 emoji 表情感觉挺有意思，分享到这，文中有官网，关于所有的小表情都可以查到。            <a href="https://www.cnblogs.com/goWithHappy/p/write-emoji-with-markdown.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 22:33 vcjmhg 阅读 (3) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12782882" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/04/19.html">2020年4月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/learn-frp.html">
+    使用frp搭建内网穿透服务
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要是关于内网穿透服务搭建相关的内容：通过 frp 搭建一个简单的内网穿透服务。            <a href="https://www.cnblogs.com/goWithHappy/p/learn-frp.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-19 16:06 vcjmhg 阅读 (40) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12731946" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/04/05.html">2020年4月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/the-design-of-cache-in-linux.html">
+    unix中数据缓冲区高速缓冲的设计
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要是本人对 unix 操作系统中的数据缓冲区高速缓冲设计以及其算法思路的一些理解，可能由于水平有限，文中难免会有错误，如若发现，恳请支持，谢谢！            <a href="https://www.cnblogs.com/goWithHappy/p/the-design-of-cache-in-linux.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-05 16:17 vcjmhg 阅读 (95) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12637703" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/03/23.html">2020年3月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/The_mothods_of_control_IO.html">
+    IO系统的控制方式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文从系统结构角度介绍了 IO 控制的五种方式包括：直接程序控制方式、中断方式、DMA 方式、通道方式、PPU 方式。以及其特点和原理，希望能给读者以帮助。当然由于本人水平有限，文中难免会有错误，若有发现，恳请指出，不胜感激。            <a href="https://www.cnblogs.com/goWithHappy/p/The_mothods_of_control_IO.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-23 11:36 vcjmhg 阅读 (48) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12551153" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/03/18.html">2020年3月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/unix_about_ln.html">
+    深入理解unix中的普通链接与符号链接
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文结合 ext4 文件系统深入介绍了 unix 操作系统的两种文件链接方式的异同以及使用方式，希望能给读者以帮助，当然由于作者水平有限，文中难免会有错误，如若发现，恳请指出，不胜感激            <a href="https://www.cnblogs.com/goWithHappy/p/unix_about_ln.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-18 11:01 vcjmhg 阅读 (22) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12516063" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/03/09.html">2020年3月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/watermelon_to_digital.html">
+    将西瓜书中的表格数字化与可视化
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：机器学习的作业，将西瓜书中的表格进行数字化以及画出可视图（四维数据的表示）            <a href="https://www.cnblogs.com/goWithHappy/p/watermelon_to_digital.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-09 11:23 vcjmhg 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12447472" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/03/07.html">2020年3月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/build_nexus.html">
+    与Nexus为Maven搭建私服
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：简单介绍了用 Nexus 搭建 Maven 私服的过程，希望能给读者提供一定帮助。            <a href="https://www.cnblogs.com/goWithHappy/p/build_nexus.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-07 15:39 vcjmhg 阅读 (51) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12434637" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2020/03/06.html">2020年3月6日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/essence_of_enumeration.html">
+    从源码角度看枚举
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要从源码角度来探讨 Java 中 Enun 的实现方法，以及一些常用的应用场景。当然由于本人能力有限，文章中可能有不足之处，如若发现，欢迎指出，不胜感激。            <a href="https://www.cnblogs.com/goWithHappy/p/essence_of_enumeration.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-06 16:00 vcjmhg 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12427066" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2019/12/29.html">2019年12月29日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/what_happened_when_extend_in_java.html">
+    关于java继承的哪些事
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在该部分我们分析的类和对象加载的过程，以及在过程中方法和代码块的执行顺序，我们可以得到以下结论。
+
+**方法和代码的执行顺序：**
+
+1. 父类的类初始化代码块（static代码块）
+2. 子类的类代码初始化块
+3. 父类的实例初始化代码块
+4. 父类的构造方法
+5. 子类的实例初始化代码块
+6. 子类的构造方法
+
+**重载方法的执行逻辑：**
+
+寻找要执行的实例方法的时候，是从对象的实际类型信息开始查找的，找不到的时候在查找父类的类型信息。            <a href="https://www.cnblogs.com/goWithHappy/p/what_happened_when_extend_in_java.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-12-29 15:22 vcjmhg 阅读 (157) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12115126" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/goWithHappy/archive/2019/12/01.html">2019年12月1日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/goWithHappy/p/three_time_handshake.html">
+    关于握手那些事
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：可能学习过计算机网络的同学都知道TCP/IP在建立连接时需要进行三次握手，但不知大家是否考虑过为何必须用三次握手来建立连接？是否可以通过两次握手就建立？为何中断连接的时候又必须进行四次握手，而不能用三次握手？下边在这篇文章中我们对这些问题一一进行解答。            <a href="https://www.cnblogs.com/goWithHappy/p/three_time_handshake.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-12-01 21:46 vcjmhg 阅读 (39) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11967896" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/goWithHappy/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 vcjmhg
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <!--live2d-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<title>Live2D</title>
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/wupeixuan/waifu.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/wupeixuan/flat-ui.min1.css"/>
+</head>
+<body>
+<div class="waifu" id="waifu">
+<div class="waifu-tips" style="opacity: 1; font-size: 14px"></div>
+<canvas id="live2d" width="300" height="300" class="live2d"></canvas>
+<div class="waifu-tool">
+<span class="fui-home"></span>
+<span class="fui-chat"></span>
+<span class="fui-eye"></span>
+<span class="fui-user"></span>
+<span class="fui-photo"></span>
+<span class="fui-info-circle"></span>
+<span class="fui-cross"></span>
+</div>
+</div>
+<script src="https://blog-static.cnblogs.com/files/wupeixuan/live2d.js"></script>
+<script src="https://blog-static.cnblogs.com/files/wupeixuan/waifu-tips1.js"></script>
+<script type="text/javascript">initModel()</script>
+</body>
+</html>
+<!--live2dend-->
+    </div>
+</body>
+</html>

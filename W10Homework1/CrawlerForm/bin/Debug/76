@@ -1,0 +1,979 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="always" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>新闻区 - 博客园</title>
+    <link rel="shortcut icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />
+    <link rel="Stylesheet" type="text/css" href="/css/aggsite.min.css?v=FRR6qbd_vc7TQxxV0n1kBxwFAKoajo20N8gkufL2xuk" />
+        <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://feed.cnblogs.com/news/rss" />
+    <script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>
+    <script src="/js/aggsite.min.js?v=pF9WYZrlQXxT2TvAo3ctCaa3IJ8YXeHpSWGGmRU2OV8"></script>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/1090369/A1', [468, 60], 'div-gpt-ad-1547816814884-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B1', [300, 250], 'div-gpt-ad-1546331539224-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B2', [300, 250], 'div-gpt-ad-1539007469525-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B3', [300, 250], 'div-gpt-ad-1546331252242-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B4', [300, 250], 'div-gpt-ad-1546331385104-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+
+        /**/</script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hd_info">
+            <div id="cnts">
+                <div id="site_nav_top">代码改变世界</div>
+                <div id="login_area"><span id="span_userinfo"></span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="header">
+            <p class="h_r_3"></p><p class="h_r_2"></p><p class="h_r_1"></p>
+            <div id="header_block">
+                <div id="logo">
+                    <h1>
+                        <a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo_small.gif" alt="博客园Logo" width="142" height="55" /></a>
+                    </h1>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <p class="h_r_1"></p><p class="h_r_2"></p><p class="h_r_3"></p>
+        </div>
+        <div id="nav_menu"><a href="https://home.cnblogs.com/">园子</a><a href="https://news.cnblogs.com">新闻</a><a href="https://q.cnblogs.com/">博问</a><a href="https://ing.cnblogs.com/">闪存</a><a href="https://group.cnblogs.com/">小组</a><a href="https://wz.cnblogs.com/">收藏</a><a href="https://job.cnblogs.com/">招聘</a><a href="https://edu.cnblogs.com/">班级</a><a href="http://zzk.cnblogs.com/">找找看</a></div>
+        <div id="main">
+            <div class="post_nav_block_wrapper">
+                <ul class="post_nav_block">
+                        <li><a href="/" class="" title="">首页</a></li>
+                        <li><a href="/pick/" class="" title="编辑精选博文">精华</a></li>
+                        <li><a href="/candidate/" class="" title="候选区的博文">候选</a></li>
+                        <li><a href="/news/" class="current_nav" title="新闻频道最新新闻">新闻</a></li>
+                        <li><a href="/following" class="" title="我关注博客的最新博文">关注</a></li>
+                        <li><a href="/aggsite/mycommented" class="" title="我评论过的博文">我评</a></li>
+                        <li><a href="/aggsite/mydigged" class="" title="我推荐过的博文">我赞</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="rss_link" id="rss_block">
+<span id="posts_refresh_tips"></span><a id="posts_refresh" href="#" class="refresh" title="刷新博文列表" onclick="aggSite.loadCategoryPostList();return false">刷新</a><a href="http://feed.cnblogs.com/news/rss"><img src="//common.cnblogs.com/images/icon_rss.gif" alt="点击订阅" style="position:relative;top:2px;" title="订阅博客园文章" /></a>            </div>
+                <div id="headline_block" class="headline"><ul><li class="editor_pick"><a href="https://www.cnblogs.com/uoyo/p/12767960.html" id="editor_pick_lnk" target="_blank">【编辑推荐】为你的 .NET 应用进行一次全方位体检<span id="editor_pick_count"></span></a> <a href="/aggsite/headline" title="查看更多编辑推荐" class="right_more">»</a></li><li><a href="https://www.cnblogs.com/catcher1994/p/12776725.html" target="_blank" title="阅读1076, 评论4, 推荐14">[最多推荐]在.NET Core中用最原生的方式读取Nacos的配置(4/1076)</a> <a href="/aggsite/topdigged24h" title="查看24小时推荐排行" class="right_more">»</a></li><li><a href="https://www.cnblogs.com/qing-gee/p/12776661.html" target="_blank" title="阅读1382, 评论10, 推荐6">[最多评论]程序员买房的一些想法(10/1382)</a> <a href="/aggsite/topcommented24h" title="查看24小时评论排行" class="right_more">»</a></li><li><a href="https://news.cnblogs.com/n/660626/" target="_blank" title="阅读1924, 评论12, 推荐7">[新闻头条]李国庆抢公章并发告全体员工书称全面接管当当|当当：已报警(12/1924)</a> <a href="https://news.cnblogs.com/" title="查看更多新闻" class="right_more">»</a></li><li><a href="https://news.cnblogs.com/n/660606/" target="_blank" title="阅读3272, 评论16, 推荐23">[推荐新闻]格力员工大厦3700套房已建成 员工每人一套房目标不变(16/3272)</a> <a href="https://news.cnblogs.com/n/recommend" title="查看更多推荐新闻" class="right_more">»</a></li></ul></div>
+
+            <div id="pager_top" style="display:none"></div>
+            <div id="post_list_tips" class="hide"></div>
+            
+            <div id="post_list">
+                <style>
+    .diggit {
+        cursor: auto;
+    }
+
+    .pfs {
+        height: auto;
+    }
+</style>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660642">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660642" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660642/" target="_blank">当当副总裁阚敏：俞渝仍掌控公司，李国庆离越远越好</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                腾讯新闻作者孙宏超 4 月 26 日上午，有消息称当当网创始人李国庆今日带人上门抢当当公章，并在公司张贴《告当当网全体员工书》。网络上流传的告员工书显示，李国庆已于 4 月 24 日依法召开临时股东会，李国庆当选董事长与总经理，全面接管公司，负责公司的经营管理。俞渝不再担任当当公司执行董事、法定代表
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 22:00
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660642#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660642/" class="gray" target="_blank">阅读(157)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660641">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660641" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660641/" target="_blank">一文读懂李国庆夺权当当：连发三份公告 细数俞渝七宗罪</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                文/腾讯科技孙实 4 月 26 日，李国庆连发三份公告（），宣布全面接管当当。继去年年底全面和俞渝“撕破”脸皮后，李国庆此番掀起夺权大战，引发外界关注了。 一、 李国庆三份公告宣布了哪些内容？ 人事调整方面主要是成立董事会，李国庆为董事长与总经理，俞渝不再担任执行董事、法定代表人及总经理，具体如下：
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 21:45
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660641#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660641/" class="gray" target="_blank">阅读(101)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660640">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660640" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660640/" target="_blank">当当电话会议实录：李国庆抢公章行为非法 俞渝持股52.23%</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                划重点 当当网从美国完成私有化后，俞渝持有当当网股权 52.23%，李国庆为 22.38%，二人的孩子持有 18.65%（由父母持有），公司目前掌握在俞渝手中。 李国庆抢公章肯定不合法，到一个公司来公然抢，还带着保镖，如果合法肯定不会带保镖。 这次事件不会对公司运营造成任何影响，因为他已经离开公司，
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 21:37
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660640#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660640/" class="gray" target="_blank">阅读(93)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660639">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660639" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660639/" target="_blank">律师解读李国庆夺公章事件：临时股东会决议很可能认定无效</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_132.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/ITblog.jpg" alt="" /></a>
+                腾讯新闻作者薛芳孙宏超 今日，当当员工爆料称，李国庆带人去当当抢夺走公章，对此李国庆回应腾讯《深网》称：依法接管当当，太忙了，不接受采访。 李国庆表示，今天去公司的四个人，包括董事（现在仍在当当）、董秘、律师、摄像和保安。 李国庆告诉《深网》等媒体，北京志霖律师事务所赵占领律师的关于这件事的四点看法
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 21:30
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660639#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660639/" class="gray" target="_blank">阅读(76)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660638">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660638" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660638/" target="_blank">李国庆方面再发公告：当当股权作为夫妻共同财产一人一半</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                腾讯科技讯，4 月 26 日消息，李国庆方面今日晚间再度发布一份盖章为当当公司的公告。称李国庆和俞渝尚未离婚，当当股权作为夫妻共同财产一人一半。 该份公告的最后使用了“北京当当科文电子商务有限公司”的公章，表示没有当当公司公章的公司声明，均不能代表公司。 以下为李国庆方面最新公告的全文： 李国庆先生
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 21:25
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660638#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660638/" class="gray" target="_blank">阅读(60)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660637">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660637" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660637/" target="_blank">当当回应：李国庆从摔杯到抢章，一直在制造事端</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                腾讯新闻作者孙宏超 4 月 26 日，今天当当网创始人李国庆带人上门抢当当公章，并称已依法开临时股东会，当选董事长与总经理，全面接管公司，俞渝无权在当当公司以任何形式任何职务代表当当公司。 今日晚间，当当副总裁阚敏通过电话会议的方式接受多家媒体采访。在采访中阚敏表示抢走公章没影响，当当经营很正常，并
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 21:20
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660637#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660637/" class="gray" target="_blank">阅读(50)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660636">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660636" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660636/" target="_blank">民商法博士解读李国庆夺权：公告无法律效力 仅有舆论战效果</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_132.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/ITblog.jpg" alt="" /></a>
+                （本文由知乎答主进击的 lawyer 撰文，腾讯科技整理，作者系在读民商法博士） 4 月 26 日下午，据媒体爆料称，当当网创始人李国庆今日带人上门抢当当公章，并在公司张贴《告当当网全体员工书》。李国庆回复腾讯新闻：依法接管当当。 告员工书显示，李国庆已于 4 月 24 日依法召开临时股东会，李国庆
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 21:13
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660636#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660636/" class="gray" target="_blank">阅读(53)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660635">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660635" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660635/" target="_blank">深网 | 李国庆微信群发声：已得到小股东支持，任何意义上都是过半数</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                腾讯新闻作者孙宏超 4 月 26 日，今天当当网创始人李国庆带人上门抢当当公章，并称已依法开临时股东会，当选董事长与总经理，全面接管公司，俞渝无权在当当公司以任何形式任何职务代表当当公司。 今日晚间，李国庆在微信媒体群里现身，称接管当当第一步是公章财务章；第二步是组班子；第三步是进驻当当开展办公给俞
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 20:52
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660635#bottom" class="gray" target="_blank">
+                        评论(1)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660635/" class="gray" target="_blank">阅读(54)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660634">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660634" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660634/" target="_blank">超过1200万名玩家参与《堡垒之夜》Travis虚拟演唱会</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_1217.htm" target="_blank"><img width="48" class="pfs" src="https://images2018.cnblogs.com/news_topic/20180522125226094-1520484130.png" alt="" /></a>
+                《堡垒之夜》与美国饶舌歌手 Travis Scott 展开跨界合作，在游戏中举办“ASTRONOMICAL”虚拟演唱会，场次横跨美国、欧洲、亚洲、大洋洲等服务器。现在，根据 Epic Games 官方统计，目前已表演的场次吸引超过 1 千 2 百万名玩家同时在线参与，再次创下惊人的纪录。 活动时间大
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:47
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660634#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660634/" class="gray" target="_blank">阅读(325)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660633">1</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660633" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660633/" target="_blank">盖茨：微软中国一半员工已复工 世界各国可参考经验</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_84.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/bill_gates.gif" alt="" /></a>
+                据美国《商业内幕》网站 23 日报道，微软联合创始人比尔&#183;盖茨表示，微软公司已经开始逐步重新开放其在中国的办事处，该公司管理复工过程的方式可成为商界其他公司的榜样。盖茨在周四发表了一篇博客文章，表达他对如何在疫情大流行之后让社会回归正常的看法。他强调，创新对战胜疫情至关重要，还提到了他认为逐步重新开
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:38
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660633#bottom" class="gray" target="_blank">
+                        评论(1)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660633/" class="gray" target="_blank">阅读(602)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660632">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660632" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660632/" target="_blank">苹果和谷歌承诺将在大流行结束后将关闭接触者追踪软件</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_1.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20190730073028742-506112123.png" alt="" /></a>
+                据外媒 The Verge 报道，周五，苹果和谷歌修改了他们雄心勃勃的自动接触者追踪系统的倡议，这距离该系统首次公布仅两周后。苹果公司的一位代表表示，这些修改是两家公司收到的关于规格以及如何改进的反馈意见的结果。两家公司还发布了一个 “常见问题 ”页面，其中重述了很多已经公开的信息。 在发布公告的同
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:36
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660632#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660632/" class="gray" target="_blank">阅读(111)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660631">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660631" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660631/" target="_blank">Apple Watch诞生五周年 设计师分享开发背后的逸闻趣事</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_514.htm" target="_blank"><img width="48" class="pfs" src="//images2015.cnblogs.com/news_topic/20151119093743436-66938402.png" alt="" /></a>
+                据外媒报道，今天（当地时间 4 月 24 日）是初代 Apple Watch 诞生的五周年纪念日，自 2015 年发布以来，这款手表的受欢迎程度一路飙升。为了迎接这个纪念日的到来，曾参与过初代 Apple Watch 设计工作的设计师 Imran Chaudhri 在社交媒体平台上分享了产品开发背后
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:35
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660631#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660631/" class="gray" target="_blank">阅读(144)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660630">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660630" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660630/" target="_blank">前程无忧回应裁员传闻：关闭11座城市办事处</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_974.htm" target="_blank"><img width="48" class="pfs" src="//images2017.cnblogs.com/news_topic/20170804091816834-631386760.png" alt="" /></a>
+                据中新社“国是直通车”官方微博 4 月 26 日消息，针对关闭 11 个城市办事处、陷裁员纠纷等传闻，前程无忧回应称，此次关闭石家庄、乌鲁木齐、兰州、厦门等 11 座城市办事处，影响到 127 名前程无忧员工劳工关系，主要是因为企业用户的业务趋于集中，叠加疫情影响。 对于理解和配合公司决定的员工，该
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:26
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660630#bottom" class="gray" target="_blank">
+                        评论(1)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660630/" class="gray" target="_blank">阅读(350)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660628">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660628" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660628/" target="_blank">京东斥资4.5亿入股凯撒旅业 称坚定看好中国旅游业</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_228.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191016104507412-1030465726.png" alt="" /></a>
+                新京报讯（记者陆一夫）疫情期间备受打击的旅游公司开始通过资本运作进行自救。4 月 25 日，A股旅游公司凯撒旅业公布不超过 11.6 亿元的定增预案，计划将所得的募资净额全部用于补充流动资金，这将是继三特索道后又一家旅游公司借定增“补血”。 凯撒旅业表示，近年来公司主要通过信用借款及债券的方式进行融
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:17
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660628#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660628/" class="gray" target="_blank">阅读(230)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660627">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660627" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660627/" target="_blank">有孩子的硅谷员工抱怨在家办公太累，科技巨头咋办</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_132.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/ITblog.jpg" alt="" /></a>
+                4 月 26 日消息，据国外媒体报道，疫情蔓延使得人们纷纷居家办公，这也冲击了硅谷惯有的加班工作文化。居家办公让原有的工作节奏和强度被打乱，家庭琐事也影响了员工原本专注于工作的精力，苹果、谷歌、Facebook、LinkedIn 以及 Uber 等科技公司在平衡员工家庭与工作之间实施了一系列新的举措
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 16:16
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660627#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660627/" class="gray" target="_blank">阅读(258)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660626">7</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660626" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660626/" target="_blank">李国庆抢公章并发告全体员工书称全面接管当当|当当：已报警</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_175.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191025110507620-2040218434.png" alt="" /></a>
+                腾讯新闻作者孙宏超 4 月 26 日下午，据多家媒体爆料，当当网创始人李国庆今日带人上门抢当当公章，并在公司张贴《告当当网全体员工书》。网络上流传的告员工书显示，李国庆已于 4 月 24 日依法召开临时股东会，李国庆当选董事长与总经理，全面接管公司，负责公司的经营管理。俞渝不再担任当当公司执行董事、
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 15:30
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660626#bottom" class="gray" target="_blank">
+                        评论(12)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660626/" class="gray" target="_blank">阅读(1924)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660625">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660625" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660625/" target="_blank">清华经管学院与西门子共同启动“数字化企业领军项目”</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_591.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/20150714183155407.png" alt="" /></a>
+                清华大学经济管理学院（清华经管学院）与西门子今天宣布正式启动“清华—西门子数字化企业领军项目”，共同面向企业高管开设培训课程，助力中国工业企业在数字经济浪潮之下把握机遇、洞见未来。项目将依托清华经管学院的前沿管理思想和理论体系，以及西门子在电气化、自动化和数字化领域的百年积淀和领先实践，培养具备宏观
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 15:23
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660625#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660625/" class="gray" target="_blank">阅读(69)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660624">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660624" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660624/" target="_blank">荣耀总裁赵明：2020年，高端化和升级将成手机行业常用名词</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_1344.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20181212185823368-1871766516.png" alt="" /></a>
+                腾讯科技讯，4 月 26 日在 GMIC LIVE 2020 中，荣耀总裁赵明进行了“春风吹浪正淘沙”的主题分享，针对在疫情影响下全球手机市场的形势进行了解读。 今年一季度，手机市场份额在全球范围内及中国市场上遭遇了大幅度下滑，突如其来的疫情也给 4G 到 5G 市场切换的手机市场带来了一股寒流。赵
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 15:15
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660624#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660624/" class="gray" target="_blank">阅读(146)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660623">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660623" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660623/" target="_blank">QQ音视频等在线教育相关功能累计申请专利超200件</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_200.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/qq.png" alt="" /></a>
+                腾讯科技讯，4 月 26 日，世界第 20 个知识产权日，以“知识产权与健康中国”为主题的 2020 年全国知识产权宣传周活动此前已经同步在线上启动。国家知识产权局局长申长雨表示，此次新冠肺炎疫情让人更加深刻地感受到了生命的宝贵、健康的重要。在疫情期间，许多领域的优秀专利成果得到广泛应用，以技术力量
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 15:08
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660623#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660623/" class="gray" target="_blank">阅读(49)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660622">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660622" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660622/" target="_blank">微信2019年知识产权保护成绩单：处理售假微信个人帐号数6万个</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_372.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191011113837921-1266267629.png" alt="" /></a>
+                腾讯科技讯，4 月 26 日是世界知识产权日，微信发布《2019 年微信知识产权保护数据全景图》。目前，微信知识产权保护方案已覆盖微信个人号、公众号和小程序，保护亿万用户和开发者的智慧成果和合法权益。 2019 年，微信品牌维权平台共向品牌权利人输送了约 30 万条举报线索，微信品牌保护联合团队协助
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 15:00
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660622#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660622/" class="gray" target="_blank">阅读(60)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660621">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660621" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660621/" target="_blank">助力全球科技抗疫 腾讯医疗AI专利已达300余件</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_7.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191225104924043-1904775843.jpg" alt="" /></a>
+                搭载“腾讯觅影”AI 医学影像和腾讯云技术的人工智能 CT 设备，只需数秒即可助力医生识别新冠肺炎；和钟南山团队组建联合实验室，攻坚流行病防控 AI；向世卫组织捐 1000 万美元，全球开源新冠肺炎 AI 自查助手；腾讯 AI Lab 联合舜宇光学科技、第三方医学检验机构金域医学，三方研发的智能显微
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 14:40
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660621#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660621/" class="gray" target="_blank">阅读(37)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660620">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660620" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660620/" target="_blank">Android 11对界面调整：加入快速截屏、多任务向国产ROM看齐</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_148.htm" target="_blank"><img width="48" class="pfs" src="//images2015.cnblogs.com/news_topic/20161020185521154-1185360701.png" alt="" /></a>
+                目前谷歌已经在全力测试 Android 11 了，而下个月他们就要针对更多的机型发布公测版本，相比上一代系统来说，新系统在 UI 界面上还是有一些变化的。 据外媒报道称，从目前已知的情况是，Andorid 11 Preview 3 测试版系统中，谷歌对新系统的多任务界面已经改造完毕，调整之后新的多任
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 14:29
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660620#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660620/" class="gray" target="_blank">阅读(174)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660619">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660619" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660619/" target="_blank">能破解百度网盘提取码 云盘万能钥匙宣布关闭</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_5.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/baidu.jpg" alt="" /></a>
+                本月中旬，有媒体报道称，百度网盘破解版 Pandownload 开发者蔡某于 4 月份被抓获，该软件开发者共非法获利 30 万余元。 报道称，该软件可以以非会员权限实现百度网盘资源的高速下载，致使百度公司损失高达上千万元。 百度网盘官方微博针对上述事件做出回应，表示一直积极配合警方严厉打击侵犯百度网
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 14:21
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660619#bottom" class="gray" target="_blank">
+                        评论(1)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660619/" class="gray" target="_blank">阅读(272)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660618">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660618" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660618/" target="_blank">1分钟输入400字 搜狗输入法火速适配iPhone SE2</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_381.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/sougou搜狗.png" alt="" /></a>
+                4 月 26 日消息，今天新款 iphone SE 正式开售，搭载旗舰级 A13 处理器，iPhone 史上最强单摄，跌破 3000 元的电商价，让很多人无法拒绝。 随着新款 iPhone SE 的发布，搜狗输入法也第一时间进行了适配，支持 1 分钟 400 字的语音输入，语音输入综合准确率提升至 
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 14:04
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660618#bottom" class="gray" target="_blank">
+                        评论(2)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660618/" class="gray" target="_blank">阅读(167)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660575">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660575" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660575/" target="_blank">从军事技术封锁到抗疫立神功 国产红外芯片十年崛起路</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_132.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/ITblog.jpg" alt="" /></a>
+                看点：疫情前线的“防卫兵”，红外芯片十年翻身仗的高光时刻。 文/韦世玮 来源：智东西（ID:zhidxcom） “全球新型冠状病毒肺炎确诊病例已累计突破 249 万例。” 随着南半球隐入晨昏线的昼夜中，美国当地时间 4 月 21 日，约翰斯&#183;霍普金斯大学（Johns Hopkins Universi
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 13:50
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660575#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660575/" class="gray" target="_blank">阅读(574)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660600">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660600" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660600/" target="_blank">Q1净利润同比增长42%，英特尔为何难抚投资者躁动不安的“芯”？</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_12.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20190816170602986-490377958.png" alt="" /></a>
+                图片来源@视觉中国 文美股研究社 北京时间 4 月 24 日，英特尔对外发布 2020 年第一季度财报。从财报来看，英特尔在营收跟净利润上均保持一定同比增长。尽管一季度业绩超华尔街分析师预期，但由于疫情影响英特尔取消全年展望，二季度调整后每股收益未达预期，再加上暂停回购等举措导致其盘后股价大幅下跌近
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 13:39
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660600#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660600/" class="gray" target="_blank">阅读(196)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660598">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660598" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660598/" target="_blank">共享单车角逐背后：一场滴滴、阿里、美团之间的无限战争</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_473.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20191223145757455-25945654.png" alt="" /></a>
+                图片来源@视觉中国 共享单车的资本游戏还在继续。 4 月 21 日，据 The Information 消息，滴滴出行的共享单车部门完成由软银和联想控股旗下君联资本投资的 1.5 亿美元B轮融资。值得注意的是，就在 4 月 17 日，青桔单车完成一笔 10 亿美元的A轮融资，投资机构为君联资本及另一
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 12:14
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660598#bottom" class="gray" target="_blank">
+                        评论(2)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660598/" class="gray" target="_blank">阅读(503)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660599">0</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660599" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660599/" target="_blank">疯狂的熔喷布：月赚千万的印钞机</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_132.htm" target="_blank"><img width="48" class="pfs" src="//images0.cnblogs.com/news_topic/ITblog.jpg" alt="" /></a>
+                图片来源@视觉中国 文极客财经社 4 月 15 日，海外社交平台流出一张 89 岁的巴菲特戴着比亚迪所产口罩的近照。 照片中，巴菲特身穿“我想长命百岁”字样的套头衫。照片下配有亲笔签名，”感谢比亚迪口罩。” 自从疫情波及全球以来，口罩因具有物理防御特性，需求量爆发性增长。从 1 月开始，部分商家就已
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 12:00
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660599#bottom" class="gray" target="_blank">
+                        评论(0)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660599/" class="gray" target="_blank">阅读(1034)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660616">1</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660616" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660616/" target="_blank">任正非：华为操作系统要想超安卓苹果 不会超300年</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_1410.htm" target="_blank"><img width="48" class="pfs" src="https://img2018.cnblogs.com/news_topic/20190710152327109-209352538.png" alt="" /></a>
+                【任正非：华为操作系统要想超越安卓和苹果不会超过 300 年】《科创板日报》26 日讯，被问及华为移动服务 HMS 目前在海外推广的进展，任正非表示，安卓和苹果的操作系统在世界的销售量是巨大的，华为是个后来者，要让消费者认同其操作系统是很艰难的。所以说，华为的操作系统要想超越安卓和苹果，可能需要很长
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 09:51
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660616#bottom" class="gray" target="_blank">
+                        评论(22)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660616/" class="gray" target="_blank">阅读(2274)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="post_item">
+        <div class="digg">
+            <div class="diggit">
+                <span class="diggnum" id="digg_count_660617">1</span>
+            </div>
+            <div class="clear"></div>
+            <div id="digg_tip_660617" class="digg_tip"></div>
+        </div>
+        <div class="post_item_body">
+            <h3><a class="titlelnk" href="//news.cnblogs.com/n/660617/" target="_blank">Win10 5月更新新改变：弱化Cortana存在 提高生产力Win10 2020新版</a></h3>
+            <p class="post_item_summary">
+                    <a href="//news.cnblogs.com/n/topic_759.htm" target="_blank"><img width="48" class="pfs" src="//images2015.cnblogs.com/news_topic/20161115110029763-1646672410.png" alt="" /></a>
+                之前微软已经表示，将在 5 月推出 2020 年首个 Windows 10 大更新，这也引起了众多用户的关注，而为了减少出错的可能，其正在大规模内测中。 据外媒最新报道称，在 Windows 10 Version 2004 功能更新中，Cortana 启用了全新的外观，优化了聊天方式的交互体验，并且
+            </p>
+            <div class="post_item_foot">
+                <a href="//home.cnblogs.com/u/34358/" class="lightblue" target="_blank">itwriter</a>
+                发布于 2020-04-26 09:47
+                <span class="article_comment">
+                    <a href="//news.cnblogs.com/n/660617#bottom" class="gray" target="_blank">
+                        评论(1)
+                    </a>
+                </span><span class="article_view"><a href="//news.cnblogs.com/n/660617/" class="gray" target="_blank">阅读(807)</a></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+   
+
+            </div>
+            <script>editorPickStat(); aggSite.user.getUserInfo();</script>
+            <script type="text/javascript">
+                var aggSiteModel = {"CategoryType":"News","ParentCategoryId":0,"CategoryId":-1,"PageIndex":1,"TotalPostCount":3000,"ItemListActionName":"AggSiteNewsList"};
+            </script>
+            <div id="pager_bottom"><div id="paging_block"><div class="pager"><a href="/news/" class="p_1 current" onclick="aggSite.loadCategoryPostList(1,30);buildPaging(1);return false;">1</a><a href="/news/2" class="p_2 middle" onclick="aggSite.loadCategoryPostList(2,30);buildPaging(2);return false;">2</a><a href="/news/3" class="p_3 middle" onclick="aggSite.loadCategoryPostList(3,30);buildPaging(3);return false;">3</a><a href="/news/4" class="p_4 middle" onclick="aggSite.loadCategoryPostList(4,30);buildPaging(4);return false;">4</a><a href="/news/5" class="p_5 middle" onclick="aggSite.loadCategoryPostList(5,30);buildPaging(5);return false;">5</a><a href="/news/6" class="p_6 middle" onclick="aggSite.loadCategoryPostList(6,30);buildPaging(6);return false;">6</a><a href="/news/7" class="p_7 middle" onclick="aggSite.loadCategoryPostList(7,30);buildPaging(7);return false;">7</a><a href="/news/8" class="p_8 middle" onclick="aggSite.loadCategoryPostList(8,30);buildPaging(8);return false;">8</a><a href="/news/9" class="p_9 middle" onclick="aggSite.loadCategoryPostList(9,30);buildPaging(9);return false;">9</a><a href="/news/10" class="p_10 middle" onclick="aggSite.loadCategoryPostList(10,30);buildPaging(10);return false;">10</a><a href="/news/11" class="p_11 middle" onclick="aggSite.loadCategoryPostList(11,30);buildPaging(11);return false;">11</a><span class="ellipsis">···</span><a href="/news/100" class="p_100 last" onclick="aggSite.loadCategoryPostList(100,30);buildPaging(100);return false;">100</a><a href="/news/2" onclick="aggSite.loadCategoryPostList(2,30);buildPaging(2);return false;">Next &gt;</a></div></div><script type="text/javascript">var pagingBuider={"OnlyLinkText":false,"TotalCount":3000,"PageIndex":1,"PageSize":30,"ShowPageCount":5,"SkipCount":0,"UrlFormat":"/news/{0}","OnClickJsFunc":"aggSite.loadCategoryPostList()","FirstPageLink":"/news/","AjaxUrl":"/AggSite/Pager","AjaxCallbak":null,"TopPagerId":"pager_top","IsRenderScript":true};function buildPaging(pageIndex){pagingBuider.PageIndex=pageIndex;$.ajax({url:pagingBuider.AjaxUrl,data:JSON.stringify(pagingBuider),type:'post',dataType:'text',contentType:'application/json; charset=utf-8',success:function (data) { $('#paging_block').html(data); var pagerTop=$('#pager_top');if(pageIndex>1){$(pagerTop).html(data).show();}else{$(pagerTop).hide();}}});}</script>
+</div>
+            <div id="side_nav">
+                
+    <div id="cate_title_block">
+<div id="cate_title_title"><div class="cate_title">网站分类</div></div>
+<ul id="cate_item">
+<li id="cate_item_108698" onmouseover="cateShow(108698)" onmouseout="cateHidden(108698)">
+<a href="/cate/108698/">.NET技术(10)</a>
+</li>
+<li id="cate_item_2" onmouseover="cateShow(2)" onmouseout="cateHidden(2)">
+<a href="/cate/2/">编程语言(74)</a>
+</li>
+<li id="cate_item_108701" onmouseover="cateShow(108701)" onmouseout="cateHidden(108701)">
+<a href="/cate/108701/">软件设计(1)</a>
+</li>
+<li id="cate_item_108703" onmouseover="cateShow(108703)" onmouseout="cateHidden(108703)">
+<a href="/cate/108703/">Web前端(19)</a>
+</li>
+<li id="cate_item_108704" onmouseover="cateShow(108704)" onmouseout="cateHidden(108704)">
+<a href="/cate/108704/">企业信息化(2)</a>
+</li>
+<li id="cate_item_108705" onmouseover="cateShow(108705)" onmouseout="cateHidden(108705)">
+<a href="/cate/108705/">手机开发(1)</a>
+</li>
+<li id="cate_item_108709" onmouseover="cateShow(108709)" onmouseout="cateHidden(108709)">
+<a href="/cate/108709/">软件工程(1)</a>
+</li>
+<li id="cate_item_108712" onmouseover="cateShow(108712)" onmouseout="cateHidden(108712)">
+<a href="/cate/108712/">数据库技术(10)</a>
+</li>
+<li id="cate_item_108724" onmouseover="cateShow(108724)" onmouseout="cateHidden(108724)">
+<a href="/cate/108724/">操作系统(16)</a>
+</li>
+<li id="cate_item_4" onmouseover="cateShow(4)" onmouseout="cateHidden(4)">
+<a href="/cate/4/">其他分类(42)</a>
+</li>
+<li id="cate_item_0" onmouseover="cateShow(0)" onmouseout="cateHidden(0)">
+<a href="/cate/all/">所有随笔(4194)</a>
+</li>
+<li id="cate_item_-1" onmouseover="cateShow(-1)" onmouseout="cateHidden(-1)">
+<a href="/comment/">所有评论(843)</a>
+</li>
+</ul>
+<div class="cate_bottom"></div>
+<div id="cate_sub_block"></div>
+<script type="text/javascript">var cateIdList = '108698,2,108701,108703,108704,108705,108709,108712,108724,4';aggSite.loadSubCategories();</script>
+</div>
+<div class="l_s"></div>
+<p class="r_l_3"></p><p class="r_l_2"></p><p class="r_l_1"></p>
+<div class="w_l">
+<h4>链接</h4>        
+<ul>
+    <li><a href="https://group.cnblogs.com/forum/public/" target="_blank">反馈或建议</a></li> 
+    <li><a href="//www.cnblogs.com/cmt/" target="_blank">官方博客</a></li>
+    <li><a href="/skins.aspx" target="_blank">博客模板</a></li>
+    <li><a href="http://www.blogjava.net/">Java博客</a></li>
+    <li><a href="http://www.cppblog.com/">C++博客</a></li>
+    <li><a href="//www.cnblogs.com/cmt/archive/2009/09/26/1574616.html">手机版</a></li>
+</ul>
+</div>
+<p class="r_l_1"></p><p class="r_l_2"></p><p class="r_l_3"></p>
+<div class="l_s"></div>
+<div id="user_stats"></div>
+<div class="l_s"></div>        
+<p class="r_l_3"></p><p class="r_l_2"></p><p class="r_l_1"></p>
+<div class="w_l">                
+<h4>统计信息</h4>
+<div id="site_stats"></div>      
+</div>
+<p class="r_l_1"></p><p class="r_l_2"></p><p class="r_l_3"></p>
+            </div>
+            <div id="side_right">
+                    <div class="w_r">
+                        <h4><a href="https://news.cnblogs.com/n/comment" class="s_r_t">最新新闻评论</a><span class="more"><a href="https://news.cnblogs.com/n/comment" class="right_more">»</a></span></h4>
+                        <div id="news_comments"><div style="margin:0 auto;width:50px;"><img src="//common.cnblogs.com/images/loading.gif" alt="loading..." /></div></div>
+                        <script>
+                            $.get('/aggsite/NewsComments', null, function (data) {
+                                $('#news_comments').html(data);
+                            }, 'text');
+                        </script>
+                    </div>
+                <div id="cnblogs_a1">
+                    <div id='div-gpt-ad-1547816814884-0' style='height:60px; width:468px;'>
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1547816814884-0'); });
+                        </script>
+                    </div>
+                </div>
+                <div id="cnblogs_b1" class="sidebar-image">
+                    <div id='div-gpt-ad-1546331539224-0' style='height:250px; width:300px;'>
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1546331539224-0'); });
+                        </script>
+                    </div>
+                </div>
+                <div id="ad_right_text" class="ad_right_text"></div>
+                <div id="side_right_block"></div>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div>Powered by .NET Core on Kubernetes</div>
+            <div><a href="https://about.cnblogs.com/">关于博客园</a><a href="https://about.cnblogs.com/contact">联系我们</a><a href="https://about.cnblogs.com/ad">广告服务</a><a href="https://about.cnblogs.com/job">人才服务</a>&copy;2004-2020<a href="https://www.cnblogs.com/">博客园</a>保留所有权利<a href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备09004260号</a></div>
+            <div><a href="https://ss.knet.cn/verifyseal.dll?sn=e131108110100433392itm000000&amp;ct=df&amp;a=1&amp;pa=0.25787803245785335" rel="nofollow" target="_blank"><img id="cnnic_img" src="//common.cnblogs.com/images/cnnic.png" alt="" width="64" height="23" /></a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502001144" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="//common.cnblogs.com/images/ghs.png" alt="" /><span style="float:left;height:20px;line-height:20px;margin: 0 5px 0 5px; color:#939393;">沪公网安备 31011502001144号</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

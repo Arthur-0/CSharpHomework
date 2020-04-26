@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="前言 随着近几年物联网、万物互联等诸多概念的大行其道，智慧城市的概念也早已经被人们耳熟能详，而作为城市的组成部分， 智慧建筑 也是重中之重，智慧园区，智慧小区等也如雨后春笋般的相继出现。 智慧建筑是指" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>基于 HTML WebGL 的会展中心智能监控系统 - xhload3d - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/cogitation/bundle-cogitation.min.css?v=PJ48NAY_dmbjZZ0ZTev3Avl3BcTMJe39d3Pc83CPcig" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/cogitation/bundle-cogitation-mobile.min.css?v=jLHKTG0H_smj72y-Z2j0JGYUmhBVGTu4_QpAGb1B_sA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xhload3d/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xhload3d/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xhload3d/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 171723;
+        var currentBlogApp = 'xhload3d';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Cogitation';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="top">
+	
+<div>
+	<table>
+		<tr>
+			<td class="HeaderTitles">
+				<h1 class="HeaderTitle"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xhload3d/">xhload3d</a>
+</h1>
+				<p id="tagline">
+www.hightopo.com
+</p>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="HeaderBar">
+	<table id="HeaderBar" class="HeaderBar" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="HeaderBarTab" nowrap>
+&nbsp;
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+ ::
+
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xhload3d/">
+首页</a>
+ ::
+<a href="http://q.cnblogs.com" class="menu">博问</a> ::
+<a href="http://home.cnblogs.com/ing/" class="menu">闪存</a> ::
+
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+ ::
+
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/xhload3d">
+联系</a> ::
+
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/xhload3d/rss/">
+订阅</a>
+
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/xhload3d/rss/">
+    <img src="/skins/cogitation/images/xml.gif" alt="订阅" />
+</a> ::
+
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+ ::
+
+
+</td>
+			<td><img id="Header1_BlueTab" src="/skins/cogitation/images/BlueTabRight.gif" align="absmiddle" alt=""/></td>
+			<td class="HeaderBarTabBack" nowrap width="100%">
+				<div class="BlogStatsBar">
+	<table class="BlogStatsBar">
+		<tr>
+			<td width="100%">
+			</td>
+			<td class="BlogStatsBar" nowrap>
+				&nbsp;
+				
+235 
+				随笔&nbsp;::
+				
+1 文章
+				::
+				
+427 评论
+				::
+				
+0 引用
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</div>
+<div id="leftmenu">	
+
+	    <div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+		
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	<div id="post_detail">
+<div class="post">
+	<div class="postTitle">
+		
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/xhload3d/p/12769133.html">基于 HTML WebGL 的会展中心智能监控系统</a>
+
+	</div>
+	
+	<div class="postText">
+		
+    <div id="cnblogs_post_description" style="display: none">
+        <img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150139363-345431036.png" class="desc_img"> 智慧建筑是指通过将建筑物的结构、系统、服务和管理根据用户的需求进行最优化组合，从而为用户提供一个高效、舒适、便利的人性化建筑环境，智慧建筑绝不仅仅只是智慧园区、智慧小区这种模式，这里我就通过 **HT for Web** 制作了一个以**会展中心**为主体的智慧建筑监控系统。
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h2 id="前言"><strong>前言</strong></h2>
+<p>随着近几年物联网、万物互联等诸多概念的大行其道，智慧城市的概念也早已经被人们耳熟能详，而作为城市的组成部分，<strong>智慧建筑</strong>也是重中之重，智慧园区，智慧小区等也如雨后春笋般的相继出现。</p>
+<p>智慧建筑是指通过将建筑物的结构、系统、服务和管理根据用户的需求进行最优化组合，从而为用户提供一个高效、舒适、便利的人性化建筑环境，智慧建筑绝不仅仅只是智慧园区、智慧小区这种模式，这里我就通过 <strong>HT for Web</strong> 制作了一个以<strong>会展中心</strong>为主体的智慧建筑监控系统。</p>
+<h2 id="效果预览"><strong>效果预览</strong></h2>
+<p><img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150139363-345431036.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150159057-980567122.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150215967-1063111252.png" alt=""></p>
+<h2 id="代码实现"><strong>代码实现</strong></h2>
+<h3 id="场景呈现"><strong>场景呈现</strong></h3>
+<p>通过上面的效果预览，可以分辨出整个监控系统是分为 3 个层次的，分别是主体、楼内、展厅，如果是使用单个 <code>graph3dView</code> 加载所有场景，通过 <code>dm.clear()</code> 清除场景，<code>dm.deserieialize()</code> 加载新场景这种切换方式必然会有一个极短的渲染时间，使切换时不连贯，所以我这里就使用了 3 个 <code>graph3dView</code> ，去呈现各自的层级模型，通过 <code>notifier</code> 事件通知器监听场景切换，代码如下：</p>
+<pre><code class="language-javascript">notifier.add((event) =&gt; {
+    if (event.kind === 'sceneChange') {
+        const oldSceneKey = event.oldScene,
+            newSceneKey = event.newScene,
+            oldScene = G[oldSceneKey],
+            newScene = G[newSceneKey];
+
+        oldScene.removeFromDOM();
+
+        newScene.addToDOM();
+
+        if (newScene.graph2d.isAnimed) {
+            newScene.graph3d.animByList();
+        } else {
+            newScene.graph3d.animByList(newScene.graph2d.animByList, newScene.graph2d);
+        }
+
+    }
+});
+</code></pre>
+<p>其中 <code>removeFromDOM</code> 是自行封装的一个方法</p>
+<pre><code class="language-javascript">removeFromDOM() {
+    const g3d = this.g3d,
+        view = g3d.getView();
+
+    if (view.remove) {
+        view.remove()
+    } else {
+        view.parentNode.removeChild(view)
+    }
+
+    this.notifier.fire({
+        kind: 'reset',
+    });
+}
+</code></pre>
+<p>但是这样还是有一个问题，<code>graph3dView</code> 默认如果不放到页面中，场景中的 <code>obj</code> 等模型相关资源是不会请求和渲染的，这样对性能是十分友好的，但是当我第一次切换场景时，还是会有短暂的请求和渲染时间，所以这里我需要对资源进行预加载。</p>
+<h3 id="资源预加载"><strong>资源预加载</strong></h3>
+<p>这里我通过在 <code>body</code> 中添加一个不在窗口展示的与窗口等宽高的 <code>div</code> 元素，通过把当前不展示的 <code>graph3dView</code> 放到其中触发对相应 <code>obj</code> 等模型资源的请求和渲染，完成预加载，代码如下：</p>
+<pre><code class="language-javascript">const preloadDiv = document.createElement('div');
+preloadDiv.style.position = 'absolute';
+preloadDiv.style.bottom = '100%';
+preloadDiv.style.width = '100%';
+preloadDiv.style.height = '100%';
+document.body.appendChild(preloadDiv);
+
+scene2.addToDOM(preloadDiv);
+scene3.addToDOM(preloadDiv);
+
+</code></pre>
+<h3 id="模型加载完成后再执行动画"><strong>模型加载完成后再执行动画</strong></h3>
+<p><img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150254770-784559626.gif" alt=""></p>
+<p>web 页面加载是依赖网速的，会展中心模型 <code>obj</code> 等资源文件是有一定大小的，可能对于不同带宽网速的用户所需要加载的时间也不尽相同，这里就需要判断下 <code>obj</code> 是否全部加载完成，加载完成后再执行动画效果，通过 <code>ht.Default.handleModelLoaded</code> 监控是否所有<strong>模型</strong>都请求加载完成, 加载完成后开始执行动画，顺便释放之前预加载的 <code>graph3dView</code> ，代码如下：</p>
+<pre><code class="language-javascript">let modelSize = 0;
+ht.Default.handleModelLoaded = (name, model) =&gt; {
+    modelSize++;
+    if (modelSize === 62) {
+        scene1.graph3d.enableShadow();
+        scene3.graph3d.enableShadow();
+        scene2.removeFromDOM();
+        scene3.removeFromDOM();
+        scene1.graph3d.animByList(scene1.graph2d.animByList, scene1.graph2d);
+    }
+};
+</code></pre>
+<h3 id="动画依参数顺序执行"><strong>动画依参数顺序执行</strong></h3>
+<p><img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150417374-439953310.gif" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150431395-162765189.gif" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150447867-784271161.gif" alt=""></p>
+<p>我想要场景第一次加载时，视角拉近后左右两边的面板再一点一点的加载出来，动画效果是不完全线性顺序的去执行，所以我这里通过 <code>ht.Default.startAnim</code> 方法封装了一套通过参数数组进行的动画的方法，代码如下：</p>
+<pre><code class="language-javascript">animByList(callback, obj) {
+    this.isAnimed = true;
+    const animList = this.animList,
+        self = this;
+
+    let callAnim = (ind) =&gt; {
+        const param = animList.get(ind);
+
+        param &amp;&amp; self.anim(param, () =&gt; {
+            callAnim(ind + 1);
+            const lastParam = animList.get(ind + 1);
+            lastParam || callback &amp;&amp; callback.call(obj || this);
+        });
+
+    };
+
+    callAnim(0);
+}
+
+anim(animParam, callback) {
+    const self = this,
+        time = animParam['time'] || 1000,
+        easing = animParam['easing'] || function (t) {
+            return t * t;
+        },
+        func = animParam['func'];
+
+    this.__animObj = ht.Default.startAnim({
+        duration: time || 1000, 
+        easing: easing,
+        action: function (v, t) {
+            const V = v,
+                T = t;
+
+            function animFunc(param) {
+                let v = V,
+                    t = T;
+                if (param instanceof Function) {
+                    param(v, t);
+                } else {
+                    const type = param['type'],
+                        object = param['object'],
+                        objectTag = param['objectTag'],
+                        key = param['key'],
+                        oldValue = param['oldValue'],
+                        newValue = param['newValue'],
+                        oneTime = param['time'],
+                        scope = param['scope'];
+
+                    if (scope) {
+                        v = v &lt; scope[0] ? 0 : v &gt; scope[1] ? 1 : (v - scope[0]) / (scope[1] - scope[0]);
+                    } else {
+                        v = !oneTime || oneTime &gt; time ? v : v * time / oneTime &lt; 1 ? v * time / oneTime : 1;
+                    }
+
+                    let obj, value;
+
+                    obj = object ? object : objectTag ? self.view.dm().getDataByTag(objectTag) : undefined;
+
+                    if (!obj) return;
+
+                    if (!isSameType(oldValue, newValue) || !isNumORNumArray(oldValue)) return;
+
+                    if (oldValue instanceof Array) {
+                        if (oldValue.length !== newValue.length) return;
+                        const darr = newValue.map((n, i) =&gt; {
+                            return n - oldValue[i];
+                        });
+
+                        value = oldValue.map((n, i) =&gt; {
+                            return n + darr[i] * v;
+                        });
+                    } else {
+                        const d = newValue - oldValue;
+
+                        value = oldValue + d * v;
+                    }
+
+                    ht.Default.setPropertyValue(obj, type, key, value);
+                }
+            }
+            if (animParam instanceof Array) {
+                animParam.forEach(ele =&gt; {
+                    animFunc(ele);
+                });
+            } else {
+                animFunc(animParam);
+            }
+        },
+        finishFunc: function () {
+            func &amp;&amp; func(func);
+            callback &amp;&amp; callback();
+        },
+    });
+}
+</code></pre>
+<p>参数格式如下：</p>
+<pre><code class="language-javascript">// 视角移动
+param = {
+    object: g3d,
+    type: undefined,
+    key: 'eye',
+    oldValue:  [-118, 5130, 15858],
+    newValue: [-26, 1130, 3494],
+    time: 1000,
+}
+ animList.add();
+// 标题从左到右出现
+param = {
+    object: title,
+    type: 'style',
+    key: 'clip.percentage',
+    oldValue: 0,
+    newValue: 1,
+    time: 1500,
+};
+animList.add(param);
+</code></pre>
+<h3 id="可点击部分高亮效果"><strong>可点击部分高亮效果</strong></h3>
+<p>为了突出可以点击的部分，我加了高亮效果，设置鼠标悬浮高亮模式，并通过 <code>g3d.getHighlightHelper().setFetchTargetFunc</code> 方式筛选需要鼠标高亮的图元，代码如下：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150619483-539777579.png" alt=""></p>
+<pre><code class="language-javascript">g3d.setHighlightMode('mouseover');
+
+g3d.getHighlightHelper().setFetchTargetFunc(function (nodes) {
+    let sortList = new ht.List(nodes);
+    return sortList.toArray(node =&gt; {
+        return jumpList.contains(node);
+    });
+});
+</code></pre>
+<h3 id="楼层视角跳转"><strong>楼层视角跳转</strong></h3>
+<p>因为整体的楼层比较大，而每个楼层中可选择的展区又比较小，所以这里我做了一个视角调整，可以使用单独移动视角到正视相应楼层的视角 <code>flyTo</code>，这里除了采用右侧边栏选中移动，也做了鼠标移入相应楼层右键改变视角的处理，使用了新建的类 <code>messageView</code> 做交互提示。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1496396/202004/1496396-20200421150637570-607035870.gif" alt=""></p>
+<pre><code class="language-javascript">g3d.flyTo(floor, {
+    animation: true,
+    direction: [0, 1, 2],
+    center: floor.p3().map((n, i) =&gt; {
+        return i !==1 ? n : n + floor.getTall() / 2;
+    }),
+    distance: distances[newFloor - 1],
+});
+</code></pre>
+<h2 id="总结"><strong>总结</strong></h2>
+<p>随着科技的井喷式发展，智慧建筑将如雨后春笋般崛起，其应用的场景也会不断拓展，应运而生的数据可视化管理系统也应该配套升级，为其把数字信息变为直观的、以图形图像信息表示的信息，清晰的展现在客户的面前，这将是无可阻挡的时代大趋势。</p>
+<p>还有更多的可视化案例可以参考：<a href="https://www.hightopo.com/demos/index.html">https://www.hightopo.com/demos/index.html</a></p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+	</div>
+	
+	<div class="postfoot">
+		posted on 
+<span id="post-date">2020-04-26 23:51</span>&nbsp;
+<a href="https://www.cnblogs.com/xhload3d/">xhload3d</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769133" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769133);return false;">收藏</a>
+	</div>
+</div>
+
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 171723, cb_blogApp = 'xhload3d', cb_blogUserGuid = '99a30dc7-3165-e311-8d02-90b11c0b17d6';
+    var cb_entryId = 12769133, cb_entryCreatedDate = '2020-04-26 23:51', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+
+
+</div>
+<div class="footer">
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 xhload3d
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+</div>
+
+
+    
+</body>
+</html>

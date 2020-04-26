@@ -1,0 +1,839 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>小菠萝测试笔记 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/poloyy/custom.css?v=mEtlXe/5nK6LTeWWgUa6Wyr0q8g=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/poloyy/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/poloyy/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/poloyy/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 567504;
+        var currentBlogApp = 'poloyy';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <!-- Loading 底层遮罩 -->
+<div id='loading'></div>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/poloyy/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/poloyy/">阿菠萝阿瑶</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/poloyy/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%B0%8F%E8%8F%A0%E8%90%9D%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/poloyy/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+216&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+78</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/01/21.html">2020年1月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12219145.html">
+[置顶]    全网最详细！Centos7.X 搭建Grafana+Jmeter+Influxdb 性能实时监控平台
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：背景 日常工作中，经常会用到Jmeter去压测，毕竟LR还要钱（@￥&amp;*...），而最常用的接口压力测试，我们都是通过聚合报告去查看压测结果的，然鹅聚合报告的真的是丑到家了，作为程序猿这当然不能忍！那我们要怎么给它变得好看点捏？ 如何华丽变身？ 方式 优点 缺点 场景 Jmeter+ant+Jenk            <a href="https://www.cnblogs.com/poloyy/p/12219145.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-21 11:34 小菠萝测试笔记 阅读 (947) 评论 (6)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12219145" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/26.html">2020年4月26日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12779353.html">
+    Jmeter系列（6）- test plan测试计划详细讲解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你想从头学习Jmeter，可以看看这个系列的文章哦 https://www.cnblogs.com/poloyy/category/1746599.html 测试计划的作用 测试计划描述了Jmeter在执行时，一系列的步骤 一个完整的测试计划包含了一个或多个【线程组、逻辑控制器、采样器、监听器、            <a href="https://www.cnblogs.com/poloyy/p/12779353.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 21:38 小菠萝测试笔记 阅读 (35) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12779353" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12781997.html">
+    Jmeter系列（5）- jmeter.properties常用配置项讲解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你想从头学习Jmeter，可以看看这个系列的文章哦 https://www.cnblogs.com/poloyy/category/1746599.html jmeter.properties 所在目录：&#160;E:\apache-jmeter-5.2.1\bin&#160;，jmeter安装目录下的bin目录            <a href="https://www.cnblogs.com/poloyy/p/12781997.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 20:19 小菠萝测试笔记 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12781997" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12777295.html">
+    Jenkins - Linux下启动Jenkins报错hudson.WebAppMain#contextDestroyed: Shutting down a Jenkins instance that was still starting up
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：报错截图 在Linux下直接运行jenkins.war报错，导致启动失败 报错原因 运行端口已被其他进程占用 解决方法 换个启动端口就可以啦！            <a href="https://www.cnblogs.com/poloyy/p/12777295.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 09:48 小菠萝测试笔记 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12777295" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/25.html">2020年4月25日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12772046.html">
+    Selenium常见报错问题（2）- 解决和分析StaleElementReferenceException异常
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你在跑selenium脚本时，需要某些异常不知道怎么解决时，可以看看这一系列的文章，看看有没有你需要的答案 https://www.cnblogs.com/poloyy/category/1749830.html 直译异常 Stale Element Reference Exception：陈旧            <a href="https://www.cnblogs.com/poloyy/p/12772046.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-25 11:13 小菠萝测试笔记 阅读 (12) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12772046" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12771874.html">
+    Jmeter系列（4）- Jmeter面板介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你想从头学习Jmeter，可以看看这个系列的文章哦 https://www.cnblogs.com/poloyy/category/1746599.html Jmeter面板介绍 讲一下常用的菜单栏 分布式运行相关的，后面再展开讲解哦 选项，可以打开日志，修改语言，还有管理插件哦！ 工具，主要看            <a href="https://www.cnblogs.com/poloyy/p/12771874.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-25 10:42 小菠萝测试笔记 阅读 (13) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12771874" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12771865.html">
+    Jmeter系列（3）- Jmeter安装目录介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你想从头学习Jmeter，可以看看这个系列的文章哦 https://www.cnblogs.com/poloyy/category/1746599.html Jmeter安装目录说明 bin：包含启动、配置等相关命令 docs：官方本地文档目录 extras：辅助库，持续集成会用到（后面讲） l            <a href="https://www.cnblogs.com/poloyy/p/12771865.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-25 10:41 小菠萝测试笔记 阅读 (12) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12771865" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12757615.html">
+    Jmeter系列（2）- Jmeter的详细介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你想从头学习Jmeter，可以看看这个系列的文章哦 https://www.cnblogs.com/poloyy/category/1746599.html Jmeter支持哪些测试场景？ Jmeter能够对许多不同的应用程序/服务器/协议类型进行负载测试和性能测试 Web - HTTP, HT            <a href="https://www.cnblogs.com/poloyy/p/12757615.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-25 10:32 小菠萝测试笔记 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12757615" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12769425.html">
+    Selenium常见报错问题（1）- 先来认识下selenium常见异常类
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你在跑selenium脚本时，需要某些异常不知道怎么解决时，可以看看这一系列的文章，看看有没有你需要的答案 https://www.cnblogs.com/poloyy/category/1749830.html 最常见异常类 异常：selenium.common.exceptions.WebD            <a href="https://www.cnblogs.com/poloyy/p/12769425.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 18:54 小菠萝测试笔记 阅读 (15) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769425" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12743869.html">
+    Jmeter系列（1）- 环境部署
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你想从头学习Jmeter，可以看看这个系列的文章哦 https://www.cnblogs.com/poloyy/category/1746599.html 官网下载Jmeter http://jmeter.apache.org/下载最新版本的 JMeter，解压文件到任意目录 百度云盘下载 当            <a href="https://www.cnblogs.com/poloyy/p/12743869.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 13:52 小菠萝测试笔记 阅读 (51) 评论 (6)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12743869" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12744072.html">
+    Java - window下环境配置
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：JDK下载 官网：https://www.oracle.com/java/technologies/javase-jdk8-downloads.html 百度网盘： 链接：https://pan.baidu.com/s/1lSsmv5k1yNSHFzrVlqi8_g 提取码：uzmj 安装JDK 要            <a href="https://www.cnblogs.com/poloyy/p/12744072.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 13:43 小菠萝测试笔记 阅读 (27) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12744072" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/19.html">2020年4月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12725509.html">
+    Pytest系列（23）- allure打标记，@allure.feature()、@allure.story()、@allure.severity()的详细使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 前言 前面几篇文章主要介绍了allure的特性，这篇文章我们就来讲下allure的标记用法 有时候我们写pytest的时候，会用到&#160;@            <a href="https://www.cnblogs.com/poloyy/p/12725509.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-19 14:55 小菠萝测试笔记 阅读 (104) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12725509" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/18.html">2020年4月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12726946.html">
+    Pytest系列（22）- allure的特性，@allure.link()、@allure.issue()、@allure.testcase()的详细使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 前言 上一篇文章介绍了两种allure的特性 @allure.description() ：添加测试用例描述，一共三种方式哦！ @al            <a href="https://www.cnblogs.com/poloyy/p/12726946.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 17:24 小菠萝测试笔记 阅读 (42) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12726946" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12726657.html">
+    Pytest系列（21）- allure的特性，@allure.description()、@allure.title()的详细使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 前言 上一篇文章介绍了两种allure的特性 @allure.step() 装饰器：可以设置测试步骤，让测试用例的执行过程更加详细 a            <a href="https://www.cnblogs.com/poloyy/p/12726657.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 16:47 小菠萝测试笔记 阅读 (63) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12726657" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12716659.html">
+    Pytest系列（20）- allure的特性，@allure.step()、allure.attach的详细使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 前言 allure除了支持pytest自带的特性之外（fixture、parametrize、xfail、skip），自己本身也有强大            <a href="https://www.cnblogs.com/poloyy/p/12716659.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 20:52 小菠萝测试笔记 阅读 (153) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12716659" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/16.html">2020年4月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12715212.html">
+    Pytest系列（19）- 我们需要掌握的allure特性
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 前言 前面我们介绍了allure的快速入门，只是单纯的敲allure命令而已 其实allure还有内置的特性可以让我们在pytest代            <a href="https://www.cnblogs.com/poloyy/p/12715212.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-16 22:17 小菠萝测试笔记 阅读 (52) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12715212" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12712616.html">
+    Pytest系列（18）- 超美测试报告插件之allure-pytest的基础使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 官方介绍 Allure Framework是一种灵活的轻量级多语言测试报告工具，不仅可以以简洁的Web报告形式非常简洁地显示已测试的内            <a href="https://www.cnblogs.com/poloyy/p/12712616.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-16 18:52 小菠萝测试笔记 阅读 (107) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12712616" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12703290.html">
+    Pytest系列（17）- pytest-xdist分布式测试的原理和流程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html pytest-xdist分布式测试的原理 前言 xdist的分布式类似于一主多从的结构，master机负责下发命令，控制slave机；            <a href="https://www.cnblogs.com/poloyy/p/12703290.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-16 08:45 小菠萝测试笔记 阅读 (56) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12703290" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/poloyy/archive/2020/04/15.html">2020年4月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12707570.html">
+    安全测试工具（1）- Burp Suite Pro的安装教程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：啥是Burp Suite 用于攻击web 应用程序的集成平台 程序员必备技能，不仅可以拿来做渗透测试、漏洞挖掘还能帮助程序员调试程序 Bug 它包含了许多Burp工具，这些不同的burp工具通过协同工作，有效的分享信息，支持以某种工具中的信息为基础供另一种工具使用的方式发起攻击。这些工具设计了许多接            <a href="https://www.cnblogs.com/poloyy/p/12707570.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-15 19:52 小菠萝测试笔记 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12707570" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12694861.html">
+    Pytest系列（16）- 分布式测试插件之pytest-xdist的详细使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果你还想从头学起Pytest，可以看看这个系列的文章哦！ https://www.cnblogs.com/poloyy/category/1690628.html 前言 平常我们功能测试用例非常多时，比如有1千条用例，假设每个用例执行需要1分钟，如果单个测试人员执行需要1000分钟才能跑完 当项目            <a href="https://www.cnblogs.com/poloyy/p/12694861.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-15 18:50 小菠萝测试笔记 阅读 (191) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12694861" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/poloyy/p/12707285.html">
+    VMware虚拟机 - 如何让鼠标从虚拟机中返回到个人计算机中
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最简单的方式 按快捷键：ctrl+alt即可 彻底解决问题的方法：安装VMware Tools 前提条件 开启虚拟机 确认客户机操作系统正在运行 因为 VMware Tools 安装程序是使用 Perl 编写的，请确认已在客户机操作系统中安装 Perl            <a href="https://www.cnblogs.com/poloyy/p/12707285.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-15 18:49 小菠萝测试笔记 阅读 (41) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12707285" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/poloyy/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 小菠萝测试笔记
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <!-- 滚动进度 -->
+<div id="bottomProgressBar"></div>
+
+<!-- 音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+<div id="aplayer" class="aplayer" data-id="329641066" data-lrctype="0" data-server="netease" data-type="playlist" data-fixed="true" data-listfolded="true"></div>
+<script src="https://unpkg.com/meting@1.2/dist/Meting.min.js"></script>
+
+<!-- 右下角菜单 -->
+<div id="rightMenu"></div>
+
+<!-- 底部加了小鱼<・)))><<~ -->
+  <div id="jsi-flying-fish-container" class="container"></div>
+  <script src='https://blog-static.cnblogs.com/files/elkyo/fish.js'></script>
+  <style>
+  @media only screen and (max-width: 767px){
+  #sidebar_search_box input[type=text]{width:calc(100% - 24px)}
+  }
+  </style>
+ <!--点击冒点-->
+  <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas><script src="https://blog-static.cnblogs.com/files/elkyo/mouse-click.js"></script>
+
+<script type="text/javascript">
+/*加一只小猫咪*/
+$("#main").append('<div id="little_cat" class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -999px;height:100% !important;"></div>')
+
+$(function() {
+var path = window.location.pathname
+var flag = path.search("/p/") !=-1
+$("#aplayer").show()
+if(flag == true){
+$('.main-header').css("background",'url("https://files.cnblogs.com/files/poloyy/beijing.bmp") center -580px no-repeat rgb(34, 34, 34) !important')
+}
+
+function scroll(){
+	//获取图片的当前大小
+		var wSize = $(this).offsetWidth;
+		var hSize = $(this).offsetHeight;
+console.log(wSize )
+console.log(hSize )
+		//滚轮上下滚动值
+		var UpDown = event.wheelDelta;
+console.log(UpDown )
+		//大于0滚轮向上滚动,小于0滚轮向下滚动
+		if(UpDown>0){
+			document.getElementById("imgId").style.width = wSize+=5;
+			document.getElementById("imgId").style.width = hSize+=5;
+		}else{
+			document.getElementById("imgId").style.width = wSize-=5;
+			document.getElementById("imgId").style.width = hSize-=5;
+		}
+}
+        //scroll 事件适用于所有可滚动的元素和 window 对象（浏览器窗口）。
+        $(window).scroll(function() {
+            var scroHei = $(window).scrollTop();//滚动的高度
+            if (scroHei > 500) {
+               $('.back-to-top').css('top','-200px');
+            }else{                                                
+                $('.back-to-top').css('top','-999px');
+            }
+        })
+        /*点击返回顶部*/
+        $('.back-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+        })
+    })
+</script>
+    </div>
+</body>
+</html>

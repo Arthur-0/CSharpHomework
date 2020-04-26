@@ -1,0 +1,1264 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>developAJ - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/luolianxi/custom.css?v=6aCFqjCFourHrBB84XDmaGCG7yU=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/luolianxi/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/luolianxi/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/luolianxi/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 255422;
+        var currentBlogApp = 'luolianxi';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <div id="loading"></div>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/luolianxi/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/luolianxi/">developAJ</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/luolianxi/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/developAJ">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/luolianxi/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+121&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+0</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2020/04/26.html">2020年4月26日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/12783124.html">
+    Go语言 2019 调查报告发布
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Go 官方博客昨日公布了 &quot;&#160;2019 年 Go 语言调查报告]。本次调查收到的回复达到&#160;10,975 份，约为[去年&quot; 的两倍。 这些受访者的反馈意见将被选取用于改进&#160;Go 语言的发展。 以下是 2019 年度的调查报告摘要： 此调查中，受访者的受众特征与 Stack Overflow 的受访者相            <a href="https://www.cnblogs.com/luolianxi/p/12783124.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 23:04 developAJ 阅读 (45) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12783124" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/12741729.html">
+    Golang 高并发编程For循环中使用Goroutine最容易犯的错误
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Golang goroutine是Go语言强大的特性之一，合理的利用它才能发挥最大的价值 1、经调查 发现初学者一般会犯以下错误使用goroutine 或者使用闭包调用 这2段代码实际上是遍历数组的所有变量。由于闭包只是绑定到这个value变量上，并没有被保存到goroutine栈中，所以以上代码极            <a href="https://www.cnblogs.com/luolianxi/p/12741729.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 00:23 developAJ 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12741729" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2020/04/18.html">2020年4月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/12728616.html">
+    2020 腾讯社招Golang后端面试经验分享
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：技术一面 基础面试 一面是通过电话直接沟通 go的调度 go struct能不能比较 go defer（for defer） select可以用于什么 context包的用途 client如何实现长连接 主协程如何等其余协程完再操作 slice，len，cap，共享，扩容 map如何顺序读取 实现s            <a href="https://www.cnblogs.com/luolianxi/p/12728616.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 22:23 developAJ 阅读 (49) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12728616" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/12728357.html">
+    2020年4月份字节跳动后端面试经验分享
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2020年4月份字节跳动后端面试经验 第一面 远程使用牛客网进行面试 面试官首先介绍说会有几轮面试 算法题 1.1 将整数转换二进制 然后将负数 算法题 1.2 买卖股票的最大利润 给定一个数组代表股票每天的价格，请问买卖多次的情况下，最大化利润是多少？ 日期不重叠的情况下，可以买卖多次? 输入:             <a href="https://www.cnblogs.com/luolianxi/p/12728357.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 21:47 developAJ 阅读 (46) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12728357" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/11/16.html">2015年11月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990268.html">
+    解决从服务器获取的数组是 __NSCFConstantString以及&quot;&quot;没有空格字符串的问题
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品问题项目遇到了个bug，从服务器获取到的数据是这样的 { status = 1, data = [ { uid = 161, type = 2, id = 79, addtime = 1447642148, addtime_t...            <a href="https://www.cnblogs.com/luolianxi/p/4990268.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-11-16 17:09 developAJ 阅读 (268) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990268" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/10/19.html">2015年10月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990277.html">
+    AJ学IOS 之ipad开发Popover的调色板应用_popover显示后其他控件仍然能进行交互
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果后面的是xcode的控制台 二：代码ViewController#import &quot;ViewController.h&quot;#import &quot;ColorsViewController.h&quot;@interface ViewController () - (IBAction)button...            <a href="https://www.cnblogs.com/luolianxi/p/4990277.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-19 09:17 developAJ 阅读 (93) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990277" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990278.html">
+    AJ学IOS 之ipad开发Popover的基本使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果图二：注意对于方法[UIPopoverController dealloc] reached while popover is still visible. 当popover还在显示的时候,它就挂了 不允许popover还在显示的时候挂掉 popover必须在消失的时...            <a href="https://www.cnblogs.com/luolianxi/p/4990278.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-19 09:02 developAJ 阅读 (43) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990278" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990279.html">
+    AJ学IOS  之ipad开发qq空间项目横竖屏幕适配
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果图先看效果 二：结构图如图所示： 其中用到了UIView+extension分类 Masonry第三方框架做子控制器的适配 NYHomeViewController对应主页也就是全部 NYDock是左边的菜单栏 放置各个选项卡等按钮功能区域 NYIconView头像 NYT...            <a href="https://www.cnblogs.com/luolianxi/p/4990279.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-19 08:19 developAJ 阅读 (83) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990279" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/10/16.html">2015年10月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990208.html">
+    C语言小练习之学生信息管理系统
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：C语言小练习之学生信息管理系统main.c文件1234567891011121314151617181920212223242526272829303132333435363738#include &quot;myFunction.h&quot;//系统开关,默认为1.当赋值为0则系统推出intflag=1;intma...            <a href="https://www.cnblogs.com/luolianxi/p/4990208.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 01:10 developAJ 阅读 (107) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990208" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990209.html">
+    014-预处理指令-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：014-预处理指令-C语言笔记学习目标1.【掌握】枚举2.【掌握】typedef关键字3.【理解】预处理指令4.【掌握】#define宏定义5.【掌握】条件编译6.【掌握】static与extern关键字一、枚举当我们要描述方向、四季、性别、学历、婚配情况等等事物的时候，我们知道这些事物的取值范围是...            <a href="https://www.cnblogs.com/luolianxi/p/4990209.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 01:04 developAJ 阅读 (79) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990209" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990210.html">
+    013-结构体-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：013-结构体-C语言笔记学习目录1.【掌握】返回指针的函数2.【掌握】指向函数的指针3.【掌握】结构体的声明4.【掌握】结构体与数组5.【掌握】结构体与指针6.【掌握】结构体的嵌套7.【掌握】结构体与函数一、返回指针的函数指针作为函数的返回值指针是可以作为函数的返回值的，不能返回局部变量的指针，因...            <a href="https://www.cnblogs.com/luolianxi/p/4990210.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:35 developAJ 阅读 (81) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990210" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990211.html">
+    012-C语言小游戏之推箱子
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：012-C语言小游戏之推箱子一、创建游戏地图123456789101112131415#define ROWS 11#define COLS 12charmap[ROWS][COLS]={&quot;###########&quot;,&quot;# #&quot;,&quot;#O#&quot;,&quot;# X##@#&quot;,&quot;### #&quot;,&quot;### #&quot;,&quot;###...            <a href="https://www.cnblogs.com/luolianxi/p/4990211.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:32 developAJ 阅读 (1415) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990211" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990212.html">
+    011-指针（上）-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：011-指针（上）-C语言笔记学习目标1.【掌握】字符串常用函数2.【掌握】指针变量的声明3.【掌握】指针变量的初始化4.【掌握】函数与指针5.【掌握】指针的数据类型6.【掌握】多级指针7.【掌握】指针与数组一、字符串常用函数puts和gets函数的声明在stdio.h头文件中，strcmp、str...            <a href="https://www.cnblogs.com/luolianxi/p/4990212.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:28 developAJ 阅读 (114) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990212" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990213.html">
+    010-字符串-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：010-字符串-C语言笔记学习目标1.【掌握】二维数组的声明和初始化2.【掌握】遍历二维数组3.【掌握】二维数组在内存中的存储4.【掌握】二维数组与函数5.【掌握】字符串一、二维数组的声明和初始化二维数组也是数组，他具有数组的所有特性。在学习二维数组过程中我们完全可以把一维数组想象成一个“行结构”，...            <a href="https://www.cnblogs.com/luolianxi/p/4990213.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:22 developAJ 阅读 (50) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990213" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990214.html">
+    009-数组-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：009-数组-C语言笔记学习目标1.【掌握】数组的声明2.【掌握】数组元素的赋值和调用3.【掌握】数组的初始化4.【掌握】数组的遍历5.【掌握】数组在内存中的存储6.【掌握】数组长度计算7.【掌握】数组的常见应用8.【掌握】数组作为函数的参数一、数组的声明作用：可以存储指定数据类型指定个数的数据，数...            <a href="https://www.cnblogs.com/luolianxi/p/4990214.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:18 developAJ 阅读 (63) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990214" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990215.html">
+    008-进制-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：008-进制-C语言笔记学习目标1.【掌握】include预处理指令2.【掌握】多文件开发3.【了解】认识进制4.【掌握】进制之间的互相转换5.【掌握】原码，反码，补码6.【掌握】位运算7.【掌握】int类型的修饰符一、include预处理指令其实我们早就有接触文件包含这个指令了， 就是#inclu...            <a href="https://www.cnblogs.com/luolianxi/p/4990215.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:07 developAJ 阅读 (78) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990215" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990216.html">
+    007-函数-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：007-函数-C语言笔记学习目标1.【了解】函数的分类2.【掌握】函数的声明定义和调用3.【掌握】函数的形参和实参4.【掌握】带返回值的函数5.【掌握】全局变量和局部变量6.【了解】注释插件的安装和使用一、函数的分类C程序是由一个一个的函数组成的，我们每天使用的main函数也是函数。其实函数在其他编...            <a href="https://www.cnblogs.com/luolianxi/p/4990216.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:05 developAJ 阅读 (119) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990216" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990217.html">
+    006-循环结构(下)-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：006-循环结构(下)-C语言笔记学习目标1.【掌握】do-while循环结构2.【掌握】for循环结构3.【掌握】嵌套循环一、do-while循环结构do-while语法：1234567intmain(){do{循环体;}while(表达式);return0;}do-while执行顺序：当遇到do...            <a href="https://www.cnblogs.com/luolianxi/p/4990217.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:04 developAJ 阅读 (57) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990217" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990218.html">
+    005-循环结构(上)-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：005-循环结构(上)-C语言笔记学习目标1.【掌握】switch-case结构2.【理解】case语句穿透3.【理解】Xcode断点调试4.【理解】while循环结构初体验5.【掌握】while循环结构的应用6.【理解】break和continue一、switch-case结构1234567891...            <a href="https://www.cnblogs.com/luolianxi/p/4990218.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:03 developAJ 阅读 (90) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990218" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990220.html">
+    004-流程控制-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：004-流程控制-C语言笔记学习目标1.【掌握】关系运算符和关系表达式2.【掌握】逻辑运算符和逻辑表达式3.【掌握】运算符的优先级和结合性4.【掌握】if-else if-else结构的使用5.【掌握】变量的作用域6.【掌握】三目运算符和三目表达式7.【了解】如何生成一个随机数一、关系运算符和关系表...            <a href="https://www.cnblogs.com/luolianxi/p/4990220.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-16 00:00 developAJ 阅读 (58) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990220" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/10/15.html">2015年10月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990221.html">
+    003-scanf函数使用和表达式-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：003-scanf函数使用和表达式-C语言笔记学习目标1.【掌握】输入函数scanf的基本使用方法2.【掌握】输入函数scanf运行原理和缓冲区理解3.【掌握】算术运算符和算术表达式的使用4.【了解】数据类型自动转换和强制转换5.【掌握】赋值运算符和复合赋值运算符6.【掌握】自增自减运算符的使用注意...            <a href="https://www.cnblogs.com/luolianxi/p/4990221.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-15 23:58 developAJ 阅读 (102) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990221" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990222.html">
+    002-IDE的使用与数据类型-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：002-IDE的使用与数据类型-C语言笔记学习目标1.【了解】IDE并熟悉Xcode基本使用技巧2.【理解】C程序的入口和运行流程3.【理解】变量的声明赋值和一些细节4.【理解】变量的命名规范5.【掌握】注释的介绍和使用6.【掌握】printf函数的使用注意和细节7.【掌握】基本数据类型一、认识ID...            <a href="https://www.cnblogs.com/luolianxi/p/4990222.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-15 23:57 developAJ 阅读 (172) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990222" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990223.html">
+    001-iOS开发前奏-C语言笔记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：001-iOS开发前奏-C语言笔记学习目标1.【了解】操作系统2.【了解】应用软件3.【了解】操作系统的分类和市场占有份额4.【了解】iOS操作系统5.【了解】应用软件开发的分类6.【了解】UNIX常用命令7.【掌握】如何开发第一个C语言程序 一、操作系统我们的计算机是由很多种硬件设备组成的，比如C...            <a href="https://www.cnblogs.com/luolianxi/p/4990223.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-15 23:56 developAJ 阅读 (63) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990223" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990224.html">
+    Web 如何搭建自己的个人网站
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如何搭建自己的个人技术博客网站学习目标1.【了解】搭建网站需要的web构件和网站运行原理2.【掌握】如何搭建个人博客网站学习前言大家都是学习开发的，相信都接触过百度，新浪，淘宝，京东...等等网站吧，对。。。这些就是网站，这篇文章就是教大家如何搭建一个这样的网站。我们在平时上网过程中，有没有去想过网...            <a href="https://www.cnblogs.com/luolianxi/p/4990224.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-15 23:55 developAJ 阅读 (308) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990224" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990225.html">
+    C语言折半查找法练习题冒泡排序
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：C语言折半查找法练习题折半查找法:折半查找法是效率较高的一种查找方法。假设有已经按照从小到大的顺序排列好的五个整数num[0]~num[4]，要查找的数是key，其基本思想是： 设查找数据的范围下限为low=0，上限为high=5，求中点mid=（low+high）/2，用key与中点元素a[mid...            <a href="https://www.cnblogs.com/luolianxi/p/4990225.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-10-15 23:53 developAJ 阅读 (1961) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990225" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/09/28.html">2015年9月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990226.html">
+    C语言冒泡排序法分析及代码实现
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：冒泡排序法:所谓冒泡排序法，就是对一组数字进行从大到小或者从小到大排序的一种算法。具体方法是，相邻数值两两交换。从第一个数值开始，如果相邻两个数的排列顺序与我们的期望不同，则将两个数的位置进行交换（对调）；如果其与我们的期望一致，则不用交换。重复这样的过程，一直到最后没有数值需要交换，则排序完成。一...            <a href="https://www.cnblogs.com/luolianxi/p/4990226.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:52 developAJ 阅读 (186) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990226" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990227.html">
+    Xcode自动注释插件：VVDocumenter-Xcode
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：VVDocumenter-Xcode是由 @onevcat 喵神开发的一个Xcode插件，其作用是在Xcode中输入&quot;///&quot;后自动生成规范的文档注释，的确非常好用而且实用。Github也许你需要翻墙才能访问,打开页面后点击右下角的 Download Zip下载.如果打不开Github可以加群 51...            <a href="https://www.cnblogs.com/luolianxi/p/4990227.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:52 developAJ 阅读 (52) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990227" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990228.html">
+    如何改变Xcode字体大小?
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：运行Xcode后依次点击左上角Xcode/Preferences/Fonts &amp; Colors里就可以调整，在右边随便点中一个字体就可以调整这个字体的大小和颜色了，按command+a可以将所有的字体选中，同时调整各个字体的大小，但不能调颜色。你学会了吗？            <a href="https://www.cnblogs.com/luolianxi/p/4990228.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:51 developAJ 阅读 (95) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990228" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990229.html">
+    传智博客2015年最新版iOS基础视频_最适合初学者入门
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：视频介绍：本视频是iOS学院精心录制的免费精华版iOS语言基础视频，该视频特点在于最大程度保证了知识点的完整性，按知识点进行视频录制，每个视频控制在20分钟左右，不会使学生产生疲劳，授课讲究通俗易懂、幽默风趣、绝对干货。通过该视频的学习，相信你能够轻轻松松地入门C语言，为iOS开发学习打下坚实的基础...            <a href="https://www.cnblogs.com/luolianxi/p/4990229.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:50 developAJ 阅读 (119) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990229" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990230.html">
+    新版本Xcode 6的视图调试详解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：开发者会经常遇到视图或者Auto Layout约束中存在bug的情况，并且这种bug很难通过代码发现，所以开发者很有必要熟知如何进行简单高效的视图调试，而Xcode 6的发布使得视图调试变得前所未有的简单。开发者不用将frames打印到控制台，然后在脑海中可视化视图的布局，现在你可以在Xcode中...            <a href="https://www.cnblogs.com/luolianxi/p/4990230.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:50 developAJ 阅读 (86) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990230" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990231.html">
+    新手必须知道的13个Xcode小技巧
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：当谈论到iOS开发工具时，有一个肯定是所有iOS开发者都熟悉的，那就是Xcode。Xcode是使所有令人赞叹的iOS app成为可能的驱动力。Xcode能帮助我们完成非常多的事情，但是这也有点让人头疼。对于新手来说，可能会觉得Xcode太过繁重了。而对那些有几年使用经验的人来说，还是在不停地学习一些...            <a href="https://www.cnblogs.com/luolianxi/p/4990231.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:49 developAJ 阅读 (13066) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990231" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990232.html">
+    Xcode 6.3.1Mac版 V6.4.Beta3免费下载
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Xcode for mac是Mac OS系统以及IOS系统开发者专用于构建 Mac OS X 及 iOS 应用程序的完整工具集 - Xcode 5 的工具经过重新设计，它们的性能更优秀、使用更容易，能带给用户前所未有的助益。Xcode 5.1.1 具有全新的用户界面，而且它赖以构建的技术也得到了充分...            <a href="https://www.cnblogs.com/luolianxi/p/4990232.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:47 developAJ 阅读 (111) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990232" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990233.html">
+    OS X10.10.3正式版和Xcode 6.3正式版下载
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：4.09日，OS X10.10.3正式版 IOS8.3 正式版和 Xcode 6.3 正式版在今天发布，这是 2015 年里面，IOS 系统和 Mac OS 系统，以及 IOS 和 Mac OS 专属开发者工具 Xcode 第一个重大版本更新。 OS X Yosemite 10.10.3 正式版拥...            <a href="https://www.cnblogs.com/luolianxi/p/4990233.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-28 23:46 developAJ 阅读 (99) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990233" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/09/25.html">2015年9月25日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990280.html">
+    AJ学IOS 之二维码学习，快速打开相机读取二维码
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品上一篇文章写了怎么生成二维码，这儿就说说怎么读取吧，反正也很简单，iOS封装的太强大了步骤呢就是这样： 读取二维码需要导入AVFoundation框架#import 1：利用摄像头识别二维码中的内容（模拟器不行）。 2：输入（摄像头）。 3：由会话将摄像头采集到的二维码图像转换成...            <a href="https://www.cnblogs.com/luolianxi/p/4990280.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-25 13:33 developAJ 阅读 (114) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990280" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990281.html">
+    AJ学IOS 之二维码学习，快速生成二维码
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品二维码是一项项目中可能会用到的，iOS打开相机索取二维码的速度可不是Android能比的。。。（Android扫描二维码要来回来回晃。。。）简单不多说，如何把一段资料（网址呀，字符串）变成二维码，直接上代码 步骤： 导入CoreImage框架 #import 通过滤镜CIFilt...            <a href="https://www.cnblogs.com/luolianxi/p/4990281.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-25 13:27 developAJ 阅读 (196) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990281" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/09/22.html">2015年9月22日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990282.html">
+    AJ学IOS 之tableView的下拉放大图片的方法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果tableview下拉的时候上部分图片放大会 二：代码直接上代码，自己研究吧#import &quot;NYViewController.h&quot;//图片的高度const CGFloat NYTopViewH = 350;@interface NYViewController ()@pr...            <a href="https://www.cnblogs.com/luolianxi/p/4990282.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-22 14:33 developAJ 阅读 (74) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990282" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/09/21.html">2015年9月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990283.html">
+    AJ学IOS 之BLOCK的妙用_利用block实现链式编程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：场景我们有个对象人，他有两个方法，一个是学习study，一个是跑步run， 这个人有个怪癖，跑完步之后必须学习，为了实现这个方法并且能调用方便，我们让跑步和学习都回返回自己这个对象作为下一次调用的快捷方式，代码如下： 调用：int main(int argc, const ch...            <a href="https://www.cnblogs.com/luolianxi/p/4990283.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-21 19:42 developAJ 阅读 (259) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990283" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/09/18.html">2015年9月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990284.html">
+    AJ学IOS 之微博项目实战(13)发送微博调用相机里面的图片以及调用相机
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果二：代码相机部分就简单多了，几行代码调用而已，但是如果你要是想实现更多丰富的功能，需要自己写。利用AssetsLibrary.framework，利用这个框架可以获得手机上的所有相册图片，写一个图片选择控制器。- (void)openCamera{ [self ope...            <a href="https://www.cnblogs.com/luolianxi/p/4990284.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-18 08:53 developAJ 阅读 (45) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990284" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990285.html">
+    AJ学IOS 之微博项目实战(12)发送微博自定义工具条代理实现点击事件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果二：封装好的工具条NYComposeToolbar.h带代理方法#import typedef enum { NYComposeToolbarButtonTypeCamera, // 拍照 NYComposeToolbarButtonTypePicture, /...            <a href="https://www.cnblogs.com/luolianxi/p/4990285.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-18 08:46 developAJ 阅读 (57) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990285" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/luolianxi/archive/2015/09/17.html">2015年9月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/luolianxi/p/4990286.html">
+    AJ学IOS 之微博项目实战(11)发送微博自定义TextView实现带占位文字
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AJ分享，必须精品一：效果二：代码：由于系统自带的UITextField:和UITextView:不能满足我们的需求，所以我们需要自己设计一个。UITextField: 1.文字永远是一行，不能显示多行文字 2.有placehoder属性设置占位文字 3.继承自UICo...            <a href="https://www.cnblogs.com/luolianxi/p/4990286.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2015-09-17 15:43 developAJ 阅读 (52) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=4990286" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/luolianxi/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 developAJ
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <div id="bottomProgressBar"></div>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+
+<div id="aplayer" class="aplayer" data-id="316722029" data-lrctype="0" data-server="netease" data-type="playlist" data-fixed="true" data-listfolded="true"></div>
+
+
+
+<div id="rightMenu"></div>
+    </div>
+</body>
+</html>

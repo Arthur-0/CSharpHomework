@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="昨天我在B站上传了一套视频 &amp;quot;《轻松手撕10大排序算法》&amp;quot; ，里面详细讲解了10大排序算法的编码实现、优化思路。只要你认真听了，绝对可以轻松拿下排序算法。建议选择1.5~2倍语速服" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>轻松手撕10大排序算法 - M了个J - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=4KE41eS1YQSSwl64fGzzTUj6ijs-YQFat4AaN-g_jxc" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/mjios/custom.css?v=dDw&#x2B;kUaX1Oe31RMZYvUJ/srVdgg=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=0pGk3D9Ik_jI4q1TALBT2ybOjIePHS_80_0J4DDOQiY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/mjios/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/mjios/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/mjios/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 142128;
+        var currentBlogApp = 'mjios';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'darkgreentrip';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/mjios/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/mjios/">M了个J</a>
+</h1>
+<h2>
+个人微信公众号：<strong>xmg_mj</strong>，B站：<a href="https://space.bilibili.com/325538782" target="_blank">小码哥MJ</a>，Github：<a href="https://github.com/CoderMJLee" target="_blank">CoderMJLee</a>，微博：<a href="http://weibo.com/exceptions" target="_blank">M了个J</a>
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/mjios/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/M%E4%BA%86%E4%B8%AAJ">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/mjios/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+122&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1115</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/mjios/p/12783687.html">轻松手撕10大排序算法</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <blockquote>
+<p>昨天我在B站上传了一套视频<a href="https://www.bilibili.com/video/BV1PT4y13767">《轻松手撕10大排序算法》</a>，里面详细讲解了10大排序算法的编码实现、优化思路。只要你认真听了，绝对可以轻松拿下排序算法。建议选择1.5~2倍语速服用，效果会更佳哦。</p>
+</blockquote>
+<h2 id="个人建议">个人建议</h2>
+<p>个人觉得，一些复杂、难懂的算法，通过视频来学习，效果会更好。原因如下：</p>
+<ul>
+<li>通过视频可以清晰看到每一个算法的每一行代码是如何写出来的（应该先写哪一句，然后再写哪一句）；而文章（博客）呢，基本都是直接将整段代码贴出来，容易让新手打退堂鼓</li>
+<li>在视频里可以增加很多生动形象的动画、描述，有助于快速理解算法思路；而文章呢，就算是有GIF动态图，效果还是欠佳，因为不能像视频那样很方便地自由暂停、重放</li>
+<li>......视频还有很多的好处，就不一一列举了</li>
+</ul>
+<h2 id="课件图片">课件图片</h2>
+<p>下面列出几张视频中用到的课件图片<br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000711472-1221796802.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000714410-879070503.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000717063-1530971423.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000719405-2122010171.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000722408-1099661841.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000724818-1048806755.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000727206-483808916.png" alt=""><br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200427000729558-1005432641.png" alt=""></p>
+<p>如果你特别希望我写点什么方面的内容，也可以留言建议，谢谢。欢迎关注<br>
+<img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200410164835214-554855079.jpg" alt=""></p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-27 00:08</span>&nbsp;
+<a href="https://www.cnblogs.com/mjios/">M了个J</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12783687" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12783687);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 142128, cb_blogApp = 'mjios', cb_blogUserGuid = 'cef4b5eb-0b7b-e211-aa8f-842b2b196315';
+    var cb_entryId = 12783687, cb_entryCreatedDate = '2020-04-27 00:08', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 M了个J
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <script src="https://blog-static.cnblogs.com/files/mjios/highlightjs-line-numbers.min-v2.6.js"></script>
+<script src="https://blog-static.cnblogs.com/files/mjios/clipboard.min.js"></script>
+<script>
+var $postBody = null;
+$(function() {
+    $postBody = $('#cnblogs_post_body');
+
+    remove();
+    backToTop();
+    rank();
+    links();
+
+    if ($postBody.length === 0) {
+        let wx = $('<div id="sidebar_wx" class="sidebar-block">'
+            + '<div class="catListBlogRank">'
+            + '<h3 class="catListTitle">个人微信公众号：xmg_mj</h3>'
+            + '<div id="wx_box"><img src="https://img2020.cnblogs.com/blog/497279/202004/497279-20200409160435413-1173031013.jpg">'
+            + '</div></div></div>')
+        $('#sideBarMain').prepend(wx)
+        return
+    }
+
+    edit();
+    sideBar();
+    addDirs();
+    moveToc();
+    followMJ();
+    markdown();
+    erJi();
+});
+
+function erJi() {
+    let $dividers = $('.ej_divider')
+    if ($dividers.length == 0) return
+    $('#subProb').remove()
+    $dividers.each(function() {
+        let $divider = $(this)
+        let no = $divider.attr('data-no')
+        let $show = $('<span class="ej_show" ' 
+            + 'id="ej_show_' + no + '" ' 
+            + 'data-no="' + no + '">显示答案</span>')
+        $show.click(function() {
+            let $this = $(this)
+            $this.hide()
+
+            let showNo = $this.attr('data-no')
+            $('#ej_analysis_' + showNo).show()
+            $('#ej_answer_' + showNo).show()
+
+            let $options = $('#ej_options_' + showNo)
+            if ($options.length != 0) {
+                let no = $('#ej_title_' + showNo).attr('data-right-option')
+                $options.find('.ej_option').eq(no).addClass('ej_right')
+            }
+        })
+        $divider.before($show)
+    })
+
+    $('.ej_answer').each(function() {
+        let $this = $(this)
+        let $answer = $this.next('pre')
+        if ($answer.length == 0) return
+        let no = $this.attr('data-no')
+        $answer.addClass('ej_answer')
+        .attr('id', 'ej_answer_' + no)
+        .attr('data-no', no)
+    })
+
+    const showText = '显示全部答案'
+    const hideText = '隐藏全部答案'
+    let $btn = $('<span class="ej_showAll">' + showText +'</span>')
+    $btn.click(function() {
+        let $this = $(this)
+        if ($btn.text() == showText) {
+            $this.text(hideText)
+            $('.ej_show').click()
+        } else {
+            $this.text(showText)
+            $('.ej_right').removeClass('ej_right')
+            $('.ej_show').show()
+            $('.ej_answer').hide()
+            $('.ej_analysis').hide()
+        }
+    })
+    $('#toc_title_0').append($btn)
+
+    // 编程题链接
+    $('#ej_title_41').before('<a href="https://github.com/CoderMJLee/NCRE" target="_blank">编程题代码下载</a>');
+}
+
+function links() {
+    $postBody.find('a').each(function() {
+        var $a = $(this);
+        let link = $a.attr('href')
+        if (!link || link.indexOf('#') === 0) return;
+        $a.attr("target", "_blank");
+    });
+}
+
+function edit() {
+    var $topics = $('#topics');
+    var $desc = $topics.find('.postDesc');
+    $topics.prepend($desc);
+
+    // 删除用户名
+    $desc.find('a:first-of-type').remove();
+
+    // 所有的链接
+    var $as = $desc.find('a');
+    $as.remove();
+
+    var $newParent = $('<span class="count-text">' + $desc[0].innerHTML + '</span>');
+    $newParent.click(function() {
+        scrollTo($('#blog-comments-placeholder').offset().top);
+    });
+
+    $desc.empty();
+    $desc.append($newParent).append($as);
+}
+
+function sideBar() {
+    const space = '270px'
+    $('#mainContent').css('float', 'none').css('margin-left', '0');
+    $('#mainContent .forFlow')
+    .css('margin-left', space).css('margin-right', '0');
+    $('#sideBar').css('margin-top', '15px').css('width', '100%');
+    $('#sideBarMain').css('padding-left', space);
+}
+
+function rank() {
+    var $rank = $('#sidebar_scorerank');
+    var $column = $('#blog-sidecolumn');
+    if ($rank.length === 0) {
+        setTimeout(rank, 100);
+        return;
+    }
+    $column.prepend($rank);
+}
+
+function markdown() {
+    if ($postBody.find('.hljs').length === 0) return;
+    $postBody.addClass('cnblogs-markdown');
+    // if (!$postBody.hasClass('cnblogs-markdown')) return;
+
+    addCodeTopBar();
+    showCodeLineNumber();
+}
+
+function addDirs() {
+    if ($postBody.length === 0) return;
+
+    var $toc = $('<div class="toc"></div>');   
+    var $tocList = $('<div class="toc-list"></div>').appendTo($toc);
+
+    var $h2List = null;
+    var $h2 = null;
+    var $h3List = null;
+    var $h3 = null;
+    var $h4List = null;
+    var titleIndex = 0;
+    $postBody.children().each(function() {
+        if (this.tagName !== 'H2'
+            && this.tagName !== 'H3'
+            && this.tagName !== 'H4') return;
+        var $title = $(this);
+        var id = 'toc_title_' + (titleIndex++);
+        $title.attr('id', id);
+        var $li = $('<li><a href="#' + id + '">' + $title.text() + '</a></li>');
+
+        if (this.tagName === 'H2') {
+            $h2 = $li;
+            $h3List = null;
+            if (!$h2List) {
+                $h2List = $('<ul></ul>').appendTo($tocList);
+            }
+            $h2List.append($h2);
+        } else if ($('.cnblogs-markdown').length > 0) {
+            if (this.tagName === 'H3') {
+                $h3 = $li;
+                $h4List = null;
+                if (!$h3List) {
+                    $h3List = $('<ul></ul>').appendTo($h2);
+                }
+                $h3List.append($h3);
+            } else if (this.tagName === 'H4') {
+                var $h4 = $li;
+                if (!$h4List) {
+                    $h4List = $('<ul></ul>').appendTo($h3);
+                }
+                $h4List.append($h4);
+            }
+        }   
+    });
+
+    if (!$h2List) return;
+    $postBody.prepend('<hr>').prepend($toc);
+}
+
+function backToTop() {
+    var $node = $('<div id="back-top">'
+        + '<img src="https://images.cnblogs.com/cnblogs_com/mjios/1435446/o_above_arrow.png">'
+        + '<div>顶部</div>'
+        + '</div>');
+    $node.appendTo($(document.body));
+    $node.click(function() {
+        scrollTo(0);
+    });
+}
+
+function remove() {
+    // 删除posted @ 
+    var fn = function() {
+        var desc = $(this);
+        var html = desc.html();
+        desc.html(html.replace(/posted @/g, ''));
+    };
+    $('.entrylistItemPostDesc').each(fn);
+    $('.postDesc').each(fn);
+
+    // 删除M了个J
+    $('.PostList .postDesc2').each(function() {
+        var $desc = $(this);
+        var html = $desc.html();
+        $desc.html(html.replace(/M了个J/g, ''));
+    });
+}
+
+function small() {
+    return $(document).width() <= 767;
+}
+
+function scrollTo(top) {
+    $('html, body').animate({scrollTop: top}, 200);
+}
+
+function moveToc() {
+    var $toc = $postBody.find('.toc');
+    if ($toc.length === 0) return;
+
+    // 添加事件处理
+    $toc.find('li a').each(function() {
+        var $a = $(this);
+        $a.click(function() {
+            scrollTo($($a.attr('href')).offset().top);
+        });
+    });
+
+    // 新的父节点
+    var $parent = $('<div id="toc-box">' 
+        + '<h3 class="catListTitle">本文目录</h3>' 
+        + '</div>');
+    $parent.append($toc.clone(true));
+    $parent.prependTo($(document.body));
+
+    // 监听滚动
+    $(window).scroll(function() {  
+        var top = $('#header').height() - $(document).scrollTop();
+        if (top <= 1) {
+            $parent.css('position', 'fixed');
+            $parent.css('top', '0');
+        } else {
+            $parent.css('position', 'absolute');
+            $parent.css('top', '137px');
+        }
+    });  
+}
+
+/**
+* 关注MJ
+*/
+function followMJ(){
+    if ($("#div_digg").length === 0){
+        setTimeout(followMJ, 100); 
+        return;
+    }
+
+    $("<div></div>")
+        .append(
+            $("#green_channel_follow")
+            .clone(true)
+            .text("关注 M了个J")
+            .attr("id", "followMJ")
+            )
+        .prependTo("#div_digg");
+}
+
+/**
+* 添加代码顶部工具条
+*/
+function addCodeTopBar() {
+    /* 编程语言 */
+    var languages = {
+        "html": "HTML",
+        "xml": "XML",
+        "svg": "SVG",
+        "mathml": "MathML",
+        "css": "CSS",
+        "clike": "C-like",
+        "js": "JavaScript",
+        "abap": "ABAP",
+        "apacheconf": "Apache Configuration",
+        "apl": "APL",
+        "arff": "ARFF",
+        "asciidoc": "AsciiDoc",
+        "adoc": "AsciiDoc",
+        "asm6502": "6502 Assembly",
+        "aspnet": "ASP.NET (C#)",
+        "autohotkey": "AutoHotkey",
+        "autoit": "AutoIt",
+        "shell": "Bash",
+        "basic": "BASIC",
+        "csharp": "C#",
+        "dotnet": "C#",
+        "cpp": "C++",
+        "cil": "CIL",
+        "csp": "Content-Security-Policy",
+        "css-extras": "CSS Extras",
+        "django": "Django/Jinja2",
+        "jinja2": "Django/Jinja2",
+        "dockerfile": "Docker",
+        "erb": "ERB",
+        "fsharp": "F#",
+        "gcode": "G-code",
+        "gedcom": "GEDCOM",
+        "glsl": "GLSL",
+        "gml": "GameMaker Language",
+        "gamemakerlanguage": "GameMaker Language",
+        "graphql": "GraphQL",
+        "hcl": "HCL",
+        "http": "HTTP",
+        "hpkp": "HTTP Public-Key-Pins",
+        "hsts": "HTTP Strict-Transport-Security",
+        "ichigojam": "IchigoJam",
+        "inform7": "Inform 7",
+        "javastacktrace": "Java stack trace",
+        "json": "JSON",
+        "jsonp": "JSONP",
+        "latex": "LaTeX",
+        "emacs": "Lisp",
+        "elisp": "Lisp",
+        "emacs-lisp": "Lisp",
+        "lolcode": "LOLCODE",
+        "markup-templating": "Markup templating",
+        "matlab": "MATLAB",
+        "mel": "MEL",
+        "n1ql": "N1QL",
+        "n4js": "N4JS",
+        "n4jsd": "N4JS",
+        "nand2tetris-hdl": "Nand To Tetris HDL",
+        "nasm": "NASM",
+        "nginx": "Nginx",
+        "nsis": "NSIS",
+        "objectivec": "Objective-C",
+        "ocaml": "OCaml",
+        "opencl": "OpenCL",
+        "parigp": "PARI/GP",
+        "objectpascal": "Object Pascal",
+        "php": "PHP",
+        "php-extras": "PHP Extras",
+        "plsql": "PL/SQL",
+        "powershell": "PowerShell",
+        "properties": ".properties",
+        "protobuf": "Protocol Buffers",
+        "q": "Q (kdb+ database)",
+        "jsx": "React JSX",
+        "tsx": "React TSX",
+        "renpy": "Ren'py",
+        "rest": "reST (reStructuredText)",
+        "sas": "SAS",
+        "sass": "Sass (Sass)",
+        "scss": "Sass (Scss)",
+        "sql": "SQL",
+        "soy": "Soy (Closure Template)",
+        "tap": "TAP",
+        "toml": "TOML",
+        "tt2": "Template Toolkit 2",
+        "ts": "TypeScript",
+        "vbnet": "VB.Net",
+        "vhdl": "VHDL",
+        "vim": "Vim",
+        "visual-basic": "Visual Basic",
+        "vb": "Visual Basic",
+        "wasm": "WebAssembly",
+        "wiki": "Wiki markup",
+        "xeoracube": "XeoraCube",
+        "xojo": "Xojo (REALbasic)",
+        "xquery": "XQuery",
+        "yaml": "YAML",
+        "oc": "Objective-C",
+        "objc": "Objective-C",
+        "object-c": "Objective-C",
+        "objective-c": "Objective-C"
+    };
+
+    var no = 0;
+    doCodePre(function() {
+        no++;
+
+        var $pre = $(this);
+        /* 顶部工具条 */
+        var $top = $('<div class="code-top"></div>');
+        $pre.prepend($top); 
+
+        /* 复制代码 */
+        var copyId = "copy-target-" + no;
+        $pre.find('code').attr('id', copyId);
+        $top.append('<div class="copy-code" data-clipboard-target="#'
+            + copyId +
+            '">复制代码</div>');
+
+        let clz = $pre.find('code')[0].className;
+
+        clz = clz.split(' ')[0].replace('language-', '').toLowerCase()
+        let language = languages[clz];
+        if (!language) {
+            if (clz.length == 1) {
+                language = clz.toUpperCase()
+            } else {
+                language = clz.charAt(0).toUpperCase() + clz.slice(1)
+            }
+        }
+        $top.append('<div class="code-language">' + language + '</div>');
+    });
+    
+
+    /* 复制代码 */
+    var clipboard = new ClipboardJS('.copy-code');
+    clipboard.on('success', function(e) {
+        // console.info('Trigger:', e.trigger);
+    });
+
+    clipboard.on('error', function(e) {
+        // console.error('Trigger:', e.trigger);
+    });
+}
+
+/**
+* 显示代码行号
+*/
+function showCodeLineNumber() {
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+}
+
+function doCodePre(fn) {
+    var $pre = $postBody.find("pre");
+    if ($pre.find('.hljs').length <= 0) return;
+    $pre.each(fn);
+}
+</script>
+    </div>
+</body>
+</html>

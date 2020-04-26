@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="taiko是一个免费的开源浏览器自动化工具，由ThoughtWorks开发。它是一个node的库，Taiko使用Chrome Devtools API，它是为测试现代web应用程序而构建的。" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>使用Taiko + Gauge进行自动化测试（一） - 句幽 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/uoyo/custom.css?v=TZbXpieXQG/10X3L0iBgILcLZKA=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/custom/bundle-custom-mobile.min.css?v=-Yh290MhQyDeXLmvKTSses9H6-49lqbpXFh55zvS0w8" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/uoyo/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/uoyo/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/uoyo/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 401017;
+        var currentBlogApp = 'uoyo';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Custom';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/uoyo/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/uoyo/">句幽</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/uoyo/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%8F%A5%E5%B9%BD">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/uoyo/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+27&nbsp; </span>
+<span id="stats_article_count">文章 - 
+1&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+406</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/uoyo/p/12401366.html">使用Taiko + Gauge进行自动化测试（一）</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+    <div id="cnblogs_post_description" style="display: none">
+        taiko是一个免费的开源浏览器自动化工具，由ThoughtWorks开发。它是一个node的库，Taiko使用Chrome Devtools API，它是为测试现代web应用程序而构建的。
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <p><div class="toc"><div class="toc-container-header">目录</div><ul><li><a href="#初识taiko">初识Taiko</a></li><li><a href="#环境安装">环境安装</a></li><li><a href="#尝试taiko">尝试Taiko</a></li><li><a href="#taiko-执行过程">taiko 执行过程</a></li><li><a href="#结合gauge编写用例">结合Gauge编写用例</a><ul><li><a href="#使用gauge">使用Gauge</a></li></ul></li><li><a href="#总结">总结</a></li></ul></div></p>
+<h2 id="初识taiko"><strong>初识Taiko</strong></h2>
+<p>先来了解一下什么是Taiko：“Taiko是一个<strong>免费</strong>的<strong>开源浏览器自动化工具</strong>，由ThoughtWorks开发。它是一个node的库，Taiko使用Chrome Devtools API，它是为测试现代web应用程序而构建的。”</p>
+<p>所以对于Taiko来说： 1、它是为测试<strong>Web应用</strong>而生 2、它基于Chrome浏览器</p>
+<p>关于Taiko简介中所提到的<strong>ThoughtWorks</strong>，如果有不了解的同学可以跳转<a href="https://www.thoughtworks.com/cn/">至此进行了解</a>（<em>开发团队可能也将成为您框架选型评估的决策项</em>）。</p>
+<h2 id="环境安装"><strong>环境安装</strong></h2>
+<p>在安装Taiko之前，请确保您已经安装了NodeJs环境。如果您还没有安装nodejs，请跳转至<a href="https://nodejs.org/en/">Node官网</a> 进行安装。</p>
+<p>对于开发工具，这里强烈推荐您使用 <strong>VS Code</strong>（<em>超强开发工具之一，不做解释</em>）。若您还未安装VS Code，请跳转至<a href="https://code.visualstudio.com/">VS Code官网</a>进行下载安装。</p>
+<p>在确保安装完成前两项基本支持环境之后，我们就需要来安装Taiko了。</p>
+<p>可以在桌面新建一个文件夹，比如“Taiko Demo”。打开 VS Code，点击左上角的“文件”，选择“打开文件夹”，并且选择刚才创建的文件。</p>
+<p>在VS Code中打开“终端”。终端是VS Code 对命令控制台的集成，比如CMD,Powershell等，可以让您不离开IDE就完成一系列操作。 选择VS Code上方的 “终端”，选择“新建终端”，当然您也可以使用快捷键（ctrl + shift + `）。</p>
+<p><img src="https://images.cnblogs.com/cnblogs_com/uoyo/1659783/o_200303022349QQ%E6%88%AA%E5%9B%BE20200303102338.png" alt="x"></p>
+<p>新建完成后，您将看到这样的窗口。（后续的操作将频繁用到此操作，请进行熟悉）。</p>
+<p>接下来，在终端输入该命令:</p>
+<blockquote>
+<p>npm install -g taiko</p>
+</blockquote>
+<p>该内容为向全局环境安装<strong>taiko</strong> Node包。安装时间可能会有点久，因为taiko里面内置了一个100MB+的<strong>Chromium</strong>浏览器。</p>
+<h2 id="尝试taiko"><strong>尝试Taiko</strong></h2>
+<p>在终端输入 <code>taiko</code> ，就可以进入taiko的命令控制台。</p>
+<p>如果您在VS Code终端得到错误提示:&quot;因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。&quot; 请使用该方法进行处理：<a href="https://www.cnblogs.com/guoyachao/p/11593637.html">《Powershell 无法运行脚本的处理方法》</a>。</p>
+<p>进入taiko后您将得到这样的显示:</p>
+<blockquote>
+<p>Version: 1.0.4 (Chromium:81.0.3994.0)<br>
+Type .api for help and .exit to quit<br>
+&gt;</p>
+</blockquote>
+<p>接下来输入 <code>openBrowser()</code>，您将看到taiko会开启一个浏览器。 然后执行 <code>goto(&quot;baidu.com&quot;)</code>,浏览器将跳转到百度首页。然后再次执行 <code>write(&quot;博客园 句幽&quot;)</code>，浏览器将在输入框内填充对于的内容。最后执行<code>click(&quot;百度一下&quot;)</code>，将模拟操作点击一下搜索。</p>
+<p>接下来输入 <code>.code</code> ，您将看到刚才操作步骤的代码。 这是taiko为您自动生成的。</p>
+<p>在VS Code中新建文件“first-case.js”。然后将刚才taiko为我们生成的代码拷贝下来，复制到文件中。</p>
+<p>此时该文件中的内容就相当于完成了我们第一个Case： “打开浏览器，输入内容，点击搜索”。</p>
+<h2 id="taiko-执行过程"><strong>taiko 执行过程</strong></h2>
+<p>那么现在您可能会问，taiko是怎么执行的呢？ 如果我要扩展一个用例该如何扩展呢？</p>
+<p>先来看看我们最开始输入的几个命令： <code>openBrowser</code>、<code>goto</code>、<code>write</code>、<code>click</code>。 这些都是taiko为我们提供的内置命令。</p>
+<p>也就是说 taiko 其实就是为咱们提供了这些基于浏览器的基础操作指令，而我们就可以用这些各种命令进行排列组合，完成对应的操作。比如 “点击”、“按压”、“输入”、“选择元素”等等操作，而这些所有的操作命令都在 <a href="https://taiko.dev">taiko 官网</a> 为我们标注出来了。我们只需要选取需要的命令进行操作就可以了。</p>
+<p>比如咱们更改一下操作:</p>
+<blockquote>
+<p>await openBrowser();<br>
+await goto(&quot;baidu.com&quot;);<br>
+await write(&quot;句幽 博客园&quot;);<br>
+await link('句幽- 博客园').exists();<br>
+await click(link('句幽- 博客园'));</p>
+</blockquote>
+<p>这样将会在百度搜索句幽的博客园，然后在点击跳转到句幽的博客园。</p>
+<p>而这每一个步骤都将会有一个验证，比如<code>await link('句幽- 博客园').exists();</code>，如果该页面没有获取到名称为&quot;句幽- 博客园&quot;的元素，将会验证失败。</p>
+<p>而将这些步骤都转换为js代码，放置在咱们的<code>first-demo.js</code> 文件中，然后在终端运行:</p>
+<blockquote>
+<p>taiko first-demo.js</p>
+</blockquote>
+<p>您将看到这样的结果:</p>
+<blockquote>
+<p>[PASS] Browser opened<br>
+[PASS] Navigated to URL <a href="http://baidu.com">http://baidu.com</a><br>
+[PASS] Wrote taiko test automation into the focused element.<br>
+[PASS] Clicked element matching text &quot;百度一下&quot; 1 times<br>
+[PASS] Browser closed</p>
+</blockquote>
+<p>成功和失败都可以直观的显示。 这些用例步骤放置到对应的文件中，最后再运行就可以得到测试结果啦。</p>
+<h2 id="结合gauge编写用例"><strong>结合Gauge编写用例</strong></h2>
+<p>现在咱们已经了解到了 taiko 是怎么使用的，它提供了各类操作浏览器的命令，供我们排列组合完成模拟操作，最终得到自动化测试结果。</p>
+<p>那么您觉得它够简单吗？如果要和团队一同维护和编辑用例，它很方便吗？ 显然不太好用。</p>
+<p>所以此刻我们将介绍另外的一个工具：Gauge。 它将以 taiko 提供的命令操作为基础，用更自然的操作方式来完成对应的操作。</p>
+<p>在vs code的终端中输入这样的命令:</p>
+<blockquote>
+<p>npm install -g @getgauge/cli</p>
+</blockquote>
+<p>运行完成之后就完成了Gauge的安装。当然在Gauge的官网，它还提供了一个<a href="https://docs.gauge.org/getting_started/installing-gauge.html?os=windows&amp;language=csharp&amp;ide=vscode">安装包</a>。 以何种方式安装取决于你，不过此处我强烈建议您使用 npm的安装方式。</p>
+<p>Gauge还提供了vs code的扩展支持，您可以在VS Code的扩展中（最左侧按钮）进行安装。</p>
+<p>接着，在桌面新建一个文件夹<code>gauge-demo</code>，然后在vscode中打开。</p>
+<p>在终端中输入：</p>
+<blockquote>
+<p>gauge init js</p>
+</blockquote>
+<p>运行完成后，将会得到Gauge的初始化项目。（vs code的扩展也提供了创建的命令，不过由于兼容问题经常会出现延迟，所以我建议您使用命令来初始化项目）。</p>
+<p><img src="https://images.cnblogs.com/cnblogs_com/uoyo/1659783/o_200303031119QQ%E6%88%AA%E5%9B%BE20200303111034.png" alt="x"></p>
+<p><em>初始化之后的项目如图。</em></p>
+<h3 id="使用gauge"><strong>使用Gauge</strong></h3>
+<p>在使用之前，先为大家说明一下，Gauge它充当着一个什么样的角色： 首先要明白，taiko为我们操作浏览器提供了便捷的指令，它使用js来编写。但是这就为咱们测试团队建立了一个障碍，首先全员都得熟悉JS的写法，比如<code>await</code>等关键字等等，这无形提高了技术操作门槛。还有一点，我们所有的案例都将已大量js片段代码来维护，无疑增大了维护成本。</p>
+<p>那么gauge干了一个什么操作呢？ 它建立于taiko之上，允许测试人员将某某关键词与某段JS相对应,比如（&quot;跳转&quot; 对应 taiko 的<code>Goto</code>）。 这样有什么好处呢？ 团队并不需要全员掌握JS了。频繁的操作用例可以统一为共同的指令，增加可维护性。</p>
+<p>所以现在来看看Gauge提供的初始化项目，您很快就能明白：</p>
+<p>查看<code>test</code>文件夹下面的<code>step_implementation.js</code> 文件。这里查看它的部分代码:</p>
+<pre><code class="language-js">step(&quot;Goto getgauge github page&quot;, async () =&gt; {
+    await goto('https://github.com/getgauge');
+});
+</code></pre>
+<p>也就是说'Goto getgauge github page' 对应着 taiko 的操作 <strong>await goto('<a href="https://github.com/getgauge">https://github.com/getgauge</a>');</strong>。</p>
+<p>然后再看看<code>specs</code>文件夹下面的<code>example.spec</code>。对应部分为:</p>
+<blockquote>
+<p>* Goto getgauge github page</p>
+</blockquote>
+<p>这样，用例编写人员只需要写出这样的语句就可以完成操作了。而测试团队中的某一小部分人员，负责js对应关系的编写，功能测试人员负责用例的编写，就能很快的完成测试工作。</p>
+<p>接下来我们来尝试使用它，在<code>test</code>文件夹下面的<code>step_implementation.js</code> 文件中增加语句:</p>
+<pre><code class="language-js">step(&quot;跳转到句幽博客&quot;, async () =&gt; {
+    await goto(&quot;baidu.com&quot;);
+    await write(&quot;句幽 博客园&quot;);
+    await link('句幽- 博客园').exists();
+    await click(link('句幽- 博客园'));
+});
+</code></pre>
+<p>这部分代码熟悉吗？ 这是咱们刚开始使用taiko所写的代码。现在我们将它包裹起来，对应到了<code>跳转到句幽博客</code> 这一指令。然后再到<code>specs</code>文件夹下面的<code>example.spec</code>添加对应操作：</p>
+<blockquote>
+<p>## 跳转测试<br>
+* 跳转到句幽博客</p>
+</blockquote>
+<p>文本指令 Gauge 采用了MarkDown的写法。我们现在无需过去去了解markdown，只需要知道在spec文件中：  <code>#</code> 代表的测试项目名，比如您可以命名（# 考勤分析测试），而<code>##</code> 代表了测试用例，比如您可以命名(## 添加考勤人员)。 <code>*</code> 代表了步骤，步骤的名称来源于您从js文件里的关键词对应。</p>
+<p>最后在终端中执行:</p>
+<blockquote>
+<p>gauge run [你的spec的文件名]</p>
+</blockquote>
+<p>就可以进行测试，最终生成测试报告。</p>
+<p>如果您安装了VS Code的Gauge插件，那么在进入'.spec'文件后，您可以看到每一个用例上都有一个运行的按钮。点击就可以执行用例。</p>
+<h2 id="总结"><strong>总结</strong></h2>
+<p>本文以一个小案例来为大家介绍了什么是Taiko和Gauge，以及如何使用它。那么和传统的自动化测试相比，它有什么优势呢？以及在自动化测试框架百花齐放的今天，它和其它的框架相比有什么优劣势呢？（<em>比如和Robot Framework相比</em>）。以BDD（行为驱动开发）为核心理念的Taiko，是如何践行BDD的呢？ 如何编写出更复杂的用例以及如何建立好的分区方式便团队成员维护等问题 都会在后期文章中为大家进行介绍。</p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-03-03 11:41</span>&nbsp;
+<a href="https://www.cnblogs.com/uoyo/">句幽</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12401366" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12401366);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 401017, cb_blogApp = 'uoyo', cb_blogUserGuid = '4660842a-34b1-4866-476c-08d52fc34315';
+    var cb_entryId = 12401366, cb_entryCreatedDate = '2020-03-03 11:41', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 句幽
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <div class="Snow">
+    <canvas id="Snow"></canvas>
+</div>
+
+<!--下雪特效-->
+<script src="https://blog-static.cnblogs.com/files/uoyo/snoweffects.js"></script>
+
+<script type="text/javascript" language="javascript"> 
+//为右下角推荐推荐区域添加关注按钮
+window.onload = function () {
+    $('#div_digg').prepend('<div style="padding-bottom: 5px" id="please_follow"><span class="icon_favorite" style="padding-top: 2px"></span><a onclick="follow(\'4660842a-34b1-4866-476c-08d52fc34315\');" href="javascript:void(0);" style="font-weight: bold; padding-left:5px;font-size: 14px; vertical-align: super;color: #ff5d47;">关注一下楼主吧</a> </div>');
+}
+</script>
+
+<!--代码复制-->
+<script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+<!--主题-->
+<script src="https://blog-static.cnblogs.com/files/uoyo/gshang.2019.10.27.1.js"></script>
+
+<!-- zoom.js 的样式 -->
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/uoyo/zoom.css">
+<!-- Bootstrap 的 transition.js cdn（过渡动画插件）-->
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<!-- zoom.js 核心代码 -->
+<script src="https://blog-static.cnblogs.com/files/uoyo/zoom.js"></script>
+<script type='text/javascript'>$('#cnblogs_post_body img').attr('data-action', 'zoom');</script>
+    </div>
+</body>
+</html>

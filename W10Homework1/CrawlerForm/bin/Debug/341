@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="1. 为什么需要进行识别框架间的转化 由于问题的不同和证据处理人员知识背景及偏好的不同，同一个证据处理人员在对不同问题，不同的证据处理人员针对同一个问题，都可能构建多个不同的识别框架。这些识别框架中包" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>基于两维语义的证据推理方法研究 - 郑瀚Andrew.Hann - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=4KE41eS1YQSSwl64fGzzTUj6ijs-YQFat4AaN-g_jxc" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=0pGk3D9Ik_jI4q1TALBT2ybOjIePHS_80_0J4DDOQiY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/LittleHann/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/LittleHann/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/LittleHann/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 152568;
+        var currentBlogApp = 'LittleHann';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'darkgreentrip';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/LittleHann/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/LittleHann/">Han Zheng, Researcher of Computer Science,  Alibaba Cloud Corp, China</a>
+</h1>
+<h2>
+阿里云安全能力建设团队长期招聘，欢迎对安全智能、大数据安全分析、入侵检测、恶意代码自动化分析领域感兴趣同学来加入，团队社招JD: https://job.alibaba.com/zhaopin/position_detail.htm?trace=qrcode_share&positionCode=GP600129。也欢迎在校学生前来获得实习机会。如有兴趣请将您的个人简历发送到我的工作邮箱：zhenghan.zh@alibaba-inc.com。
+Welcome to contact me by Wechat：LittleHann or email：zhenghan.zh@alibaba-inc.com。知乎专栏：https://zhuanlan.zhihu.com/cyber-security-data-science
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/LittleHann/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E9%83%91%E7%80%9AAndrew.Hann">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/LittleHann/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+662&nbsp; </span>
+<span id="stats_article_count">文章 - 
+8&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+428</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/LittleHann/p/12758954.html">基于两维语义的证据推理方法研究</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <h1>1. 为什么需要进行识别框架间的转化</h1>
+<p>由于问题的不同和证据处理人员知识背景及偏好的不同，同一个证据处理人员在对不同问题，不同的证据处理人员针对同一个问题，都可能构建多个不同的识别框架。这些识别框架中包含的元素的数目、元素含义等方面可能有所差异，识别框架之间的逻辑关系也可能不同。</p>
+<p>而证据推理方法需要在同一个识别框架下对多批证据进行融合，为此，需要对多个识别框架进行分类，并确定识别框架等价及其相互之间的转化方法。</p>
+<p>&nbsp;</p>
+<h1>2. 识别框架的分类</h1>
+<h2><span style="color: #888888;">0x1：识别框架的分类</span></h2>
+<p>一般来说，<strong>识别框架的类型不同，信息处理方法也不同。每种识别框架就代表了一种看待目标对象的抽象视角。</strong></p>
+<p>就单个识别框架来说，根据识别框架中元素的不同，可以将识别框架分为多种类型。</p>
+<h3><span style="color: #ff0000;">1、平行框架</span></h3>
+<p>设&nbsp;&Theta;<sub>1</sub>，&Theta;<sub>2</sub>，.....，&Theta;<sub>n&nbsp;</sub>为 n 个不同的识别框架，若这 n 个框架分别从不同的角度处理同一个问题，则称这 n 个框架为平行框架。</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425192909340-163848646.png" alt="" width="260" height="217"></p>
+<p>例如，在风险评估时，甲对某个指标比较熟悉，他对该指标所反映的风险程度构建识别框架：</p>
+<p style="text-align: center;">&Theta;<sub>甲</sub> = {低、较低、中、较高、高}&nbsp;</p>
+<p style="text-align: left;">并给出了相应的信度函数。</p>
+<p style="text-align: left;">而乙对该指标的熟悉程度相对较弱，构建的风险程度识别框架为：</p>
+<p style="text-align: center;">&Theta;<sub>乙</sub>&nbsp;= {低、中、高}&nbsp;</p>
+<p>也给出了相应的信度函数。</p>
+<p>可以看出，由于专家自身知识背景和个人偏好的不同，对同一个问题构造的识别框架也不同，此时的识别框架&nbsp;&Theta;<sub>甲</sub> 和&nbsp;&Theta;<sub>乙</sub> 为两个平行框架。</p>
+<p><strong>一般来说，平行框架是针对同一个问题不同方面，或不同信息源针对同一问题某个方面而构建的，其特性和概念是相容的，通常有公共的精细框架，故平行框架是相容框架</strong>。</p>
+<p><span style="color: #ff6600;"><strong>笔者思考</strong></span>：</p>
+<p><strong>对于安全数据分析来说，一项基础工作就是所谓的日志采集，例如进程启动日志、进程网络外连日志、进程写文件日志、文件落盘日志。这些不同的日志代表了当前系统行为的一个描述切面。从识别框架的角度来看，基于不同的日志可以抽象为不同的离散状态集（集合中的每一个状态代表了一个系统状态描述）</strong>。</p>
+<h3><span style="color: #ff0000;">2、递进框架</span></h3>
+<p>设&nbsp;&Theta;<sub>1</sub>，&Theta;<sub>2</sub>，.....，&Theta;<sub>n&nbsp;</sub>为 n 个不同的识别框架，若这 n 个框架中后一个识别框架中的元素用来修饰（说明）前一个识别框架中的元素。</p>
+<ul>
+<li>第一层识别框架用于抽象描述待处理问题；</li>
+<li>第二层识别框架用于描述第一层识别框架的可信度；</li>
+<li>此后类推..</li>
+</ul>
+<p>则称这 n 个框架为 n 维递进框架。</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425195909523-243068723.png" alt="" width="337" height="165"></p>
+<p>例如，在科学基金立项评审的同行评议表中，&ldquo;综合评价&rdquo;和&ldquo;熟悉程度&rdquo;可以看做一个两维递进识别框架。</p>
+<ul>
+<li>&ldquo;综合评价&rdquo;是第一层识别框架，&Theta;<sub>1</sub>&nbsp;= {优、良、中、差}&nbsp;</li>
+<li>&ldquo;熟悉程度&rdquo;是第二层识别框架，&Theta;<sub>2</sub>，用来修饰说明专家给出的&ldquo;综合评价&rdquo;的不确定程度&nbsp;</li>
+</ul>
+<h3><span style="color: #ff0000;">3、混合框架</span></h3>
+<p>设&nbsp;&Theta;<sub>1</sub>，&Theta;<sub>2</sub>，.....，&Theta;<sub>n&nbsp;</sub>为 n 个不同的识别框架，若这 n 个框架中并列框架和递进框架并存，则称这 n 个框架为混合框架。</p>
+<p>例如，在科学基金立项评审的同行评议表中，&ldquo;综合评价&rdquo;、&ldquo;资助意见&rdquo;、&ldquo;熟悉程度&rdquo;三个框架本质上是一组混合框架，</p>
+<ul>
+<li>&ldquo;综合评价&rdquo;、&ldquo;资助意见&rdquo;是两个平行框架</li>
+<li>&ldquo;熟悉程度&rdquo;是用来修饰&ldquo;综合评价&rdquo;和&ldquo;资助意见&rdquo;的</li>
+</ul>
+<p><strong>在多个识别框架的构建过程中，平行框架通常是针对决策问题属性的特点或决策者根据自己的知识背景和偏好而构建的；而递进框架通常是用来反映决策主体与决策过程特征信息的，往往反映了决策者给出的决策信息质量</strong>。</p>
+<p>&nbsp;</p>
+<h1>3. 识别框架的等价性</h1>
+<h2><span style="color: #808080;">0x1：识别框架等价定义</span></h2>
+<p>为了便于将不同识别框架上的信息进行融合，一般要求将不同识别框架上的信息转化到同一个识别框架上，为此，需要对不同识别框架的等价性和评估等价的概念进行界定。</p>
+<p>设两个识别框架分别为&nbsp;&Theta; = {&theta;<sub>n</sub>，n=1,2,....,N<sub>1</sub>} 和&nbsp;&Omega; = {&omega;<sub>n</sub>，n=1,2,....,N<sub>2</sub>}，若对<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425202343957-1571811725.png" alt="" width="51" height="17">，都存在唯一的&nbsp;&omega;<sub>n</sub> 与之等价，记为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425202546108-1825362258.png" alt="" width="66" height="26"></p>
+<p style="text-align: left;">反之，若对<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425202618168-46938632.png" alt="" width="57" height="19">，都存在唯一的&nbsp;&theta;<sub>n</sub> &isin;&nbsp;&Theta;&nbsp;与之等价，则称<strong>识别框架&nbsp;&Theta; 和&nbsp;&Omega; 等价（一正一反都成立）</strong>，记为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425202810987-1996903527.png" alt="" width="69" height="22"></p>
+<p style="text-align: left;">例如，在对汽车的发动机的噪声进行评价时，存在两个识别框架，</p>
+<ul>
+<li style="text-align: left;">识别框架&nbsp;&Theta; = {非常吵、吵、一般、静、非常静}</li>
+<li style="text-align: left;">识别框架&nbsp;&Omega; = {差、较差、中、良、优}</li>
+</ul>
+<p style="text-align: left;">两个识别框架的元素，都彼此存在唯一的等价元素，则<strong>识别框架&nbsp;&Theta; 和&nbsp;&Omega; 等价</strong>。</p>
+<p>显然，<strong>若识别框架&nbsp;&nbsp;&Theta; 和&nbsp;&Omega; 等价，则有 N<sub>1</sub> = N<sub>2</sub></strong>。</p>
+<p>设&nbsp;&Theta; 和&nbsp;&Omega; 为两个等价的识别框架，且在两个识别框架下的基本可信度分配分别为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425205115474-960042340.png" alt="" width="257" height="66">&nbsp;</p>
+<p>则当且仅当 N1 = N2 且&nbsp;&beta;<sub>1,n</sub>&nbsp;=&nbsp;&gamma;<sub>2,n</sub>&nbsp;成立时（n=1,2,...,N<sub>1</sub>），称<strong>两个基本可信度分配 m1 与 m2 等价</strong>，记为</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425205402578-1195635899.png" alt="" width="91" height="28"></p>
+<h2><span style="color: #808080;">0x2：识别框架元素间概率等价</span></h2>
+<p>这里需要注意的是，实际情况中，完全等价的识别框架是比较少见的，而是彼此错位的，即彼此相容而又不完全一一对应（N<sub>1</sub> &ne; N<sub>2</sub>），且一个框架中的元素（&theta; &isin; &Theta;）并不一定恰好对应于另一个框架中的某个元素（&omega; &isin; &Omega;），而是以一定程度对应于另一框架中多个元素。</p>
+<p>为此，这里给出识别框架元素间概率等价的概念定义。</p>
+<p>若&nbsp;&theta;<sub>1,n</sub> &isin;&nbsp;&Theta; 以&nbsp;&alpha;<sub>2,l</sub>(l=1,2,....,N<sub>2</sub>) 的程度对应于&nbsp;&omega;<sub>l</sub> &isin;&nbsp;&Omega;，其中</p>
+<p style="text-align: center;">0 &le;&nbsp;&alpha;<sub>2,l</sub> &le; 1，<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425210910267-484851488.png" alt="" width="69" height="42">，即满足概率完备性</p>
+<p style="text-align: left;">则称<strong>框架&nbsp;&Theta; 中的元素&nbsp;&theta;<sub>1,n</sub> 与框架&nbsp;&Omega; 中的元素集 {(&omega;<sub>l</sub>，&alpha;<sub>2,l</sub>)，l=12,....,N<sub>2</sub>} 以概率等价</strong>，记为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211111978-137348340.png" alt=""></p>
+<p>在多属性群决策中，上述等价关系通常是由决策者提供的，其中意味着元素&nbsp;&theta;<sub>1,n</sub>&nbsp;&isin;&nbsp;&Theta; 的效用和&nbsp;{(&omega;<sub>l</sub>，&alpha;<sub>2,l</sub>)，l=12,....,N<sub>2</sub>} 的期望效用</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211433723-1934937390.png" alt="" width="176" height="53">&nbsp;</p>
+<p>相等。</p>
+<p>若对<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211514369-1274108764.png" alt="" width="178" height="24">，均有<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211551397-1925362925.png" alt="" width="237" height="24">；反过来，对<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211619760-1955044532.png" alt="" width="192" height="22">，均有<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211637223-791603147.png" alt="" width="250" height="23">，则称识别框架&nbsp;&Theta; 和&nbsp;&Omega; 以概率等价，记为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200425211727614-460572385.png" alt=""></p>
+<h2><span style="color: #808080;">0x3：识别框架之间等价关系的逻辑分类</span></h2>
+<p>因此，从逻辑关系上来说，识别框架可以分为：</p>
+<ul>
+<li>平行框架</li>
+<li>递进框架</li>
+<li>混合框架</li>
+</ul>
+<p>从转化关系（等价关系）来说，有</p>
+<ul>
+<li>粗化&nbsp;</li>
+<li>细化</li>
+<li>概率转化</li>
+</ul>
+<p>&nbsp;</p>
+<h1>4. 两维语义信息的表示及融合方法</h1>
+<p>传统的基于单层识别框架的决策在信息的表示上，未能反映决策者提供的决策信息的质量，因此信息对多个意见的合成具有重要作用，直接影响了决策质量。也就是所谓的训练样本的纯度和丰富度决定了模型的最终效果。</p>
+<p>因此，有必要增加一维信息反映专家决策知识和行为特征，并对原有决策信息进行修正，以更加精确有效地利用专家信息。</p>
+<p>我们本章来讨论两维语义信息的语义表示及集结方法。</p>
+<h2><span style="color: #888888;">0x1：两维语义信息的内涵</span></h2>
+<p>设 H<sub>n</sub>(n=1,2,...,N) 和 S<sub>t</sub>(t=1,2,...,T) 分别为预先定义好的语言评价集 H 和 S 中的第 n 个和第 t 个元素，其中 H<sub>n</sub> 和 S<sub>t</sub> 满足以下几个特性：</p>
+<ul>
+<li><strong>有序性</strong>：当 i &gt; j 时，<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426160219948-1893010749.png" alt="" width="51" height="18">，<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426160245209-1775269497.png" alt="" width="42" height="18"></li>
+<li>
+<p><strong>极大化运算和极小化运算</strong>：当<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426160320812-1063821568.png" alt="" width="91" height="17">时，有 max(H<sub>i</sub>，H<sub>j</sub>) = H<sub>i</sub>，max(S<sub>i</sub>，S<sub>j</sub>) = S<sub>i</sub>，min(H<sub>i</sub>，H<sub>j</sub>) = H<sub>j</sub>，min(S<sub>i</sub>，S<sub>j</sub>) = S<sub>j</sub></p>
+</li>
+</ul>
+<p>对一个判决问题，决策者同时构建了两个识别框架（语言短语集）H = {H<sub>1</sub>，H<sub>2</sub>，....，H<sub>N</sub>} 和 S = {S<sub>1</sub>，S<sub>2</sub>，....，S<sub>T</sub>}，使用了一、二两个维度识别框架中的评价信息描述自己对于某一事物的评判。</p>
+<ul>
+<li>其中第一维识别框架中的评价信息 H<sub>n</sub>(n=1,2,....,N) 是用来描述待决策对象属性的，是对决策对象属性的评价</li>
+<li>第二维识别框架中的评价信息 S<sub>t</sub>(t=1,2,....,T) 是用来反映决策者知识证据的属性特征的，是对第一维评价信息 H<sub>n</sub> 质量的评价</li>
+</ul>
+<p>这种由两个维度形成的语言评价信息 (H<sub>n</sub>，S<sub>t</sub>) 称为<strong>两维语义评价信息</strong>。</p>
+<p>例如，在国家自然科学基金立项评估中，同行评议意见表中预先构建了两个语言评估框架：</p>
+<ul>
+<li>专家科研项目质量的评价：H<sub>n</sub> = {H<sub>4</sub>(优)，H<sub>3</sub>(良)，H<sub>2</sub>(中)，H<sub>1</sub>(差)}</li>
+<li>反映同行专家对自己给出质量评价 H<sub>n</sub> 的评价：S =&nbsp;{S<sub>3</sub>(熟悉)，S<sub>2</sub>(较熟悉)，S<sub>1</sub>(部分熟悉)}</li>
+</ul>
+<p>同行评议专家提供评价信息 (H<sub>n</sub>，S<sub>t</sub>)(n=1,2,3,4; t=1,2,3) 即为两维语义评价信息。&nbsp;</p>
+<p>在两维语义评价信息中，第二维评价信息是用来描述第一维评价信息质量的，通过第二维语义评价信息，不仅能够反映决策者评价信息的质量，同时也能反映决策信息的不确定和不完全程度。</p>
+<p>例如，同行评议专家提供评价信息 (优，较为熟悉) 即为两维语义信息的一个实例，</p>
+<ul>
+<li>第一维评价信息&rdquo;优&ldquo;是评议专家对科研项目的评价</li>
+<li>第二维评价信息&rdquo;较熟悉&ldquo;反映了评议专家对自己给出的评价&rdquo;优&ldquo;的不确定程度，同时也反映了评议专家对该科研项目的未知程度（不完全程度）</li>
+</ul>
+<h2><span style="color: #888888;">0x2：两维语义信息的语义表示</span></h2>
+<p>由于两维语义信息不仅能够反映决策者评价信息的质量，同时也能反映决策信息的不确定和不完全程度。</p>
+<p>同时我们知道，证据理论用信度函数表示证据，信度函数满足半可加性，它比概率函数能更恰当表示信息中的&rdquo;不确定性&ldquo;和&rdquo;不知性&ldquo;。因此，两维语义信息的语义，可用信度函数来表示，即可用证据理论中的证据体来表示两维语义评价信息。</p>
+<h3><span style="color: #ff0000;">1、两维语义的点信度语义表示</span></h3>
+<p>设&nbsp;H = {H<sub>1</sub>，H<sub>2</sub>，....，H<sub>N</sub>} 和 S = {S<sub>1</sub>，S<sub>2</sub>，....，S<sub>T</sub>} 分别为一、二两个维度上的语言集，将语言集 H 视为证据理论中的识别框架，则两维语义信息 (H<sub>n</sub>，S<sub>t</sub>) 的语义可通过映射 f 表示为证据体：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426163418781-798722051.png" alt="" width="490" height="28"></p>
+<p>其中，&beta;<sub>tk</sub> 代表一个点信度，表示两维语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 支持 H<sub>k</sub> &isin; H(k=1,2,...,N) 为真的置信度，且满足：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426163619431-648667596.png" alt="" width="79" height="49">，即信度分配函数的完备性</p>
+<p style="text-align: left;">则称 <strong>f 为两维语义的点信度表示函数</strong>。</p>
+<h3><span style="color: #ff0000;">2、两维语义的点信度语义规则</span></h3>
+<p><strong>两维语义的点信度表示函数可由多个专家基于领域经验得出，也可以通过数据驱动的方式从大样本中得出（例如神经网络</strong>）。</p>
+<p>一般来说，两维语义的点信度函数遵循以下规则：</p>
+<ul>
+<li>不完全信息规则：第二维语义中对第一维信息质量的评价越高，决策者的评价信息中含有的不完全信息程度就越低，即若<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426164805058-245373957.png" alt="" width="43" height="18">，则<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426164821902-557015224.png" alt="" width="98" height="19"></li>
+<li>
+<p>信度单峰规则：(H<sub>n</sub>，S<sub>t</sub>) 转化成的证据体 {(H<sub>k</sub>，&beta;<sub>tk</sub>)，k=1,2,....,N}，其信度应以 H<sub>n</sub> 为单峰，且距离 H<sub>n</sub> 越远，其信度就越小。即对<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426165214053-1226314781.png" alt="" width="155" height="18">，有<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426165240808-1933177138.png" alt="" width="203" height="23">，且若 | i-n | &lt; | j-n |，则有 &beta;t(H<sub>i</sub>) &gt; &beta;t(H<sub>j</sub>)，其中 i,j &isin; {1,2,....,N}</p>
+</li>
+</ul>
+<h3><span style="color: #ff0000;">3、两维语义的区间信度表示</span></h3>
+<p>两维语义的点信度表示法要求给出两维语义支持各语言评价等级的精确置信度，这对决策者的领域知识或者有监督样本集的要求较高。</p>
+<p>但是由于客观事物的复杂性（相关性不明显，或者伪相关性）和人类自身知识的局限性，两维语义的区间信度比精确的点信度表示更容易获取。</p>
+<p>针对两维语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 的语义，假设专家用映射 g 表示区间信度：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426165853174-82339275.png" alt="" width="411" height="32"></p>
+<p>其中，<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426165910789-1767205015.png" alt="" width="77" height="23">代表一个区间信度，表示两维语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 支持 H<sub>k</sub> &isin; H(k=1,2,...,N) 为真的置信度，且满足：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426170013703-1488799202.png" alt="" width="91" height="55">，同样需要满足信度分配函数的完备性&nbsp;</p>
+<p>则称 <strong>g 为两维语义的区间信度表示函数</strong>。&nbsp;</p>
+<p>类似的，两维语义的区间信度表示法也同样遵循&rdquo;不完全信息&ldquo;和&rdquo;信度单峰&ldquo;语义规则。</p>
+<h2><span style="color: #808080;">0x3：两维语义信息的比较</span></h2>
+<p>由两位语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 的信度表示法可知，两维语义信息不仅反映了决策者对待处理问题的评价，同时反映了决策信息的质量（包括决策信息的不确定性和不完全性），因此对两维语义信息进行比较，关键是如何处理不确定和不完全信息。</p>
+<p>对于两维语义的点信度表示法，可以采用两种处理方法：</p>
+<ul>
+<li>点期望得分法</li>
+<li>区间期望得分法</li>
+</ul>
+<p>对于两维语义的区间信度语义表示法，可利用基于连续的有序加权平均算子（continuous ordered weighted averaging，C-OWA）算子的区间信度的点化法，将区间信度转化为点信度，再进行比较。</p>
+<h3><span style="color: #ff0000;">1、点期望得分法</span></h3>
+<p>点期望得分法将两维语义中的第一个维度上的语言短语量化为得分，通过两维语义的证据体表示中的信度计算两维语义信息的加权平均得分。</p>
+<p>设第一个维度上的语言集&nbsp;H = {H<sub>1</sub>，H<sub>2</sub>，....，H<sub>N</sub>}，且<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426173448803-1903873958.png" alt="" width="55" height="18">(i &lt; j)，(H<sub>n</sub>，S<sub>t</sub>) 的点信度语义为<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426173537163-508480275.png" alt="" width="163" height="19">。假设语言短语 H<sub>i</sub> 的得分为 h<sub>i</sub>，满足 h<sub>i</sub> &lt; h<sub>j</sub>(i &lt; j)。与加权平均法类似，可定义两维语义信息的期望得分 E[(H<sub>n</sub>，S<sub>t</sub>)]：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426173817286-1763224069.png" alt="" width="257" height="106"></p>
+<p>由证据体表示的两维语义信息，通过期望得分化为得分值，从而可将多个两维语义信息进行比较、排序。这种方法计算简单，但缺点是处理过程有损失。</p>
+<h3><span style="color: #ff0000;">2、区间期望得分法</span></h3>
+<p>区间期望得分法首先也将两维语义中的第一个维度上的语言短语量化为得分，当 &beta;<sub>t</sub>(H)&gt;0时，为了便于多个两维语义信息比较，将这部分信度分别赋予最小分值和最大分值，由此，产生一个得分区间。</p>
+<p>设第一个维度上的语言集&nbsp;H = {H<sub>1</sub>，H<sub>2</sub>，....，H<sub>N</sub>}，且<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426173448803-1903873958.png" alt="" width="55" height="18">(i &lt; j)，(H<sub>n</sub>，S<sub>t</sub>) 的点信度语义为<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426173537163-508480275.png" alt="" width="163" height="19">。假设语言短语 H<sub>i</sub>&nbsp;的得分为 h<sub>i</sub>，满足 h<sub>i</sub>&nbsp;&lt; h<sub>j</sub>(i &lt; j)。</p>
+<p>当<img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426174525547-2008938322.png" alt="" width="158" height="36">时，说明由于人们对问题的不确知而将这一部分信度赋予了整个框架。为了便于比较，将这部分信度分别赋予 min(H<sub>1</sub>，H<sub>2</sub>，...，H<sub>N</sub>) = H<sub>1</sub>，max(H<sub>1</sub>，H<sub>2</sub>，...，H<sub>N</sub>) = H<sub>1</sub>。则两维语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 的最小、最大期望得分分别为：&nbsp;</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426175031540-707064156.png" alt="" width="326" height="124"></p>
+<p>从而可得两维语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 的期望得分区间：</p>
+<p style="text-align: center;"><strong>[minE[(H<sub>n</sub>，S<sub>t</sub>)]，maxE[(H<sub>n</sub>，S<sub>t</sub>)]]</strong></p>
+<p>这种信度分配方法很容易理解，因为由于信息的不完全或人们认识能力的局限性，信度 &beta;<sub>t</sub>(H) 不知该分配到哪个评语上，但无论这部分信度如何分配，两维语义信息&nbsp;(H<sub>n</sub>，S<sub>t</sub>) 的期望得分均落在上述区间中。</p>
+<p>显然，当&nbsp;&beta;<sub>1</sub>(H) = 0 时，上述区间退化成一个点；而当&nbsp;&beta;<sub>t</sub>(H) = 1 时，即当人们对问题完全无知时，该区间就退化为 [h<sub>1</sub>，h<sub>N</sub>]。</p>
+<p>根据区间数的可能度公式可对多个两维语义信息进行比较、排序。</p>
+<p>相比点期望得分法，得分区间法计算较复杂，但结果更精确，处理过程中信心损失较少。</p>
+<h2><span style="color: #808080;">0x4：两维语义信息的集结</span></h2>
+<p>根据两位语义信息的语义表示，对多个两维语义信息的集结转化成了对多条证据的集结。</p>
+<p>目前，证据的融合方法主要有：</p>
+<ul>
+<li>Dempster合成规则</li>
+<li>改进的冲突证据合成规则</li>
+<li>证据推理算子&nbsp;</li>
+</ul>
+<p>Dempster合成规则在处理高度冲突的证据时，其结果往往有悖常理，例如著名的<a href="https://www.cnblogs.com/LittleHann/p/12730627.html#_lab2_0_0" target="_blank">Zadeh悖论</a>。</p>
+<p>改进的冲突证据合成规则从不同的角度对Dempster合成规则进行了改善，并且在某些领域取得了较好的应用，但处理的冲突证据都有一定应用背景和使用哦范围限制，且在处理不同权重信息的证据方面也存在一定的困难。</p>
+<p>而证据推理方法是由Yang等人在1994年提出来的，后又对此进行了完善和发展。该方法应用权重修正证据源，并在合成过程中对未分配的信度进一步细分为由权重引起的不完全和由信息源给出的判断不完全两部分。证据推理合成规则在处理不同权重的多条证据的融合方面具有独特的优势，且能很好地处理高度冲突的证据合成问题。</p>
+<p><strong>由于不同的两维语义信息的质量不同，其在信息融合的重要性也不相同，即不同两维语义信息的权重不同，且多个两维语义信息也存在高度冲突情况</strong>。因此，我们通过引入证据推理算子对多个两维语义信息进行融合。</p>
+<p>设有 p 个信息源给出的两维语义评价信息为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426210715032-716410394.png" alt=""></p>
+<p>其点信度语义表示为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426210746814-1283903953.png" alt="" width="405" height="31"></p>
+<p style="text-align: left;">其中，<img style="font-size: 1em" src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426210811661-691858717.png" alt="" width="199" height="18">为第 i 个信息源 E<sub>i</sub> 支持评价对象评为等级 H<sub>n</sub> 的置信程度，且满足：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426211155987-1623064317.png" alt="" width="273" height="51"></p>
+<p>假设权重向量为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426211222678-746427065.png" alt="">&nbsp;</p>
+<p>满足：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426211241121-365062530.png" alt="" width="238" height="49"></p>
+<p>则可应用证据推理算子将多个两维语义信息进行集成。</p>
+<p>综合 p 个两维语义评价信息后，其集成结果仍为证据体，可以表示为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426211401486-1393172163.png" alt="" width="400" height="31"></p>
+<h2><span style="color: #888888;">0x5：算例分析</span></h2>
+<p>假设预先设定的针对评价对象的语言评价集 H = {H<sub>1</sub>，H<sub>2</sub>，H<sub>3</sub>，H<sub>4</sub>} = {差，中，良，优}，专家对评价对象的熟悉程度的语言评价集为 S = {S<sub>1</sub>，S<sub>2</sub>，S<sub>3</sub>} = {熟悉，较熟悉，部分熟悉}。</p>
+<p>现有五位专家 E<sub>i</sub>(i=1,2,3,4,5)，针对某一个评价对象给出的两维语义评价信息为：</p>
+<ul>
+<li>E<sub>1</sub> = (H<sub>1</sub>，S<sub>2</sub>)</li>
+<li>E<sub>2</sub>&nbsp;= (H<sub>2</sub>，S<sub>2</sub>)</li>
+<li>E<sub>3</sub>&nbsp;= (H<sub>2</sub>，S<sub>3</sub>)</li>
+<li>E<sub>4</sub>&nbsp;= (H<sub>3</sub>，S<sub>1</sub>)</li>
+<li>E<sub>5</sub>&nbsp;= (H<sub>2</sub>，S<sub>2</sub>)</li>
+</ul>
+<p>假设专家采用两维语义的点信度表示，且给出点信度语义表示如下表所示：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426212449205-826622624.png" alt="" width="740" height="244">&nbsp;</p>
+<p>根据上表中两维语义的点信度表示，5位专家给出的两维语义评价信息的点信度可分别表示为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426212709916-701755008.png" alt="" width="336" height="147">&nbsp;</p>
+<p>设5位专家的权重向量为（根据专家对专家的了解这一领域知识得出）：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426213004392-727425347.png" alt="" width="235" height="30"></p>
+<p>则由证据推理算子，将5位专家给出两维语义信息进行集结为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426213127722-93811078.png" alt="" width="651" height="28"></p>
+<p>即综合5位专家的意见，认为该评价对象为&rdquo;优&ldquo;、&rdquo;良&ldquo;、&rdquo;中&ldquo;、&rdquo;差&ldquo;的可信度分别为：19.85%、35.21%、27.54%、1.26%、还有另外16.14%的信度不知道被评为哪个等级。&nbsp;</p>
+<p><span style="color: #ff0000;"><strong><strong>Relevant Link:</strong></strong>&nbsp;&nbsp;</span></p>
+<div class="cnblogs_code">
+<pre>《证据推理理论方法及其在决策评估中的应用》   </pre>
+</div>
+<p>&nbsp;</p>
+<h1>5. 基于两维语义的群体决策方法</h1>
+<h2><span style="color: #888888;">0x1：基于两维语义的专家组合赋权法</span></h2>
+<p>影响专家评价准确性的因素主要有两个方面，</p>
+<ul>
+<li>一方面是专家对决策对象的熟悉程度（或了解程度），可通过专家对自己做出的评价进行自评价，其体现的是专家对所做评价信息可靠性的自我评估（简称自评）</li>
+<li>另一方面是专家的宽严尺度（评价标准），其体现了专家评价的主观偏好，需要与其他专家比较进行评估（简称他评）</li>
+</ul>
+<p>一般来说，专家对决策对象熟悉程度越高，评价的准确性就越高；对同一个决策对象的评价与其他专家评价的差异性越小，该专家对评价标准掌握的情况的情况可能就相对越好。</p>
+<h3><span style="color: #ff0000;">1、自评标准</span></h3>
+<h3><span style="color: #ff0000;">2、他评标准</span></h3>
+<p><span style="color: #000000;">与其他专家评价的差异性，可以通过对同一个决策对象各专家评价信息的距离或相似度来度量。</span></p>
+<p><span style="color: #000000;">假设第一维度（对决策对象的评价）的评语集为 H<sub>1</sub>，H<sub>2</sub>，.....，H<sub>N</sub>，分别赋值为 h<sub>1</sub>，h<sub>2</sub>，....，h<sub>N</sub>，满足当 i &ge; j 时，h<sub>i</sub> &ge; h<sub>j</sub>，则评价信息 H<sub>i</sub> 和 H<sub>j</sub> 的距离可定义为：</span></p>
+<p style="text-align: center;"><span style="color: #000000;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426215934787-140129527.png" alt="" width="271" height="56"></span></p>
+<p>显然，d<sub>i,j</sub> 满足距离的基本性质：</p>
+<ul>
+<li>0 &le; d<sub>i,j</sub> &le; 1</li>
+<li>当且仅当 h<sub>i</sub> = h<sub>j</sub> 时，d<sub>i,j</sub> = 0</li>
+<li>d<sub>i,j</sub> =&nbsp;d<sub>j,i</sub></li>
+<li>d<sub>i,j</sub> &le; d<sub>i,k</sub> + d<sub>k,j</sub></li>
+</ul>
+<p>假设有 p 个专家对某一决策对象进行评价，则可以计算出专家们提供评价信息之间的两两距离，可用一个距离矩阵表示：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426220256003-269881285.png" alt="" width="247" height="124"></p>
+<p>定义评价信息 H<sub>i</sub> 和 H<sub>j</sub> 之间的相似性测度 Sim(H<sub>i</sub>，H<sub>j</sub>) 为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426220502537-1734831396.png" alt="" width="351" height="34"></p>
+<p>其结果可以用一个相似矩阵表示：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426220525446-1021217861.png" alt=""></p>
+<p>两个评价信息距离越小，它们的相似性程度就越大，该评价系统中对评价信息 H<sub>i</sub> 的支持度 Sup(H<sub>i</sub>) 为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426220636942-1782463973.png" alt="" width="359" height="51"></p>
+<p>从公式中可以看出，支持度体现了某个专家的评价信息 H<sub>i</sub> 在同行中的累计相似程度，通俗地说就是群体共识。</p>
+<p>将支持度归一化后可得评价信息 H<sub>i</sub> 的可信度 Crd<sub>i</sub>：&nbsp;</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426220717234-1043020453.png" alt="" width="268" height="81">&nbsp;</p>
+<p>可将 Crd<sub>i</sub> 作为专家 E<sub>i</sub> 提供评价信息的一个权重 u<sub>i</sub>，即权重 u<sub>i</sub> 为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426220950397-1861201967.png" alt=""></p>
+<p style="text-align: left;">另外，第二维度的评价值 S<sub>t</sub> 是对第一维评价信息质量的评价，可将第二维度的评价值 S<sub>t</sub> 进行量化。假设专家 E<sub>i</sub> 给出的第二维度的评语的量化值为 q<sub>t</sub>，则可赋予该专家评价信息的另一个权重 v<sub>i</sub> 为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426221140038-1298637239.png" alt="" width="234" height="55"></p>
+<p>为了全面反映专家评价信息的重要性，此处利用专家给出的两维语义评价信息，根据每个维度的评价信息分别对专家进行赋权，再采用乘法合成法对专家评价信息进行组合赋权，专家评价信息的最终权重 w<sub>i</sub> 为：</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426221437739-377249601.png" alt="" width="223" height="75"></p>
+<p style="text-align: left;"><span style="color: #ff6600;"><strong>笔者提醒</strong></span>：</p>
+<p style="text-align: left;">这和之前讨论的<a href="https://www.cnblogs.com/LittleHann/p/12730627.html#_lab2_2_6" target="_blank">基于证据联盟的证据融合方式</a>，其原理是类似的。</p>
+<h2><span style="color: #808080;">0x2：决策步骤</span></h2>
+<p>假设有 M 个备选方案 a<sub>j</sub><span style="font-size: 14px;">(j=1,2,...,M)，专家 E</span><sub>i</sub><span style="font-size: 14px;"> 对方案&nbsp;</span><span style="font-size: 14px;">a</span><sub>j</sub><span style="font-size: 14px;"> 给出的两维语义评价信息为：</span></p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/532548/202004/532548-20200426214732258-553757835.png" alt="" width="283" height="31"></p>
+<p>针对多个专家给出的两维语义评价信息，可以根据以下步骤进行决策：</p>
+<ul>
+<li>步骤1，确定专家的权重。假设专家 i 给出的两维语义评价信息 E<sub>i</sub> = (H<sub>k</sub><sup>i</sup>，S<sub>t</sub><sup>i</sup>)，对专家进行组合赋权，可得专家的权重 w<sub>i</sub>(i=1,2,...,p)</li>
+<li>步骤2，给出两维语义信息的点信度或区间信度语义表示，在不完全信息规则和信息单峰规则的前提下，由多个专家经过反复斟酌（或者由数据驱动），给出两维语义信息的点信度或区间信度语义表示，将两维语义信息表示为证据体。</li>
+<li>步骤3，综合多个专家的两维语义信息，将转化为多个专家的两维语义信息进行集结，可得每个方案的综合评价结果，其结果仍表示为一个证据体。</li>
+<li>步骤4，对多个决策方案进行排序择优，应用两维语义比较方法，将多个方案进行排序择优。</li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-26 22:27</span>&nbsp;
+<a href="https://www.cnblogs.com/LittleHann/">郑瀚Andrew.Hann</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12758954" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12758954);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 152568, cb_blogApp = 'LittleHann', cb_blogUserGuid = '8cb3dedf-4dc5-e211-8d02-90b11c0b17d6';
+    var cb_entryId = 12758954, cb_entryCreatedDate = '2020-04-26 22:27', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 郑瀚Andrew.Hann
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <div align="center">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000401968'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1000401968%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script language="javascript" type="text/javascript">
+//生成目录索引列表
+function GenerateContentList()
+{
+    var jquery_h1_list = $('#cnblogs_post_body h1');
+    if (jquery_h1_list.length == 0) { return; }
+    if ($('#cnblogs_post_body').length == 0) { return; }
+
+    var content = '<a name="_labelTop"></a>';
+    content    += '<div id="navCategory">';
+    content    += '<p style="font-size:18px"><b>阅读目录(Content)</b></p>';
+    // 一级目录 start
+    content += '<ul class="first_class_ul">';
+
+    for (var i = 0; i < jquery_h1_list.length; i++)
+    {
+        var go_to_top = '<div style="text-align: right"><a href="#_labelTop">回到顶部(go to top)</a><a name="_label' + i + '"></a></div>';
+        $(jquery_h1_list[i]).before(go_to_top);
+
+        // 一级目录的一条
+        var li_content = '<li><a href="#_label' + i + '">' + $(jquery_h1_list[i]).text() + '</a></li>';
+
+        var nextH1Index = i + 1;
+        if (nextH1Index == jquery_h1_list.length) { nextH1Index = 0; }
+        var jquery_h2_list = $(jquery_h1_list[i]).nextUntil(jquery_h1_list[nextH1Index], "h2");
+        // 二级目录 start
+        if (jquery_h2_list.length > 0)
+        {
+            //li_content +='<ul style="list-style-type:none; text-align: left; margin:2px 2px;">';
+            li_content += '<ul class="second_class_ul">';
+        }
+        for (var j = 0; j < jquery_h2_list.length; j++)
+        {
+            var go_to_top2 = '<div style="text-align: right"><a name="_lab2_'+ i + '_' + j + '"></a></div>';
+            $(jquery_h2_list[j]).before(go_to_top2);
+            // 二级目录的一条
+            li_content +='<li><a href="#_lab2_'+ i +'_' + j + '">' + $(jquery_h2_list[j]).text() + '</a></li>';
+
+            var nextH2Index = j + 1;
+            var next;
+            if (nextH2Index == jquery_h2_list.length) 
+            {
+                if (i + 1 == jquery_h1_list.length)
+                {
+                    next = jquery_h1_list[0];
+                }
+                else
+                {
+                    next = jquery_h1_list[i + 1];
+                }
+            }
+            else
+            {
+                next = jquery_h2_list[nextH2Index];
+            }
+            var jquery_h3_list = $(jquery_h2_list[j]).nextUntil(next, "h3");
+            // 三级目录 start
+            if (jquery_h3_list.length > 0)
+            {
+                li_content += '<ul class="third_class_ul">';
+            }
+            
+            for (var k = 0; k < jquery_h3_list.length; k++)
+            {
+                var go_to_third_Content = '<div style="text-align: right"><a name="_label3_' + i + '_' + j + '_' + k + '"></a></div>';
+                $(jquery_h3_list[k]).before(go_to_third_Content);
+                // 三级目录的一条
+                li_content += '<li><a href="#_label3_' + i + '_' + j + '_' + k + '">' + $(jquery_h3_list[k]).text() + '</a></li>';
+            }
+            
+            if (jquery_h3_list.length > 0)
+            {
+                li_content += '</ul>';
+            }
+            li_content += '</li>';
+            // 三级目录 end
+        }
+        if (jquery_h2_list.length > 0)
+        {
+            li_content +='</ul>';
+        }
+        li_content +='</li>';
+        // 二级目录 end
+
+        content += li_content;
+    }
+    // 一级目录 end
+    content += '</ul>';
+    content += '</div>';
+
+    $($('#cnblogs_post_body')[0]).prepend(content);
+}
+
+GenerateContentList();
+</script>
+
+</div>
+    </div>
+</body>
+</html>

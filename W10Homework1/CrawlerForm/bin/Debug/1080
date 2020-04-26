@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>心悦君兮君不知-睿 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/chrismas/bundle-chrismas.min.css?v=cHk4gf2lev8VwqAl_-5lUOjKFjXXfXYt-RTrWhDrAns" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/chrismas/bundle-chrismas-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/ruigege0000/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/ruigege0000/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/ruigege0000/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 519726;
+        var currentBlogApp = 'ruigege0000';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Chrismas';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <!--done-->
+<div id="wrap" align="center">
+<div id="banner" align="center">
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/ruigege0000/">心悦君兮君不知-睿</a>
+<br>
+	</div>
+	<div class="headerDis">
+
+</div>
+</div>
+
+</div>
+<div id="main">
+	<!-- left starts -->
+	<div id="left">
+		<DIV id="mystats">
+			
+				<!--done-->
+<div class="blogStats">
+随笔- 
+277&nbsp;
+文章- 
+2&nbsp;
+评论- 
+15&nbsp;
+
+</div>
+
+
+			
+		</DIV>
+		<div id="mylinks">
+
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+&nbsp;&nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/ruigege0000/">
+首页</a>
+&nbsp;&nbsp;
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+&nbsp;&nbsp;
+
+<a id="MyLinks1_NewArticleLink" class="menu" href="https://i.cnblogs.com/EditArticles.aspx?opt=1">新文章</a>
+&nbsp;&nbsp;
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%BF%83%E6%82%A6%E5%90%9B%E5%85%AE%E5%90%9B%E4%B8%8D%E7%9F%A5-%E7%9D%BF">
+联系</a>&nbsp;&nbsp;
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+&nbsp;&nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/ruigege0000/rss/">
+订阅</a>&nbsp;
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/ruigege0000/rss/">
+    <img src="/skins/chrismas/images/xml.gif" alt="订阅" />
+</a>
+
+</div>
+		<div id="topics">
+			
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/27.html"></a>
+        &nbsp;
+        2020年4月27日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12783712.html">
+    HTML连载85-添加选择圆点
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、添加选择圆点，先上个半成品 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/base.css&quot;&gt; &lt;link             <a href="https://www.cnblogs.com/ruigege0000/p/12783712.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-27 00:19 心悦君兮君不知-睿 阅读 (3) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12783712" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/24.html"></a>
+        &nbsp;
+        2020年4月24日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12764833.html">
+    Android连载7-动语添加碎片
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、 1.我们设置主活动的框架，把主活动的屏幕分成两个碎片，各显示子活动的界面​。 &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android            <a href="https://www.cnblogs.com/ruigege0000/p/12764833.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 00:12 心悦君兮君不知-睿 阅读 (17) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12764833" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/23.html"></a>
+        &nbsp;
+        2020年4月23日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12757975.html">
+    JavaScript连载6-转化为Number和Boolean类型、运算符
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、承接连载5 1.注意事项 对于非String使用parseInt()或parseFloat(),会先将其转换为String类型在进行操作。 var s1 = false; var s2 = parseInt(s1);//这里会先转换为字符串false，然后在进行解析数字 console.log(            <a href="https://www.cnblogs.com/ruigege0000/p/12757975.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 00:27 心悦君兮君不知-睿 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12757975" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/22.html"></a>
+        &nbsp;
+        2020年4月22日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12749155.html">
+    Java连载111-timer定时器、反射机制概述
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、timer定时器 1.关于定时器的应用：每隔一段固定的时间执行一段代码。 2.函数Timer().schedule(TimerTask timerTask,Date date,long proid) package code_class_file; import java.text.Simple            <a href="https://www.cnblogs.com/ruigege0000/p/12749155.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-22 00:22 心悦君兮君不知-睿 阅读 (32) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12749155" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/21.html"></a>
+        &nbsp;
+        2020年4月21日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12741709.html">
+    HTML连载84-添加中部的图片
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、设置图片居中margin:0 auto;这个语法没有效果，对其父元素使用text-align:center；也是没有用的，因为图片太大了，解决方式如下： 如果图片的宽度大于了父元素的宽度，不可能使用margin:0 auto；或者text-align:center;来使图片居中 如果图片的宽度大            <a href="https://www.cnblogs.com/ruigege0000/p/12741709.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 00:17 心悦君兮君不知-睿 阅读 (39) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12741709" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/20.html"></a>
+        &nbsp;
+        2020年4月20日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12735259.html">
+    Android连载6-碎片
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、碎片化 1.碎片：是一种可以在嵌入在活动当中的UI片段，他能让程序更加合理和充分的利用大屏幕空间，因为在平板电脑上应用的非常广泛。 2.先设置一个左边的 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;LinearLayout xmlns:android=&quot;htt            <a href="https://www.cnblogs.com/ruigege0000/p/12735259.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-20 00:17 心悦君兮君不知-睿 阅读 (32) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12735259" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/19.html"></a>
+        &nbsp;
+        2020年4月19日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12732923.html">
+    JavaScript连载5-数据转换为Number与String、数字解析
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、承接连载4 3.null和undefined没有toString()方法，调用就会报错 var num1 = undefined; console.log(num1.toString()); ​ var num2 = null; console.log(num2.toString()); 二、S            <a href="https://www.cnblogs.com/ruigege0000/p/12732923.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-19 19:01 心悦君兮君不知-睿 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12732923" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/18.html"></a>
+        &nbsp;
+        2020年4月18日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12723605.html">
+    Java连载110-类锁、死锁、守护线程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、类锁 1.类只有一个，所以锁是类级别的，只有一个 package com.bjpowernode.java_learning; ​ public class D110_1_ClassLock { public static void main(String[] args) throws Exce            <a href="https://www.cnblogs.com/ruigege0000/p/12723605.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 00:35 心悦君兮君不知-睿 阅读 (37) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12723605" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/17.html"></a>
+        &nbsp;
+        2020年4月17日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12717018.html">
+    HTML连载83-编写中间内容层
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、我们填写广告区域 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Title&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/base.css&quot;&gt; &lt;link rel=&quot;            <a href="https://www.cnblogs.com/ruigege0000/p/12717018.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 00:30 心悦君兮君不知-睿 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12717018" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/ruigege0000/archive/2020/04/16.html"></a>
+        &nbsp;
+        2020年4月16日
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/ruigege0000/p/12709809.html">
+    Android连载5-编写一个微信聊天界面
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、制作Nine-Patch图片 1.含义：一种被特殊处理的png图片，能够指定哪些区域可以被拉伸，哪些区域不可以被拉伸。 2.首先先制作一个布局 &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xml            <a href="https://www.cnblogs.com/ruigege0000/p/12709809.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="postDesc">
+
+posted @ 2020-04-16 00:35 心悦君兮君不知-睿 阅读 (35) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12709809" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/ruigege0000/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+		</div>
+		<br/><br/><br/>
+	</div>
+	<!-- left ends -->
+	<!-- right starts -->
+	<div id="right">
+		<!-- 右侧工具部分 -->
+		<div id="right_content">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+				<DIV id="leftcontentcontainer">
+					<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+				</DIV>
+			
+		</div>
+		<!-- //右侧工具部分 -->
+		<div id="footer">
+			Copyright &copy; 2020 心悦君兮君不知-睿
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+		</div>
+	</div>
+	<!-- right ends -->	
+</div>
+</div>
+
+
+    
+</body>
+</html>

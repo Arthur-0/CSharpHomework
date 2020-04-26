@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="写在前面 去年我整理了一份 &amp;quot;「前端工程师必备书籍清单.md」&amp;quot; ，得到很多人的关注。这份清单里面的书籍大部分我都看过了，但有些知识点难免看后就忘。之前看这些书对一些重点都进行了记" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>[推荐收藏]JavaScript书籍精读笔记系列导航 - 小磊哥er - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/yzsunlei/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/yzsunlei/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/yzsunlei/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 547315;
+        var currentBlogApp = 'yzsunlei';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/yzsunlei/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/yzsunlei/">小磊哥er</a>
+</h1>
+<h2>
+大前端工程师
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/yzsunlei/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%B0%8F%E7%A3%8A%E5%93%A5er">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/yzsunlei/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+22&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/yzsunlei/p/12709839.html">[推荐收藏]JavaScript书籍精读笔记系列导航</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h3 id="写在前面">写在前面</h3>
+<ul>
+<li>去年我整理了一份<a href="https://github.com/yzsunlei/awesome-web-tutorial/blob/master/1.%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E5%A4%87%E4%B9%A6%E7%B1%8D%E6%B8%85%E5%8D%95.md">「前端工程师必备书籍清单.md」</a>，得到很多人的关注。这份清单里面的书籍大部分我都看过了，但有些知识点难免看后就忘。之前看这些书对一些重点都进行了记录，最近一段时间计划把这些重点笔记整理下来。一方面让自己能通过快速翻阅来拾起知识点，另一方面希望能与更多志同道合的技术人进行交流。</li>
+<li>以下是一份分类目录，整理出来的书籍笔记就会在这里添上链接，欢迎star收藏。每本书一篇笔记，笔记后面会附上书籍pdf，方便下载，书籍pdf上也把这些的重要知识点都标记出来了，欢迎下载细读。</li>
+<li>持续更新，推荐收藏...</li>
+</ul>
+<h3 id="分类">分类</h3>
+<ul>
+<li>A - HTML/HTML5系列</li>
+<li>B - CSS/CSS3系列</li>
+<li>C - JavaScript基础</li>
+<li>D - JavaScript应用</li>
+<li>E - JavaScript进阶</li>
+<li>F - JQuery类库</li>
+<li>G - MVVM框架</li>
+<li>H - 前端工程化</li>
+<li>I - ES6+系列</li>
+<li>J - HybirdApp系列</li>
+<li>K - Node.js系列</li>
+<li>L - 附加系列</li>
+</ul>
+<h3 id="a---htmlhtml5系列">A - HTML/HTML5系列</h3>
+<ul>
+<li>《HTML5秘籍》</li>
+<li>《HTML5_Canvas详解》</li>
+</ul>
+<h3 id="b---csscss3系列">B - CSS/CSS3系列</h3>
+<ul>
+<li>《响应式web设计HTML5和CSS3实践》</li>
+<li>《CSS世界》</li>
+</ul>
+<h3 id="c---javascript基础">C - JavaScript基础</h3>
+<ul>
+<li>《JavaScript语言精粹》</li>
+<li>《学习JavaScript数据结构与算法（第2版）》</li>
+<li>《你不知道的JavaScript（上卷）》</li>
+</ul>
+<h3 id="d---javascript应用">D - JavaScript应用</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/yzsunlei/p/12716884.html">《基于MVC的JavaScript Web富应用开发》</a></li>
+<li><a href="https://www.cnblogs.com/yzsunlei/p/12757936.html">《移动WEB前端高级开发实践》</a></li>
+<li>《单页Web应用：JavaScript从前端到后端》</li>
+<li>《第三方JavaScript编程》</li>
+</ul>
+<h3 id="e---javascript进阶">E - JavaScript进阶</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/yzsunlei/p/12709843.html">《JavaScript异步编程》</a></li>
+<li>《JavaScript框架设计（第二版）》</li>
+</ul>
+<h3 id="f---jquery类库">F - JQuery类库</h3>
+<ul>
+<li>《jQuery技术内幕-深入解析jQuery架构设计与实现原理》</li>
+</ul>
+<h3 id="g---mvvm框架">G - MVVM框架</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/yzsunlei/p/12749061.html">《React Native精解与实战》</a></li>
+<li>《React Native移动开发实战》</li>
+<li>《Vue.js权威指南》</li>
+</ul>
+<h3 id="h---前端工程化">H - 前端工程化</h3>
+<ul>
+<li>《前端工程化：体系设计与实践》</li>
+<li>《前端架构设计》</li>
+<li>《现代前端技术解析》</li>
+</ul>
+<h3 id="i---es6系列">I - ES6+系列</h3>
+<ul>
+<li>《ES6标准入门（第三版）》</li>
+</ul>
+<h3 id="j---hybirdapp系列">J - HybirdApp系列</h3>
+<ul>
+<li>《React Native应用开发实例解析》</li>
+</ul>
+<h3 id="k---nodejs系列">K - Node.js系列</h3>
+<ul>
+<li>《深入浅出Node.js》</li>
+<li>《Node.js调试指南》</li>
+<li>《Node.js设计模式》</li>
+</ul>
+<h3 id="l---附加系列">L - 附加系列</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/yzsunlei/p/12782503.html">《Web前端黑客技术揭秘》</a></li>
+<li>《微服务设计》</li>
+<li>《算法图解》</li>
+</ul>
+<h3 id="写在最后">写在最后</h3>
+<ul>
+<li>本系列仓库地址：<a href="https://github.com/yzsunlei/javascript-book-reading">https://github.com/yzsunlei/javascript-book-reading</a>，觉得有用，记得star收藏</li>
+<li>为了方便在手机上查看，后面我会把这些笔记陆续发布到公众号“派三派四”，可以扫码关注一下，欢迎关注。<br>
+<img src="https://user-gold-cdn.xitu.io/2020/4/26/171b6b5a416faa24?w=258&amp;h=258&amp;f=jpeg&amp;s=27376" alt="扫码关注公众号"></li>
+</ul>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-26 23:17</span>&nbsp;
+<a href="https://www.cnblogs.com/yzsunlei/">小磊哥er</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12709839" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12709839);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 547315, cb_blogApp = 'yzsunlei', cb_blogUserGuid = 'cdfdf038-87c2-4010-81d2-08d73853e76a';
+    var cb_entryId = 12709839, cb_entryCreatedDate = '2020-04-26 23:17', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 小磊哥er
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>
