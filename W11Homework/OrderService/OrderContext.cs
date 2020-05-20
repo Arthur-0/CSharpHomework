@@ -12,7 +12,7 @@ namespace OrderApp
         public OrderContext():base("OrderDataBase")
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<OrderContext>());
-           
+            
         }
 
         public DbSet<Order> orders { get; set; }

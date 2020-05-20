@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
@@ -19,16 +20,26 @@ namespace OrderApp
         public List<Order> Orders { get => orders; set => orders = value; }
         public OrderService()
         {
-          
-            Orders = new List<Order>();
-            using (var context=new OrderContext())
+            this.orders = GetAllOrders();
+        }
+
+        public static List<Order> GetAllOrders()
+        {
+            using (var context = new OrderContext())
             {
-                foreach(Order order in context.orders)
-                {
-                    this.Orders.Add(order);
-                }
+                return AllOrders(context).ToList();
             }
         }
+
+        public  Order GetOrder(string id)
+        {
+            using (var context = new OrderContext()) { 
+            
+                return AllOrders(context).FirstOrDefault(o => o.OrderId == id);
+            }
+        }
+
+        /*
 
         public Order GetOrder(string id)
         {
@@ -36,7 +47,7 @@ namespace OrderApp
                     .Where(order => order.OrderId == id)
                     .OrderBy(o => o.TotalPrice);
             return query as Order;
-        }
+        }*/
 
         public Order AddOrder(Order order1)
         {
@@ -51,26 +62,23 @@ namespace OrderApp
                 }
                 return order1;
             }
-            catch (Exception e)
+            catch (DbEntityValidationException dbEx)
             {
                 //TODO 需要更加错误类型返回不同错误信息
-                throw new ApplicationException($"添加错误: {e.Message}");
+                throw new ApplicationException($"添加错误: {dbEx.Message}");
             }
         }
 
         //删除订单
         public void DeleteOrder(string ID)
         {
-            Order order1 = SearchByID(ID);
-            if(order1!=null)
+            using (var context = new OrderContext())
             {
-                Orders.Remove(order1);
-                using (var context = new OrderContext())
-                {
-                    context.orders.Remove(order1);
-                    context.SaveChanges();
-                    Console.WriteLine("成功删除订单");
-                }
+                var order = context.orders.Include("Items").Where(o =>o.OrderId == ID).FirstOrDefault();
+                this.orders.Remove(order);
+                context.orders.Remove(order);
+                context.SaveChanges();
+
             }
             
         }
@@ -80,7 +88,7 @@ namespace OrderApp
             var query = Orders
                     .Where(order => order.OrderId==ID)
                     .OrderBy(o => o.TotalPrice);
-            return query as Order;
+            return query.ToList().First();
         }
 
         public List<Order> QueryOrdersByGoodsName(string goodsName)
@@ -101,9 +109,7 @@ namespace OrderApp
 
         public void UpdateOrder(Order newOrder)
         {
-            Order oldOrder = GetOrder(newOrder.OrderId);
-            if (oldOrder == null)
-                throw new ApplicationException($"修改错误：订单 {newOrder.OrderId} 不存在!");
+            deleteItems(newOrder.OrderId);
 
             using (var context = new OrderContext())
             {
@@ -114,6 +120,21 @@ namespace OrderApp
             }
         }
 
+        private static void deleteItems(string orderId)
+        {
+            using (var db = new OrderContext())
+            {
+                var oldItems = db.orderItems.Where(item => item.OrderId == orderId);
+                db.orderItems.RemoveRange(oldItems);
+                db.SaveChanges();
+            }
+        }
+
+        private static IQueryable<Order> AllOrders(OrderContext context)
+        {
+            return context.orders.Include(o => o.Items.Select(i => i.GoodsItem))
+                      .Include("Customer");
+        }
 
 
         //删除订单明细

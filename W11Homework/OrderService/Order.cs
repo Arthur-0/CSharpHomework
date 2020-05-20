@@ -15,16 +15,19 @@ namespace OrderApp
     public class Order : IComparable<Order>
     {
 
-        private List<OrderItem> items;
+        private List<OrderItem> items { get; set; }
 
         [Key]
         public string OrderId { get; set; }
-        public String CustomerId { get; set; }
+
+        public string CustomerId { get; set; }
 
         [ForeignKey("CustomerId")]
         public Customer Customer { get; set; }
 
-        public string CustomerName { get => (Customer != null) ? Customer.Name : ""; }
+        public string CustomerName { get; set; }
+
+        //public String CustomerName { get => (Customer != null) ? Customer.Name : ""; }
 
         public DateTime CreateTime { get; set; }
 
@@ -54,27 +57,22 @@ namespace OrderApp
             get => items.Sum(item => item.TotalPrice);
         }
 
+
         public void AddItem(OrderItem orderItem)
         {
             if (Items.Contains(orderItem))
-                throw new ApplicationException($"添加错误：订单项{orderItem.GoodsName} 已经存在!");
+                throw new ApplicationException($"添加错误：订单项已经存在!");
             Items.Add(orderItem);
-            using (var context = new OrderContext())
-            {
-                context.Entry(orderItem).State = EntityState.Added;
-                context.SaveChanges();
-            }
         }
 
         public void RemoveItem(OrderItem orderItem)
         {
             Items.Remove(orderItem);
-            using (var context = new OrderContext())
-            {
-                context.orderItems.Remove(orderItem);
-                context.SaveChanges();
-            }
         }
+
+
+
+
 
         public override string ToString()
         {

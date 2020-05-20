@@ -50,9 +50,10 @@
             this.dgvItems = new System.Windows.Forms.DataGridView();
             this.Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Goods = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
@@ -68,11 +69,11 @@
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(7, 6);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(8, 7);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(827, 150);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(930, 180);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "基本信息";
@@ -80,8 +81,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 745F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 838F));
             this.tableLayoutPanel1.Controls.Add(this.cbxCustomer, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
@@ -89,14 +90,14 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblCreateTime, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 22);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 26);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(819, 124);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(922, 149);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // cbxCustomer
@@ -107,10 +108,10 @@
             this.cbxCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCustomer.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbxCustomer.FormattingEnabled = true;
-            this.cbxCustomer.Location = new System.Drawing.Point(137, 45);
-            this.cbxCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxCustomer.Location = new System.Drawing.Point(154, 54);
+            this.cbxCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxCustomer.Name = "cbxCustomer";
-            this.cbxCustomer.Size = new System.Drawing.Size(453, 23);
+            this.cbxCustomer.Size = new System.Drawing.Size(509, 26);
             this.cbxCustomer.TabIndex = 10;
             // 
             // orderBindingSource
@@ -125,10 +126,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Location = new System.Drawing.Point(77, 0);
+            this.label2.Location = new System.Drawing.Point(84, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 41);
+            this.label2.Size = new System.Drawing.Size(62, 49);
             this.label2.TabIndex = 7;
             this.label2.Text = "订单号";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,10 +138,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Location = new System.Drawing.Point(92, 41);
+            this.label1.Location = new System.Drawing.Point(102, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 41);
+            this.label1.Size = new System.Drawing.Size(44, 49);
             this.label1.TabIndex = 6;
             this.label1.Text = "客户";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,19 +150,19 @@
             // 
             this.txtOrderId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOrderId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "OrderId", true));
-            this.txtOrderId.Location = new System.Drawing.Point(137, 4);
-            this.txtOrderId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderId.Location = new System.Drawing.Point(154, 5);
+            this.txtOrderId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtOrderId.Name = "txtOrderId";
-            this.txtOrderId.Size = new System.Drawing.Size(454, 25);
+            this.txtOrderId.Size = new System.Drawing.Size(510, 28);
             this.txtOrderId.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 95);
+            this.label3.Location = new System.Drawing.Point(67, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
+            this.label3.Size = new System.Drawing.Size(80, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "下单时间";
             // 
@@ -170,9 +171,9 @@
             this.lblCreateTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblCreateTime.AutoSize = true;
             this.lblCreateTime.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "CreateTime", true));
-            this.lblCreateTime.Location = new System.Drawing.Point(136, 95);
+            this.lblCreateTime.Location = new System.Drawing.Point(153, 114);
             this.lblCreateTime.Name = "lblCreateTime";
-            this.lblCreateTime.Size = new System.Drawing.Size(79, 15);
+            this.lblCreateTime.Size = new System.Drawing.Size(89, 18);
             this.lblCreateTime.TabIndex = 12;
             this.lblCreateTime.Text = "2020-4-10";
             // 
@@ -192,10 +193,10 @@
             this.panel1.Controls.Add(this.btnAddItem);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(7, 477);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(8, 561);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(827, 48);
+            this.panel1.Size = new System.Drawing.Size(930, 58);
             this.panel1.TabIndex = 3;
             // 
             // btnDeleteItem
@@ -203,10 +204,10 @@
             this.btnDeleteItem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnDeleteItem.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnDeleteItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteItem.Location = new System.Drawing.Point(249, 8);
-            this.btnDeleteItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteItem.Location = new System.Drawing.Point(280, 10);
+            this.btnDeleteItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDeleteItem.Name = "btnDeleteItem";
-            this.btnDeleteItem.Size = new System.Drawing.Size(100, 29);
+            this.btnDeleteItem.Size = new System.Drawing.Size(112, 35);
             this.btnDeleteItem.TabIndex = 7;
             this.btnDeleteItem.Text = "删除明细";
             this.btnDeleteItem.UseVisualStyleBackColor = true;
@@ -217,10 +218,10 @@
             this.btnEditItem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnEditItem.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnEditItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditItem.Location = new System.Drawing.Point(141, 8);
-            this.btnEditItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditItem.Location = new System.Drawing.Point(159, 10);
+            this.btnEditItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditItem.Name = "btnEditItem";
-            this.btnEditItem.Size = new System.Drawing.Size(100, 29);
+            this.btnEditItem.Size = new System.Drawing.Size(112, 35);
             this.btnEditItem.TabIndex = 6;
             this.btnEditItem.Text = "修改明细";
             this.btnEditItem.UseVisualStyleBackColor = true;
@@ -231,10 +232,10 @@
             this.btnAddItem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAddItem.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddItem.Location = new System.Drawing.Point(33, 8);
-            this.btnAddItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddItem.Location = new System.Drawing.Point(37, 10);
+            this.btnAddItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(100, 29);
+            this.btnAddItem.Size = new System.Drawing.Size(112, 35);
             this.btnAddItem.TabIndex = 5;
             this.btnAddItem.Text = "添加明细";
             this.btnAddItem.UseVisualStyleBackColor = true;
@@ -247,10 +248,10 @@
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(638, 8);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(718, 10);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(168, 29);
+            this.btnSave.Size = new System.Drawing.Size(189, 35);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "保存订单";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -260,11 +261,11 @@
             // 
             this.groupBox2.Controls.Add(this.dgvItems);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(7, 156);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(8, 187);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(827, 321);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(930, 374);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "订单明细";
@@ -277,17 +278,18 @@
             this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Index,
             this.Goods,
-            this.quantityDataGridViewTextBoxColumn,
             this.UnitPrice,
-            this.Amount});
+            this.Amount,
+            this.orderIdDataGridViewTextBoxColumn,
+            this.totalPriceDataGridViewTextBoxColumn});
             this.dgvItems.DataSource = this.itemsBindingSource;
             this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvItems.Location = new System.Drawing.Point(4, 22);
-            this.dgvItems.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvItems.Location = new System.Drawing.Point(4, 26);
+            this.dgvItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.ReadOnly = true;
             this.dgvItems.RowTemplate.Height = 23;
-            this.dgvItems.Size = new System.Drawing.Size(819, 295);
+            this.dgvItems.Size = new System.Drawing.Size(922, 343);
             this.dgvItems.TabIndex = 0;
             this.dgvItems.DoubleClick += new System.EventHandler(this.dgvItems_DoubleClick);
             // 
@@ -306,13 +308,6 @@
             this.Goods.ReadOnly = true;
             this.Goods.Width = 200;
             // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "数量";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // UnitPrice
             // 
             this.UnitPrice.DataPropertyName = "UnitPrice";
@@ -327,19 +322,33 @@
             this.Amount.Name = "Amount";
             this.Amount.ReadOnly = true;
             // 
+            // orderIdDataGridViewTextBoxColumn
+            // 
+            this.orderIdDataGridViewTextBoxColumn.DataPropertyName = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.HeaderText = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.Name = "orderIdDataGridViewTextBoxColumn";
+            this.orderIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // totalPriceDataGridViewTextBoxColumn
+            // 
+            this.totalPriceDataGridViewTextBoxColumn.DataPropertyName = "TotalPrice";
+            this.totalPriceDataGridViewTextBoxColumn.HeaderText = "TotalPrice";
+            this.totalPriceDataGridViewTextBoxColumn.Name = "totalPriceDataGridViewTextBoxColumn";
+            this.totalPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // FormEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 531);
+            this.ClientSize = new System.Drawing.Size(946, 626);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(1327, 578);
-            this.MinimumSize = new System.Drawing.Size(661, 578);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(1490, 682);
+            this.MinimumSize = new System.Drawing.Size(741, 682);
             this.Name = "FormEdit";
-            this.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Text = "修改订单";
             this.Load += new System.EventHandler(this.FormEdit_Load);
             this.groupBox1.ResumeLayout(false);
@@ -377,10 +386,11 @@
     private System.Windows.Forms.DataGridView dgvItems;
     private System.Windows.Forms.DataGridViewTextBoxColumn Index;
     private System.Windows.Forms.DataGridViewTextBoxColumn Goods;
-    private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
     private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
     private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
     private System.Windows.Forms.Button btnEditItem;
     private System.Windows.Forms.Button btnDeleteItem;
-  }
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalPriceDataGridViewTextBoxColumn;
+    }
 }

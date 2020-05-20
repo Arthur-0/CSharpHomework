@@ -21,17 +21,18 @@ namespace OrderForm
             List<Customer> customers = Customer.GetAll();
             if (customers.Count == 0)
             {
-                Customer.Add(new Customer("1","li"));
-                Customer.Add(new Customer("2","zhang"));
+                Customer.Add(new Customer("li"));
+                Customer.Add(new Customer("zhang"));
                 customers = Customer.GetAll();
             }
             customerBindingSource.DataSource = customers;
 
         }
-
-        public FormEdit(Order order, bool editMode = false) : this()
+        
+        public FormEdit(Order order, bool editMode = false) :this()
         {
             //TODO 如果想实现不点保存只关窗口后订单不变化，需要把order深克隆给CurrentOrder
+
             CurrentOrder = order;
             orderBindingSource.DataSource = CurrentOrder;
             txtOrderId.Enabled = !editMode;
@@ -55,6 +56,13 @@ namespace OrderForm
                     }
                     formItemEdit.OrderItem.Index = index;
                     CurrentOrder.AddItem(formItemEdit.OrderItem);
+                    CurrentOrder.Items.ForEach(item =>
+                    {
+                        item.GoodsItemId = item.GoodsItem.ID;
+                        item.GoodsName = item.GoodsItem.Name;
+                        item.UnitPrice = item.GoodsItem.Price;
+
+                    });
                     itemsBindingSource.ResetBindings(false);
                 }
             }
@@ -64,15 +72,19 @@ namespace OrderForm
             }
         }
 
+
         private void btnSave_Click(object sender, EventArgs e)
         {
 
             //TODO 加上订单合法性验证
             CurrentOrder.CustomerId = CurrentOrder.Customer.ID;
+            CurrentOrder.CustomerName = CurrentOrder.Customer.Name;
             CurrentOrder.Customer = null;
             CurrentOrder.Items.ForEach(item =>
             {
                 item.GoodsItemId = item.GoodsItem.ID;
+                item.GoodsName = item.GoodsItem.Name;
+                item.UnitPrice = item.GoodsItem.Price;
                 item.GoodsItem = null;
                 item.OrderId = CurrentOrder.OrderId;
   

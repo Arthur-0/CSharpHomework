@@ -110,9 +110,6 @@ namespace OrderForm
                     orderBindingSource.DataSource = orderService.Orders;
                     break;
                 case 1://根据ID查询
-                    Order order = orderService.GetOrder(Keyword);
-                    List<Order> result = new List<Order>();
-                    if (order != null) result.Add(order);
                     orderBindingSource.DataSource = orderService.SearchByID(Keyword);
                     break;
                 case 2://根据客户查询

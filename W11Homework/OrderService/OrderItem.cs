@@ -21,9 +21,9 @@ namespace OrderApp
         [ForeignKey("GoodsItemId")]
         public Goods GoodsItem { get; set; }
 
-        public String GoodsName { get => GoodsItem != null ? this.GoodsItem.Name : ""; }
+        public String GoodsName { get; set; }
 
-        public double UnitPrice { get => GoodsItem != null ? this.GoodsItem.Price : 0.0; }
+        public double UnitPrice { get; set; }
 
         public string GoodsItemId { get; set; }
 
@@ -32,7 +32,10 @@ namespace OrderApp
 
         public int Quantity { get; set; }
 
-        public OrderItem() { }
+        public OrderItem() {
+            Id = Guid.NewGuid().ToString();
+
+        }
 
         public OrderItem(int index, Goods goods, int quantity) : this()
         {
@@ -43,7 +46,7 @@ namespace OrderApp
 
         public double TotalPrice
         {
-            get => GoodsItem == null ? 0.0 : GoodsItem.Price * Quantity;
+            get => UnitPrice * Quantity;
         }
 
         public override string ToString()
