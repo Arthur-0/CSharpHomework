@@ -1,0 +1,14 @@
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CoreCompileInputs.cache
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\bin\Debug\OrderManager.exe.config
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\bin\Debug\OrderManager.exe
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\bin\Debug\OrderManager.pdb
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\obj\Debug\OrderManager.exe
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\obj\Debug\OrderManager.pdb
+C:\Users\Ruby\Desktop\courseMaterial\C#\OrderManager\OrderManager\obj\Debug\OrderManager.csprojAssemblyReference.cache
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\bin\Debug\OrderManager.exe.config
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\bin\Debug\OrderManager.exe
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\bin\Debug\OrderManager.pdb
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\obj\Debug\OrderManager.csprojAssemblyReference.cache
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CoreCompileInputs.cache
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\obj\Debug\OrderManager.exe
+C:\Users\Ruby\Desktop\W8Homework1\OrderManager\OrderManager\obj\Debug\OrderManager.pdb
