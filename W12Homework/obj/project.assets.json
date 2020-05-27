@@ -870,11 +870,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruby\\W12Homework\\W12Homework.csproj",
+      "projectUniqueName": "C:\\Users\\Ruby\\Desktop\\courseMaterial\\C#\\W12Homework\\W12Homework.csproj",
       "projectName": "W12Homework",
-      "projectPath": "C:\\Users\\Ruby\\W12Homework\\W12Homework.csproj",
+      "projectPath": "C:\\Users\\Ruby\\Desktop\\courseMaterial\\C#\\W12Homework\\W12Homework.csproj",
       "packagesPath": "C:\\Users\\Ruby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruby\\W12Homework\\obj\\",
+      "outputPath": "C:\\Users\\Ruby\\Desktop\\courseMaterial\\C#\\W12Homework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

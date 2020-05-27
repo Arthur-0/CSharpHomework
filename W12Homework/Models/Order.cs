@@ -30,7 +30,7 @@ namespace W12Homework.Models {
       CreateTime = DateTime.Now;
     }
 
-    public Order(Customer customer, List<OrderItem> items):this() {
+    public Order(List<OrderItem> items):this() {
       this.CreateTime = DateTime.Now;
       if (items != null) Items = items;
     }
